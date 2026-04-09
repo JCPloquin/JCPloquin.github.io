@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Exo:400,700&display=swap" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HarpEK : L&#39;instrument de geste continu arrive à maturité - Jean-Christophe Ploquin &amp; Arthur Gyl : les deux faces d&#39;un artiste</title>
+   <meta name="description" content="Musique haptique et installations immersives">
+   <link rel="stylesheet" href="/css/style.css">
+   <script data-goatcounter="https://jcploquin.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</head>
+<script>
+window.addEventListener('scroll', function() {
+  const aLaUne = document.getElementById('a-la-une');
+  const header = document.querySelector('.site-header');
+  if (!aLaUne || !header) return;
+  const headerHeight = header.offsetHeight;
+  const scrollY = window.scrollY;
+
+  if (scrollY < 100) {
+    aLaUne.classList.add('floating');
+    aLaUne.style.top = headerHeight + 'px';
+  } else {
+    aLaUne.classList.remove('floating');
+    aLaUne.style.top = '';
+  }
+});
+</script>
+
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            
+            <div class="language-selector-header">
+                
+                    
+                        
+                            <a href="/en/blog/harpek-design-advances/" title="English" class="lang-flag">🇬🇧</a>
+                        
+                    
+                
+                
+                
+                
+                    <span class="lang-flag-header current" title="Français">🇫🇷</span>
+                
+            </div>
+            
+            <h1 class="site-title">
+                <div>DEUX FACES POUR UN ARTISTE</div>
+            </h1>
+            
+            <nav class="site-nav">
+                <div class="nav-flex">
+                    <input type="checkbox" id="menu-toggle"/>
+                    <label for="menu-toggle" class="menu-icon">☰</label>
+                    <ul class="menu">
+                        
+                            <li><a href="/">Accueil</a></li>
+                        
+                            <li><a href="/musique/">Musique</a></li>
+                        
+                            <li><a href="/litterature/">Littérature</a></li>
+                        
+                            <li><a href="/jeux/">Jeux vidéos</a></li>
+                        
+                            <li><a href="/about/">Biographie</a></li>
+                        
+                            <li><a href="/contact/">Contact</a></li>
+                        
+                            <li><a href="/blog/">Blog</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+    
+        <div class="banner-slice">
+            <img src="/img/banniere-tranche.jpg" alt="Bandeau graphique" class="banner-slice-img">
+        </div>
+    
+
+    <main>
+        
+<article class="single-page">
+    <div class="container">
+        <header class="page-header">
+            <h1>HarpEK : L&#39;instrument de geste continu arrive à maturité</h1>
+            <p class="article-meta">21 December 2025</p>
+        </header>
+        <div class="page-content markdown-content">
+            <h1 id="harpek--linstrument-de-geste-continu-arrive-à-maturité">HarpEK : L&rsquo;instrument de geste continu arrive à maturité</h1>
+<p>Après des mois de conception, de tests et d&rsquo;ajustements, <strong>HarpEK</strong> franchit une étape décisive : presque tout le matériel critique est validé et documenté. L&rsquo;instrument prend forme, et avec lui, une vision renouvelée du contrôle gestuel en musique électronique.</p>
+<p><img src="/img/harpek_projet.png" alt="HarpEK - Vue d&rsquo;ensemble du boîtier">
+<em>Modélisation 3D du boîtier HarpEK avec capteurs ultrason, encodeurs et joystick</em></p>
+<hr>
+<h2 id="-architecture-matérielle-validée">🎛️ Architecture matérielle validée</h2>
+<h3 id="plateforme-et-alimentation">Plateforme et alimentation</h3>
+<p>Le cœur du système repose sur un <strong>ESP32-S3 DevKitC</strong> pleinement opérationnel :</p>
+<ul>
+<li>Programmation via Arduino IDE stable</li>
+<li>Communication USB série à 115200 bps</li>
+<li>Protocole OSC-Serial vers Pure Data fonctionnel</li>
+</ul>
+<p>L&rsquo;alimentation 5V / 3,3V a été validée avec précision :</p>
+<ul>
+<li>Adaptateur 5V 3A</li>
+<li>Régulateur AMS1117-3.3V</li>
+<li>Tensions mesurées : <strong>5,02V</strong> et <strong>3,28V</strong></li>
+<li>GND commun propre, sans bruit parasite</li>
+</ul>
+<p>Interrupteur général, bornier d&rsquo;alimentation et connecteur <strong>USB-C panel-mount Chenyang</strong> ont tous été testés et validés mécaniquement et électriquement.</p>
+<hr>
+<h2 id="-capteurs-et-contrôleurs--le-corps-au-centre-du-jeu">🎵 Capteurs et contrôleurs : le corps au centre du jeu</h2>
+<h3 id="harpe-ultrason-3--hc-sr04">Harpe ultrason (3 × HC-SR04)</h3>
+<p>Le dispositif phare de HarpEK : <strong>trois capteurs ultrason espacés de 80 mm</strong> créent une zone de détection gestuelle continue.</p>
+<p><strong>Performance mesurée</strong> :</p>
+<ul>
+<li>Algorithme <strong>Winner-Takes-All</strong> stable</li>
+<li><strong>99% de détections correctes</strong></li>
+<li>Latence ≈ <strong>60 ms</strong></li>
+<li>Portée utile : <strong>5–177 cm</strong></li>
+<li>Mapping distance → pitch déjà exploitable musicalement</li>
+</ul>
+<p>Chaque capteur dispose de sa <strong>LED dédiée</strong> (GPIO 45/46/47) pour un feedback visuel immédiat.</p>
+<h3 id="pédales-dexpression-4--roland-dp-10">Pédales d&rsquo;expression (4 × Roland DP-10)</h3>
+<p>Brochage TRS et alimentation 5V mesurés avec précision. Diviseurs de tension <strong>1kΩ / 2kΩ</strong> convertissent les signaux 0–5V en plage ADC utilisable (≈0–3,3V), soit <strong>0–2800 en résolution 12 bits</strong>.</p>
+<p><strong>Aucune diaphonie</strong> entre les 4 pédales : chaque canal reste propre et stable.</p>
+<h3 id="encodeurs-rotatifs-3--ky-040">Encodeurs rotatifs (3 × KY-040)</h3>
+<p>Testés simultanément en mode circulaire <strong>0–127 avec wrap-around</strong>. Les boutons intégrés (SW) sont fiables, aucun problème de rebond ni de diaphonie.</p>
+<h3 id="joystick-arcade-d400x-r4">Joystick arcade (D400X-R4)</h3>
+<p>Version fonctionnelle validée : <strong>3 axes analogiques</strong> (0–4095) + bouton central. Intégration via diviseurs identiques aux pédales.</p>
+<hr>
+<h2 id="-interface-mémoires-et-feedback">🧠 Interface mémoires et feedback</h2>
+<h3 id="système-de-mémoires-4-boutons-gebildet-12-mm">Système de mémoires (4 boutons Gebildet 12 mm)</h3>
+<p>Câblage sur Eurocard terminé et testé. Schéma logique séparant <strong>boutons et LEDs</strong>, gestion firmware prévue avec sélection <strong>exclusive d&rsquo;une seule mémoire active</strong> à la fois.</p>
+<p>Chaque mémoire pourra stocker une configuration complète de mappings, gammes ou presets Pure Data.</p>
+<hr>
+<h2 id="-architecture-électronique-et-mécanique">🔧 Architecture électronique et mécanique</h2>
+<p><img src="/img/harpek_projet2.png" alt="Architecture interne HarpEK">
+<em>Vue éclatée : Eurocard, ESP32, connecteurs et câblage interne</em></p>
+<h3 id="eurocard-10080-mm">Eurocard 100×80 mm</h3>
+<p>Carte principale achevée avec qualité professionnelle :</p>
+<ul>
+<li>Headers ESP32 soudés</li>
+<li>Bornier d&rsquo;alimentation fixé</li>
+<li>Diviseurs de tension installés</li>
+<li>Inspection à la loupe : continuités vérifiées, <strong>aucun court-circuit</strong></li>
+</ul>
+<h3 id="tableau-de-connexions-complet">Tableau de connexions complet</h3>
+<p><strong>85 connexions GPIO documentées</strong> dans un tableur LibreOffice. Chaque signal, masse et alimentation a été vérifié en croisé. Aucune incohérence restante.</p>
+<p><img src="/img/tableau-connexions-harpek.png" alt="Tableau de connexions ESP32-S3">
+<em>Tableau exhaustif des 85 connexions GPIO de l&rsquo;ESP32-S3</em></p>
+<h3 id="boîtier-hammond-1455n1602">Boîtier Hammond 1455N1602</h3>
+<p>Modélisation 3D complète sous <strong>SketchUp</strong>. Gabarits A4 pour les 4 faces validés :</p>
+<ul>
+<li>HC-SR04 affleurants (face avant)</li>
+<li>Encodeurs, joystick, boutons mémoire (face supérieure)</li>
+<li>Jacks TRS pédales, USB-C, interrupteur (face arrière)</li>
+<li>Clearances internes vérifiées : aucun conflit mécanique</li>
+</ul>
+<hr>
+<h2 id="-philosophie-instrumentale--le-geste-continu">💡 Philosophie instrumentale : le geste continu</h2>
+<p>HarpEK n&rsquo;est pas un simple contrôleur MIDI. C&rsquo;est un <strong>instrument pensé pour le geste continu</strong>, une réponse aux limites des protocoles traditionnels.</p>
+<h3 id="au-delà-du-midi">Au-delà du MIDI</h3>
+<p>Le protocole <strong>OSC-like sur USB série</strong> permet d&rsquo;exploiter toute la résolution <strong>12 bits</strong> des capteurs, sans la contrainte des 7 bits du MIDI. Le langage de l&rsquo;instrument devient un alphabet personnel, mappé dans Pure Data en :</p>
+<ul>
+<li>Gammes microtonales</li>
+<li>Espaces spectraux</li>
+<li>Structures rythmiques non métriques</li>
+<li>Spatialisation 5.1 et 8.1</li>
+</ul>
+<h3 id="un-héritage-des-années-1980">Un héritage des années 1980</h3>
+<p>HarpEK s&rsquo;inspire des <strong>joysticks analogiques</strong> et de la <strong>synthèse modulaire</strong> : le musicien modèle des flux continus plutôt que d&rsquo;empiler des notes isolées. Avec la harpe ultrason, les pédales, le joystick et les encodeurs, <strong>le corps redevient central</strong> : chaque déplacement de main ou de pied devient une trajectoire sonore.</p>
+<h3 id="immédiateté-instrumentale">Immédiateté instrumentale</h3>
+<p>L&rsquo;objectif : que le musicien pense en <strong>geste et en timbre</strong>, pas en &ldquo;paramètres&rdquo; ou en &ldquo;messages&rdquo;. HarpEK prolonge une tradition instrumentale jusque dans l&rsquo;informatique musicale de 2025.</p>
+<hr>
+<h2 id="-prochaines-étapes">🚀 Prochaines étapes</h2>
+<p>Avec toutes les briques techniques majeures validées, les prochaines phases sont :</p>
+<ol>
+<li><strong>Assemblage final</strong> dans le boîtier Hammond</li>
+<li><strong>Calibration complète</strong> des capteurs en situation réelle</li>
+<li><strong>Développement firmware</strong> : gestion des mémoires et optimisation latence</li>
+<li><strong>Patches Pure Data dédiés</strong> pour premiers tests musicaux</li>
+<li><strong>Documentation utilisateur</strong> et premiers concerts tests</li>
+</ol>
+<p>HarpEK approche de sa forme définitive. L&rsquo;instrument est presque prêt à jouer.</p>
+<hr>
+<p>🎸 <em>Projet open hardware — Conçu et documenté pour la communauté des musiques expérimentales.</em></p>
+
+        </div>
+        
+        
+        
+        <nav class="article-nav">
+            
+                <a href="/blog/fluctus-planetarium-version-stable-imminente/" class="prev-article">← Fluctus Planetarium : tout sur la version stable imminente</a>
+            
+            
+        </nav>
+        
+    </div>
+</article>
+
+    </main>
+    <footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 Jean-Christophe Ploquin - Musicien et Écrivain</p>
+        <p>Musique haptique et installations immersives - Romans de Science-fiction</p>
+    </div>
+</footer>
+
+
+    
+</body>
+</html>
+

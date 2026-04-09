@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Exo:400,700&display=swap" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Behind the scenes : Création d&#39;Ascendance - Jean-Christophe Ploquin &amp; Arthur Gyl : les deux faces d&#39;un artiste</title>
+   <meta name="description" content="Musique haptique et installations immersives">
+   <link rel="stylesheet" href="/css/style.css">
+   <script data-goatcounter="https://jcploquin.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</head>
+<script>
+window.addEventListener('scroll', function() {
+  const aLaUne = document.getElementById('a-la-une');
+  const header = document.querySelector('.site-header');
+  if (!aLaUne || !header) return;
+  const headerHeight = header.offsetHeight;
+  const scrollY = window.scrollY;
+
+  if (scrollY < 100) {
+    aLaUne.classList.add('floating');
+    aLaUne.style.top = headerHeight + 'px';
+  } else {
+    aLaUne.classList.remove('floating');
+    aLaUne.style.top = '';
+  }
+});
+</script>
+
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            
+            <div class="language-selector-header">
+                
+                    
+                        
+                            <a href="/en/blog/behind-the-scenes-creation-dascendance/" title="English" class="lang-flag">🇬🇧</a>
+                        
+                    
+                
+                
+                
+                
+                    <span class="lang-flag-header current" title="Français">🇫🇷</span>
+                
+            </div>
+            
+            <h1 class="site-title">
+                <div>DEUX FACES POUR UN ARTISTE</div>
+            </h1>
+            
+            <nav class="site-nav">
+                <div class="nav-flex">
+                    <input type="checkbox" id="menu-toggle"/>
+                    <label for="menu-toggle" class="menu-icon">☰</label>
+                    <ul class="menu">
+                        
+                            <li><a href="/">Accueil</a></li>
+                        
+                            <li><a href="/musique/">Musique</a></li>
+                        
+                            <li><a href="/litterature/">Littérature</a></li>
+                        
+                            <li><a href="/jeux/">Jeux vidéos</a></li>
+                        
+                            <li><a href="/about/">Biographie</a></li>
+                        
+                            <li><a href="/contact/">Contact</a></li>
+                        
+                            <li><a href="/blog/">Blog</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+    
+        <div class="banner-slice">
+            <img src="/img/banniere-tranche.jpg" alt="Bandeau graphique" class="banner-slice-img">
+        </div>
+    
+
+    <main>
+        
+<article class="single-page">
+    <div class="container">
+        <header class="page-header">
+            <h1>Behind the scenes : Création d&#39;Ascendance</h1>
+            <p class="article-meta">5 July 2025</p>
+        </header>
+        <div class="page-content markdown-content">
+            <p>Trois semaines après le lancement d'<em>Ascendance</em>, il est temps de lever le voile sur les coulisses de cette création. Comment transforme-t-on une idée artistique en œuvre interactive ? Retour sur un processus créatif qui mêle composition électroacoustique et développement logiciel.</p>
+<h2 id="létincelle-créative--quand-la-généalogie-rencontre-lacousmatique">L&rsquo;étincelle créative : quand la généalogie rencontre l&rsquo;acousmatique</h2>
+<p>L&rsquo;idée d'<em>Ascendance</em> est née d&rsquo;une observation simple : <strong>nos arbres généalogiques ressemblent à des partitions</strong>. Chaque branche évoque une ligne mélodique, chaque génération suggère une tessiture, chaque ancêtre porte en lui une histoire sonore unique.</p>
+<p>Cette révélation s&rsquo;est imposée lors d&rsquo;une exploration de mes propres archives familiales. En contemplant les dates de naissance et de décès de mes ancêtres, j&rsquo;entendais déjà résonner les cloches, les chœurs et les trompettes qui allaient devenir les objets sonores fondamentaux de l&rsquo;œuvre.</p>
+<h2 id="le-défi-technique--faire-dialoguer-gedcom-et-audio">Le défi technique : faire dialoguer GEDCOM et audio</h2>
+<p><strong>Premier obstacle majeur :</strong> comment faire &ldquo;parler&rdquo; un fichier GEDCOM ? Ces fichiers de généalogie contiennent une mine d&rsquo;informations, mais dans un format purement textuel. Il fallait créer un <strong>parseur</strong> capable d&rsquo;extraire les données pertinentes et de les transformer en paramètres musicaux.</p>
+<h3 id="quest-ce-quun-parseur-">Qu&rsquo;est-ce qu&rsquo;un parseur ?</h3>
+<p>Un <strong>parseur</strong> (de l&rsquo;anglais &ldquo;parser&rdquo;) est un programme informatique qui analyse une chaîne de caractères et la décompose en éléments compréhensibles par la machine. Étymologiquement, le terme vient du latin &ldquo;pars&rdquo; (partie) : le parseur identifie les différentes parties d&rsquo;un texte selon des règles précises.</p>
+<p>Dans le contexte d'<em>Ascendance</em>, mon parseur GEDCOM doit :</p>
+<ul>
+<li><strong>Identifier</strong> chaque individu dans l&rsquo;arbre généalogique</li>
+<li><strong>Extraire</strong> ses dates de naissance et de décès</li>
+<li><strong>Comprendre</strong> les liens de parenté</li>
+<li><strong>Convertir</strong> ces informations en coordonnées spatiales et temporelles pour la composition</li>
+</ul>
+<h3 id="le-parallèle-avec-xenakis-et-la-musique-stochastique">Le parallèle avec Xenakis et la musique stochastique</h3>
+<p>Cette approche rappelle les travaux révolutionnaires d&rsquo;Iannis Xenakis dans les années 1950. Le compositeur grec utilisait les <strong>mathématiques stochastiques</strong> - basées sur le calcul des probabilités - pour transformer des données abstraites en matériau musical concret.</p>
+<p><strong>Xenakis transformait :</strong></p>
+<ul>
+<li>Les <strong>lois de la physique</strong> (cinétique des gaz, chaînes de Markov) en <strong>règles compositionnelles</strong></li>
+<li>Les <strong>phénomènes naturels</strong> (chant des cigales, manifestations de foule) en <strong>masses sonores</strong></li>
+<li>Les <strong>équations probabilistes</strong> en <strong>événements musicaux</strong></li>
+</ul>
+<p><strong>Dans Ascendance, je transforme :</strong></p>
+<ul>
+<li>Les <strong>données généalogiques</strong> en <strong>objets sonores spatialisés</strong></li>
+<li>Les <strong>liens familiaux</strong> en <strong>relations harmoniques</strong></li>
+<li>Les <strong>dates historiques</strong> en <strong>progressions temporelles</strong></li>
+</ul>
+<p>Comme Xenakis qui &ldquo;parsait&rdquo; les phénomènes naturels pour en extraire des lois compositionnelles, mon parseur GEDCOM extrait la structure musicale cachée dans nos histoires familiales.</p>
+<h2 id="larchitecture-sonore--trois-univers-trois-esthétiques">L&rsquo;architecture sonore : trois univers, trois esthétiques</h2>
+<p><em>Ascendance</em> se structure en trois mouvements distincts, chacun nécessitant une approche compositionnelle spécifique :</p>
+<h3 id="le-préchauffage--voyage-dans-lhistoire-musicale">Le Préchauffage : voyage dans l&rsquo;histoire musicale</h3>
+<p><strong>Défi artistique :</strong> Comment représenter le passage du temps historique par la musique ? J&rsquo;ai choisi de superposer des échantillons d&rsquo;époques différentes - Pierre Henry, Léo Delibes, chant grégorien, musique antique - dans un ordre aléatoire. Cette cacophonie contrôlée prépare l&rsquo;auditeur au voyage temporel qui l&rsquo;attend.</p>
+<h3 id="le-voyage-aller--chaque-ancêtre-une-signature-sonore">Le Voyage aller : chaque ancêtre, une signature sonore</h3>
+<p><strong>Innovation technique :</strong> Chaque ancêtre génère automatiquement trois objets sonores symboliques. Les dates de naissance déclenchent des trompettes, les périodes de vie activent des chœurs, les dates de décès font résonner des cloches. La spatialisation quadriphonique permet de ne percevoir que les ancêtres &ldquo;proches&rdquo; dans l&rsquo;arbre.</p>
+<h3 id="le-voyage-retour--lavalanche-temporelle">Le Voyage retour : l&rsquo;avalanche temporelle</h3>
+<p><strong>Choix esthétique radical :</strong> Abandonner la mélodie individuelle pour une texture globale descendante. Cette &ldquo;avalanche chromatique&rdquo; symbolise la cascade des générations, créant un effet dramatique saisissant.</p>
+<h2 id="les-défis-de-la-spatialisation-interactive">Les défis de la spatialisation interactive</h2>
+<p><strong>Problème complexe :</strong> Comment naviguer dans un espace sonore trop vaste pour être appréhendé globalement ? La solution résidait dans la création d&rsquo;un &ldquo;horizon sonore&rdquo; - seuls les ancêtres dans un rayon de 4 générations restent audibles.</p>
+<p>Cette limitation technique devient un choix artistique : elle mime notre perception naturelle de l&rsquo;histoire familiale, où seuls les ancêtres &ldquo;proches&rdquo; nous sont vraiment accessibles.</p>
+<h2 id="lévolution-harmonique--le-comma-comme-guide-temporel">L&rsquo;évolution harmonique : le comma comme guide temporel</h2>
+<p><strong>Découverte compositionnelle :</strong> Plutôt qu&rsquo;une progression par demi-tons (trop brutale), j&rsquo;ai opté pour une montée par commas (neuvième de ton). Ce micro-intervalle crée une progression harmonique subtile qui accompagne l&rsquo;exploration généalogique sans la dominer.</p>
+<p>Chaque génération remontée élève légèrement la hauteur générale, créant une sensation d&rsquo;élévation spirituelle vers les origines.</p>
+<h2 id="les-outils-de-création--entre-tradition-et-innovation">Les outils de création : entre tradition et innovation</h2>
+<p><strong>Palette logicielle :</strong></p>
+<ul>
+<li><strong>Ardour</strong> : Séquenceur principal pour l&rsquo;assemblage et le mixage multicanal</li>
+<li><strong>Pure Data</strong> : Programmation des algorithmes musicaux et traitement temps réel</li>
+<li><strong>Godot Engine</strong> : Moteur de jeu pour l&rsquo;interactivité et l&rsquo;interface</li>
+<li><strong>Bibliothèques audio personnalisées</strong> : Objets sonores composés spécifiquement pour le projet</li>
+<li><strong>Scripts de parsing GEDCOM</strong> : Développés sur mesure pour l&rsquo;analyse généalogique</li>
+</ul>
+<p><strong>Pure Data</strong> joue un rôle central dans mes créations. Ce langage de programmation visuelle me permet de développer les algorithmes musicaux complexes qui transforment les données généalogiques en objets sonores. Chaque ancêtre, chaque date, chaque lien familial passe par des patches Pure Data qui calculent en temps réel les paramètres de spatialisation, de hauteur et de timbre.</p>
+<h2 id="les-retours-dexpérience--quand-lart-rencontre-son-public">Les retours d&rsquo;expérience : quand l&rsquo;art rencontre son public</h2>
+<p>Depuis le lancement, les retours révèlent des usages inattendus. Certains utilisateurs explorent <em>Ascendance</em> comme outil de méditation familiale, d&rsquo;autres y trouvent une nouvelle façon d&rsquo;appréhender leur héritage. Cette diversité d&rsquo;approches confirme la richesse du medium interactif.</p>
+<p><strong>Témoignages marquants :</strong></p>
+<ul>
+<li>&ldquo;J&rsquo;ai enfin &lsquo;entendu&rsquo; mon arrière-grand-père&rdquo;</li>
+<li>&ldquo;Une expérience bouleversante qui donne une dimension sonore à ma généalogie&rdquo;</li>
+<li>&ldquo;Plus qu&rsquo;un jeu, c&rsquo;est un voyage intérieur&rdquo;</li>
+</ul>
+<h2 id="vers-de-nouveaux-horizons-créatifs">Vers de nouveaux horizons créatifs</h2>
+<p><em>Ascendance</em> ouvre la voie à d&rsquo;autres expérimentations. L&rsquo;idée d&rsquo;adapter cette approche à d&rsquo;autres types de données - géographiques, historiques, scientifiques - germe déjà. Le principe reste le même : transformer l&rsquo;information en expérience artistique immersive.</p>
+<h2 id="les-leçons-apprises">Les leçons apprises</h2>
+<p><strong>Sur le plan artistique :</strong> L&rsquo;interactivité ne doit jamais dominer la dimension esthétique. Chaque choix technique doit servir l&rsquo;intention musicale.</p>
+<p><strong>Sur le plan technique :</strong> La simplicité d&rsquo;usage cache souvent une complexité de développement. Trois clics pour charger un GEDCOM représentent des centaines d&rsquo;heures de programmation.</p>
+<p><strong>Sur le plan humain :</strong> L&rsquo;art interactif crée des liens uniques entre créateur et public. Chaque utilisateur devient co-créateur de sa propre expérience.</p>
+<p><em>Ascendance</em> démontre qu&rsquo;il est possible de repenser les frontières entre composition, programmation et expérience utilisateur. Cette œuvre hybride ouvre de nouvelles perspectives pour l&rsquo;art sonore du XXIe siècle, dans la lignée des innovations de Xenakis qui transformait déjà les mathématiques en musique.</p>
+<hr>
+<p><em>Découvrez Ascendance gratuitement sur <a href="https://jcploquin.itch.io/ascendance">jcploquin.itch.io/ascendance</a> et explorez votre propre voyage généalogique musical.</em></p>
+
+        </div>
+        
+        
+        
+        <nav class="article-nav">
+            
+                <a href="/blog/lacousmatique-dans-les-jeux-video/" class="prev-article">← L&#39;acousmatique dans les jeux vidéo</a>
+            
+            
+                <a href="/blog/cranelab-2025/" class="next-article">Retour sur les Rencontres Acousmatiques 2025 au CRANE lab →</a>
+            
+        </nav>
+        
+    </div>
+</article>
+
+    </main>
+    <footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 Jean-Christophe Ploquin - Musicien et Écrivain</p>
+        <p>Musique haptique et installations immersives - Romans de Science-fiction</p>
+    </div>
+</footer>
+
+
+    
+</body>
+</html>
+

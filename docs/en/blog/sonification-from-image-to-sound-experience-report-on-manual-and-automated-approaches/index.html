@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Exo:400,700&display=swap" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sonification: From Image to Sound - Experience Report on Manual and Automated Approaches - Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</title>
+   <meta name="description" content="Musique haptique et installations immersives">
+   <link rel="stylesheet" href="/css/style.css">
+   <script data-goatcounter="https://jcploquin.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</head>
+<script>
+window.addEventListener('scroll', function() {
+  const aLaUne = document.getElementById('a-la-une');
+  const header = document.querySelector('.site-header');
+  if (!aLaUne || !header) return;
+  const headerHeight = header.offsetHeight;
+  const scrollY = window.scrollY;
+
+  if (scrollY < 100) {
+    aLaUne.classList.add('floating');
+    aLaUne.style.top = headerHeight + 'px';
+  } else {
+    aLaUne.classList.remove('floating');
+    aLaUne.style.top = '';
+  }
+});
+</script>
+
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            
+            <div class="language-selector-header">
+                
+                    
+                        
+                            <a href="/blog/sonification-de-limage-au-son-retour-dexp%C3%A9rience-entre-approche-manuelle-et-automatisation/" title="Français" class="lang-flag">🇫🇷</a>
+                        
+                    
+                
+                
+                
+                
+                    <span class="lang-flag-header current" title="English">🇬🇧</span>
+                
+            </div>
+            
+            <h1 class="site-title">
+                <div>TWO FACES OF AN ARTIST</div>
+            </h1>
+            
+            <nav class="site-nav">
+                <div class="nav-flex">
+                    <input type="checkbox" id="menu-toggle"/>
+                    <label for="menu-toggle" class="menu-icon">☰</label>
+                    <ul class="menu">
+                        
+                            <li><a href="/en/">Home</a></li>
+                        
+                            <li><a href="/en/musique/">Music</a></li>
+                        
+                            <li><a href="/en/litterature/">Literature</a></li>
+                        
+                            <li><a href="/en/jeux/">Video Games</a></li>
+                        
+                            <li><a href="/en/about/">Biography</a></li>
+                        
+                            <li><a href="/en/contact/">Contact</a></li>
+                        
+                            <li><a href="/en/blog/">Blog</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+    
+        <div class="banner-slice">
+            <img src="/img/banniere-tranche.jpg" alt="Bandeau graphique" class="banner-slice-img">
+        </div>
+    
+
+    <main>
+        
+<article class="single-page">
+    <div class="container">
+        <header class="page-header">
+            <h1>Sonification: From Image to Sound - Experience Report on Manual and Automated Approaches</h1>
+            <p class="article-meta">4 August 2025</p>
+        </header>
+        <div class="page-content markdown-content">
+            <h1 id="sonification-from-image-to-sound---experience-report-on-manual-and-automated-approaches">Sonification: From Image to Sound - Experience Report on Manual and Automated Approaches</h1>
+<p>Sonification, this fascinating technique that transforms visual data into sonic experiences, plays a central role in my transmedia projects. Having had the opportunity to experiment with this approach through <strong>Fluctus Planetarium</strong> and its interactive adaptation <strong>Fluctus Planetarium: The Game</strong>, I wish to share my experience with two complementary methodologies: manual sonification with ARGOPd/PureData for the original work and custom automation with Godot Engine for the interactive adaptation.</p>
+<h2 id="sonification-in-my-creative-projects">Sonification in My Creative Projects</h2>
+<p>As an electroacoustic composer, I have always been intrigued by the bridges between visual arts and sound creation. Sonification offers the unique possibility to make heard what is seen, to reveal the hidden musicality of shapes and colors. It was this curiosity that led me to integrate these techniques into <strong>Fluctus Planetarium</strong>, then to completely rethink the approach during its adaptation to an interactive game.</p>
+<h2 id="manual-approach-fluctus-planetarium-and-argopd">Manual Approach: Fluctus Planetarium and ARGOPd</h2>
+<h3 id="original-creative-context">Original Creative Context</h3>
+<p>For <strong>Fluctus Planetarium</strong>, my acousmatic project, I needed to translate the <strong>planetary textures created by Louis Jeanne</strong> into sound material. These visual works, resulting from the deconstruction of portraits into abstract and organic textures, constitute the base material for my sonic creation.</p>
+<h3 id="manual-vectorization-process-for-argopd">Manual Vectorization Process for ARGOPd</h3>
+<p>The particularity of the <strong>ARGOPd Theme8 sonification module</strong> (developed by Gérard Paresys) that I used is that it requires <strong>vector graphic scores</strong> specifically formatted to function. The &ldquo;Score/Graphic Score&rdquo; module uses Pure Data&rsquo;s &ldquo;data structures&rdquo; and requires meticulous preparation of the visual material.</p>
+<p>I therefore developed a <strong>manual vectorization</strong> process of Louis Jeanne&rsquo;s textures:</p>
+<ol>
+<li><strong>Analysis</strong> of the organic textures of the planets</li>
+<li><strong>Extraction</strong> of significant graphic elements</li>
+<li><strong>Manual vectorization</strong> into geometric shapes compatible with Pd data structures</li>
+<li><strong>Creation</strong> of graphic scores exploitable by the Theme8 module</li>
+</ol>
+<div style="display: flex; gap: 20px; margin: 20px 0;">
+  <div style="flex: 1;">
+    <img src="/img/matis_texture.png" alt="Organic texture by Louis Jeanne" style="width: 100%; height: auto;" />
+    <p style="text-align: center; font-style: italic; margin-top: 10px;">Organic texture by Louis Jeanne</p>
+  </div>
+  <div style="flex: 1;">
+    <img src="/img/matis_partition.png" alt="Vectorized score for ARGOPd" style="width: 100%; height: auto;" />
+    <p style="text-align: center; font-style: italic; margin-top: 10px;">Vectorized score for ARGOPd</p>
+  </div>
+</div>
+<p><em>Visual comparison: The original organic texture by Louis Jeanne (gray and blue organic tones) and its manual vectorization into a colorful graphic score (bright geometric shapes) - same structural framework, different vectorial interpretation</em></p>
+<p>This vectorization step is <strong>crucial</strong>: it transforms the fluid and organic textures into discrete geometric elements that the ARGOPd module can interpret as sound instructions.</p>
+<h3 id="argopd-theme8-an-exceptional-tool-for-interpretation">ARGOPd Theme8: An Exceptional Tool for Interpretation</h3>
+<p>Once the vectorized scores are created according to Theme8 specifications, <strong>ARGOPd</strong> reveals all its power. This suite of over 200 modules and 300 patches for PureData, co-winner of the 2014 AFIM International Musical Software Competition, offers particularly sophisticated <strong>sonification patches</strong>.</p>
+<p>The Theme8 &ldquo;Score/Graphic Score&rdquo; module uses Pure Data&rsquo;s &ldquo;data structures&rdquo; and allows:</p>
+<ul>
+<li><strong>Sequential reading</strong> of the vectorized elements of the score</li>
+<li><strong>Transformation</strong> of each geometric shape into sound parameters</li>
+<li><strong>Artistic control</strong> of playback speed and rendering quality</li>
+<li><strong>Generation</strong> of real-time audio streams from visual data</li>
+</ul>
+<p>Using vectorized scores in ARGOPd Theme8 allowed me to:</p>
+<ul>
+<li><strong>Artistically control</strong> every aspect of the visual-to-sound transposition</li>
+<li><strong>Musically interpret</strong> Louis Jeanne&rsquo;s textures</li>
+<li><strong>Compose</strong> customized processing chains</li>
+<li><strong>Create</strong> an authentic dialogue between visual arts and electroacoustic composition</li>
+</ul>
+<h3 id="results-of-manual-sonification">Results of Manual Sonification</h3>
+<p>The graphic scores I created reveal the <strong>creative mediation</strong> necessary between the original visual art and its sonification. The colorful geometric shapes - triangles, rectangles and polygons - combine with audio signal representations in the ARGOPd interface, creating a true <strong>contemporary score</strong> where each color and shape corresponds to specific sound parameters.</p>
+<p>This manual approach offers exceptional <strong>creative flexibility</strong>. Each parameter can be adjusted intuitively, allowing exploration of different sonic interpretations of the original textures until the desired artistic result is achieved.</p>
+<h2 id="automated-approach-fluctus-planetarium-the-game-and-godot-engine">Automated Approach: Fluctus Planetarium: The Game and Godot Engine</h2>
+<h3 id="interactive-adaptation-challenge">Interactive Adaptation Challenge</h3>
+<p>When adapting <strong>Fluctus Planetarium</strong> into the interactive version <strong>Fluctus Planetarium: The Game</strong>, the constraints were entirely different: I had to automate sonification to allow players to progressively discover musical creation. The goal was to develop an algorithm capable of automatically generating interesting sonic material from any image, without going through the manual vectorization step.</p>
+<p>This transition from acousmatic work to interactive experience forced me to <strong>completely rethink</strong> the sonification approach, moving from manual artistic interpretation to direct pedagogical automation.</p>
+<h3 id="custom-algorithmic-innovation">Custom Algorithmic Innovation</h3>
+<p>I developed an original sonification system that directly analyzes pixels without prior vectorization:</p>
+<h4 id="rgb-to-harmonics-mapping">RGB to Harmonics Mapping</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#66d9ef">var</span> r_freq <span style="color:#f92672">=</span> lerp(<span style="color:#ae81ff">110.0</span>, <span style="color:#ae81ff">440.0</span>, color<span style="color:#f92672">.</span>r)    <span style="color:#75715e"># Red: 110-440 Hz</span>
+<span style="color:#66d9ef">var</span> g_freq <span style="color:#f92672">=</span> lerp(<span style="color:#ae81ff">880.0</span>, <span style="color:#ae81ff">2200.0</span>, color<span style="color:#f92672">.</span>g)   <span style="color:#75715e"># Green: 880-2200 Hz  </span>
+<span style="color:#66d9ef">var</span> b_freq <span style="color:#f92672">=</span> lerp(<span style="color:#ae81ff">4400.0</span>, <span style="color:#ae81ff">8800.0</span>, color<span style="color:#f92672">.</span>b)  <span style="color:#75715e"># Blue: 4400-8800 Hz</span>
+</code></pre></div><h4 id="progressive-revelation-in-5-temporal-phases">Progressive Revelation in 5 Temporal Phases</h4>
+<p>The algorithm progressively reveals sonic complexity over 10 seconds:</p>
+<ul>
+<li><strong>0-2s</strong>: Red only</li>
+<li><strong>2-4s</strong>: Blue only</li>
+<li><strong>4-6s</strong>: Green only</li>
+<li><strong>6-8s</strong>: Red + Blue</li>
+<li><strong>8-10s</strong>: Complete RGB</li>
+</ul>
+<p>This pedagogical approach allows players to progressively understand how each color component contributes to the final sonic result, creating a <strong>bridge</strong> between the original work and its appropriation by users.</p>
+<h4 id="professional-audio-quality">Professional Audio Quality</h4>
+<ul>
+<li><strong>Bilinear interpolation</strong> for smooth image traversal</li>
+<li><strong>Temporal smoothing</strong> (factor 0.95) to reduce granularity</li>
+<li><strong>Normalization to -1dB</strong> for optimal audio level</li>
+<li><strong>Anti-click envelopes</strong> with fade in/out of 2000 samples</li>
+</ul>
+<h3 id="real-time-effects-chain">Real-Time Effects Chain</h3>
+<p>The algorithm generates a <strong>AudioStreamWAV</strong> 44.1kHz 16-bit which is then processed by a complete effects chain:</p>
+<ul>
+<li><strong>6-band Equalizer</strong> (Bass/Medium/Treble)</li>
+<li><strong>Pitch Shift</strong>, <strong>Reverb</strong>, <strong>Delay</strong>, <strong>Chorus</strong>, <strong>Distortion</strong></li>
+<li><strong>Real-time spectrum analyzer</strong> with 16-band VU meters</li>
+<li><strong>Integrated oscilloscope</strong> with 512-sample buffer</li>
+<li><strong>User-editable volume curve</strong></li>
+</ul>
+<p>This architecture transforms the sound workshop into a true <strong>virtual studio</strong> accessible to non-musician players, democratizing access to techniques used in the original work.</p>
+<h2 id="comparison-of-both-approaches">Comparison of Both Approaches</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Aspect</strong></th>
+<th><strong>ARGOPd Theme8 (Manual)</strong></th>
+<th><strong>Godot (Automated)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Preparation</strong></td>
+<td>Mandatory manual vectorization</td>
+<td>Direct pixel analysis</td>
+</tr>
+<tr>
+<td><strong>Interface</strong></td>
+<td>Pure Data data structures</td>
+<td>Structured GDScript code</td>
+</tr>
+<tr>
+<td><strong>Control</strong></td>
+<td>Artistic interpretation</td>
+<td>Reproducible algorithm</td>
+</tr>
+<tr>
+<td><strong>Real-time</strong></td>
+<td>Yes, via PureData</td>
+<td>Yes, with spectral analysis</td>
+</tr>
+<tr>
+<td><strong>Source format</strong></td>
+<td>Specific vector scores</td>
+<td>Any raster images</td>
+</tr>
+<tr>
+<td><strong>Target audience</strong></td>
+<td>Electroacoustic composers</td>
+<td>General public via gaming</td>
+</tr>
+<tr>
+<td><strong>Creativity</strong></td>
+<td>Subjective interpretation</td>
+<td>Objective logic</td>
+</tr>
+</tbody>
+</table>
+<h2 id="work-evolution-from-creation-to-adaptation">Work Evolution: From Creation to Adaptation</h2>
+<p>This experience showed me how a <strong>single work</strong> can require radically different technical approaches depending on its dissemination context:</p>
+<h3 id="original-work-fluctus-planetarium">Original Work (Fluctus Planetarium)</h3>
+<ul>
+<li><strong>Creative interpretation</strong> of Louis Jeanne&rsquo;s textures via vectorization for ARGOPd Theme8</li>
+<li><strong>Total artistic control</strong> by the composer with Pure Data data structures</li>
+<li><strong>Sonification</strong> as collaborative creative process and creative mediation</li>
+</ul>
+<h3 id="interactive-adaptation-fluctus-planetarium-the-game">Interactive Adaptation (Fluctus Planetarium: The Game)</h3>
+<ul>
+<li><strong>Automated algorithm</strong> for universal accessibility without preparation</li>
+<li><strong>Progressive pedagogy</strong> of direct pixel-by-pixel sonification</li>
+<li><strong>Democratization</strong> without prior creative mediation or technical skills</li>
+</ul>
+<h2 id="complementary-methods">Complementary Methods</h2>
+<p>These two approaches reveal the richness of the sonification process:</p>
+<h3 id="manual-approach-argopd-theme8-favors">Manual approach (ARGOPd Theme8) favors:</h3>
+<ul>
+<li><strong>Creative interpretation</strong> of visual material via vectorization</li>
+<li><strong>Artistic collaboration</strong> between visual and sonic creators</li>
+<li><strong>In-depth aesthetic research</strong> with meticulous preparation</li>
+<li><strong>Dialogue</strong> between visual arts and electroacoustic composition</li>
+</ul>
+<h3 id="automated-approach-godot-promotes">Automated approach (Godot) promotes:</h3>
+<ul>
+<li><strong>Universal accessibility</strong> to techniques without preparation</li>
+<li><strong>Reproducibility</strong> of results with any image</li>
+<li><strong>Progressive learning</strong> through direct experience</li>
+<li><strong>Personal appropriation</strong> of concepts without technical barriers</li>
+</ul>
+<h2 id="future-prospects">Future Prospects</h2>
+<p>This adaptation experience opens fascinating perspectives for the future of electroacoustic works. One can imagine <strong>transmedia ecosystems</strong> where:</p>
+<ul>
+<li><strong>Manual interpretation</strong> (ARGOPd) maintains its collaborative artistic dimension</li>
+<li><strong>Automated algorithms</strong> (Godot) broaden the audience without mediation</li>
+<li><strong>Artificial intelligence</strong> assists the transition between creative approaches</li>
+<li>The <strong>community</strong> explores and extends the work via diversified tools</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p><strong>Fluctus Planetarium</strong> and its adaptation perfectly illustrate the richness of sonification approaches. From manual vectorization of Louis Jeanne&rsquo;s textures for the ARGOPd Theme8 module to the direct algorithm on Godot, each method reveals different aspects of the creative process.</p>
+<p>My experience with this dual approach has convinced me that the future of sonification lies in complementarity: manual creative interpretation for aesthetic research with specialized tools like ARGOPd, intelligent automation for transmission and appropriation via custom solutions.</p>
+<p>Sonification thus becomes a <strong>mediation language</strong> with multiple facets, capable of revealing the hidden musicality of our visual environment according to different levels of reading and interaction, from in-depth artistic collaboration requiring creative vectorization to accessible playful experience with direct pixel analysis.</p>
+<p><em>This article explores sonification techniques in the context of Fluctus Planetarium transmedia projects. To learn more about my other research in electroacoustic sound creation, check out <a href="/posts/">my other articles</a>.</em></p>
+
+        </div>
+        
+        
+        
+        <nav class="article-nav">
+            
+                <a href="/en/blog/fluctus-planetarium-behind-scenes/" class="prev-article">← Creating an Acousmatic Game: Behind the Scenes of Fluctus Planetarium</a>
+            
+            
+                <a href="/en/blog/behind-the-scenes-of-book-4-from-dream-to-reality/" class="next-article">Behind the Scenes of Book 4: From Dream to Reality →</a>
+            
+        </nav>
+        
+    </div>
+</article>
+
+    </main>
+    <footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 Jean-Christophe Ploquin - Musician and Writer</p>
+        <p>Haptic music and immersive installations - Science fiction novels</p>
+    </div>
+</footer>
+
+
+    
+</body>
+</html>
+

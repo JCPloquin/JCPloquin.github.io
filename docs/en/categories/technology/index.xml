@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</title>
+    <link>https://jcploquin.github.io/en/categories/technology/</link>
+    <description>Recent content in Technology on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 21 Dec 2025 14:45:00 +0100</lastBuildDate><atom:link href="https://jcploquin.github.io/en/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HarpEK: The Continuous Gesture Instrument Reaches Maturity</title>
+      <link>https://jcploquin.github.io/en/blog/harpek-design-advances/</link>
+      <pubDate>Sun, 21 Dec 2025 14:45:00 +0100</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/harpek-design-advances/</guid>
+      <description>HarpEK: The Continuous Gesture Instrument Reaches Maturity After months of design, testing and adjustments, HarpEK reaches a decisive milestone: almost all critical hardware is validated and documented. The instrument takes shape, along with a renewed vision of gestural control in electronic music.
+3D modeling of the HarpEK enclosure with ultrasonic sensors, encoders and joystick
+ 🎛️ Validated Hardware Architecture Platform and Power Supply The system&amp;rsquo;s core relies on a fully operational ESP32-S3 DevKitC:</description>
+    </item>
+    
+    <item>
+      <title>Sonification: From Image to Sound - Experience Report on Manual and Automated Approaches</title>
+      <link>https://jcploquin.github.io/en/blog/sonification-from-image-to-sound-experience-report-on-manual-and-automated-approaches/</link>
+      <pubDate>Mon, 04 Aug 2025 10:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/sonification-from-image-to-sound-experience-report-on-manual-and-automated-approaches/</guid>
+      <description>Sonification: From Image to Sound - Experience Report on Manual and Automated Approaches Sonification, this fascinating technique that transforms visual data into sonic experiences, plays a central role in my transmedia projects. Having had the opportunity to experiment with this approach through Fluctus Planetarium and its interactive adaptation Fluctus Planetarium: The Game, I wish to share my experience with two complementary methodologies: manual sonification with ARGOPd/PureData for the original work and custom automation with Godot Engine for the interactive adaptation.</description>
+    </item>
+    
+  </channel>
+</rss>

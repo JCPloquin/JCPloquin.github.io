@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ARGOPd on Jean-Christophe Ploquin &amp; Arthur Gyl : les deux faces d&#39;un artiste</title>
+    <link>https://jcploquin.github.io/tags/argopd/</link>
+    <description>Recent content in ARGOPd on Jean-Christophe Ploquin &amp; Arthur Gyl : les deux faces d&#39;un artiste</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 04 Aug 2025 10:00:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/tags/argopd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sonification : de l&#39;image au son - Retour d&#39;expérience entre approche manuelle et automatisation</title>
+      <link>https://jcploquin.github.io/blog/sonification-de-limage-au-son-retour-dexp%C3%A9rience-entre-approche-manuelle-et-automatisation/</link>
+      <pubDate>Mon, 04 Aug 2025 10:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/blog/sonification-de-limage-au-son-retour-dexp%C3%A9rience-entre-approche-manuelle-et-automatisation/</guid>
+      <description>Sonification : de l&amp;rsquo;image au son - Retour d&amp;rsquo;expérience entre approche manuelle et automatisation La sonification, cette fascinante technique qui permet de transformer des données visuelles en expériences sonores, occupe une place centrale dans mes projets transmedia. Ayant eu l&amp;rsquo;occasion d&amp;rsquo;expérimenter cette approche à travers Fluctus Planetarium et son adaptation interactive Fluctus Planetarium : le Jeu, je souhaite partager mes retours d&amp;rsquo;expérience sur deux méthodologies complémentaires : la sonification manuelle avec ARGOPd/PureData pour l&amp;rsquo;œuvre originale et l&amp;rsquo;automatisation sur mesure avec Godot Engine pour l&amp;rsquo;adaptation ludique.</description>
+    </item>
+    
+  </channel>
+</rss>

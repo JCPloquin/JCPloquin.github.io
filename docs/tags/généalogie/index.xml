@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>généalogie on Jean-Christophe Ploquin &amp; Arthur Gyl : les deux faces d&#39;un artiste</title>
+    <link>https://jcploquin.github.io/tags/g%C3%A9n%C3%A9alogie/</link>
+    <description>Recent content in généalogie on Jean-Christophe Ploquin &amp; Arthur Gyl : les deux faces d&#39;un artiste</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Sat, 05 Jul 2025 15:00:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/tags/g%C3%A9n%C3%A9alogie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Behind the scenes : Création d&#39;Ascendance</title>
+      <link>https://jcploquin.github.io/blog/behind-the-scenes-creation-dascendance/</link>
+      <pubDate>Sat, 05 Jul 2025 15:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/blog/behind-the-scenes-creation-dascendance/</guid>
+      <description>Trois semaines après le lancement d&#39;Ascendance, il est temps de lever le voile sur les coulisses de cette création. Comment transforme-t-on une idée artistique en œuvre interactive ? Retour sur un processus créatif qui mêle composition électroacoustique et développement logiciel.
+L&amp;rsquo;étincelle créative : quand la généalogie rencontre l&amp;rsquo;acousmatique L&amp;rsquo;idée d&#39;Ascendance est née d&amp;rsquo;une observation simple : nos arbres généalogiques ressemblent à des partitions. Chaque branche évoque une ligne mélodique, chaque génération suggère une tessiture, chaque ancêtre porte en lui une histoire sonore unique.</description>
+    </item>
+    
+    <item>
+      <title>Comment la musique s&#39;adapte à votre généalogie dans Ascendance</title>
+      <link>https://jcploquin.github.io/blog/comment-la-musique-sadapte-a-votre-genealogie-dans-ascendance/</link>
+      <pubDate>Sat, 28 Jun 2025 14:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/blog/comment-la-musique-sadapte-a-votre-genealogie-dans-ascendance/</guid>
+      <description>Depuis le lancement d&#39;Ascendance il y a quelques semaines, une question revient régulièrement : comment la musique peut-elle réellement s&amp;rsquo;adapter à une généalogie ? Plongeons dans les coulisses de cette innovation musicale interactive.
+Qu&amp;rsquo;est-ce qu&amp;rsquo;un fichier GEDCOM ? Avant d&amp;rsquo;explorer la magie musicale d&#39;Ascendance, comprenons d&amp;rsquo;abord ce qui rend cette expérience possible : le fichier GEDCOM.
+GEDCOM (Genealogical Data Communication) est le format standard des fichiers de généalogie. C&amp;rsquo;est un fichier texte simple avec l&amp;rsquo;extension .</description>
+    </item>
+    
+  </channel>
+</rss>

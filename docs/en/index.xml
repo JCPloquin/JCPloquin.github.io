@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</title>
+    <link>https://jcploquin.github.io/en/</link>
+    <description>Recent content in Home on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 21 Dec 2025 14:45:00 +0100</lastBuildDate><atom:link href="https://jcploquin.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HarpEK: The Continuous Gesture Instrument Reaches Maturity</title>
+      <link>https://jcploquin.github.io/en/blog/harpek-design-advances/</link>
+      <pubDate>Sun, 21 Dec 2025 14:45:00 +0100</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/harpek-design-advances/</guid>
+      <description>HarpEK: The Continuous Gesture Instrument Reaches Maturity After months of design, testing and adjustments, HarpEK reaches a decisive milestone: almost all critical hardware is validated and documented. The instrument takes shape, along with a renewed vision of gestural control in electronic music.
+3D modeling of the HarpEK enclosure with ultrasonic sensors, encoders and joystick
+ 🎛️ Validated Hardware Architecture Platform and Power Supply The system&amp;rsquo;s core relies on a fully operational ESP32-S3 DevKitC:</description>
+    </item>
+    
+    <item>
+      <title>Fluctus Planetarium: Everything About the Imminent Stable Release</title>
+      <link>https://jcploquin.github.io/en/blog/fluctus-planetarium-version-stable-imminente/</link>
+      <pubDate>Thu, 18 Sep 2025 12:09:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/fluctus-planetarium-version-stable-imminente/</guid>
+      <description>🎵 Fluctus Planetarium: The Stable Version Is Coming! Final game icon
+Current Project Status Fluctus Planetarium is entering its final development phase with a stable version scheduled for September 2025. We are therefore in the critical period where this new version should see the light very soon.
+Final Steps Before Release Technical Finalization  Event cards balancing: Completed last week Rules proofreading: In progress, version 1.14.18 Printed prototypes: Finalized, &amp;ldquo;blind play&amp;rdquo; tests were conducted in August  Testing Phase The game adaptation has entered the polishing phase, a crucial step that determines the final quality of the user experience.</description>
+    </item>
+    
+    <item>
+      <title>Behind the Scenes of Book 4: From Dream to Reality</title>
+      <link>https://jcploquin.github.io/en/blog/behind-the-scenes-of-book-4-from-dream-to-reality/</link>
+      <pubDate>Sat, 06 Sep 2025 10:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/behind-the-scenes-of-book-4-from-dream-to-reality/</guid>
+      <description>Behind the Scenes of Book 4: From Dream to Reality Why a Book 4? It’s true, after all, wasn’t the story supposed to end at the conclusion of Book 3?
+As a true Rouennais, I’ll answer “Maybe yes, maybe no!” The most attentive among you will have noticed that mysterious message at the end of Book 3, “Les Triades”:
+&amp;ldquo;Hello, Ace of Hearts? Ace of Clubs here. You’ll never believe what’s happening…&amp;quot;</description>
+    </item>
+    
+    <item>
+      <title>Sonification: From Image to Sound - Experience Report on Manual and Automated Approaches</title>
+      <link>https://jcploquin.github.io/en/blog/sonification-from-image-to-sound-experience-report-on-manual-and-automated-approaches/</link>
+      <pubDate>Mon, 04 Aug 2025 10:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/sonification-from-image-to-sound-experience-report-on-manual-and-automated-approaches/</guid>
+      <description>Sonification: From Image to Sound - Experience Report on Manual and Automated Approaches Sonification, this fascinating technique that transforms visual data into sonic experiences, plays a central role in my transmedia projects. Having had the opportunity to experiment with this approach through Fluctus Planetarium and its interactive adaptation Fluctus Planetarium: The Game, I wish to share my experience with two complementary methodologies: manual sonification with ARGOPd/PureData for the original work and custom automation with Godot Engine for the interactive adaptation.</description>
+    </item>
+    
+    <item>
+      <title>Creating an Acousmatic Game: Behind the Scenes of Fluctus Planetarium</title>
+      <link>https://jcploquin.github.io/en/blog/fluctus-planetarium-behind-scenes/</link>
+      <pubDate>Sat, 26 Jul 2025 11:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/fluctus-planetarium-behind-scenes/</guid>
+      <description>Creating an Acousmatic Game: Behind the Scenes of Fluctus Planetarium How to transform a contemporary multimedia art installation into an interactive gaming experience? A look back at the genesis of a singular transmedia project, where gravitational physics and electroacoustic composition converge toward a new form of collaborative creation.
+From a Multimedia Installation to an Interactive Game Fluctus Planetarium was born in 2023 from an artistic collaboration between Louis Jeanne and myself.</description>
+    </item>
+    
+    <item>
+      <title>🔎 Quick Update: A Look at Three Projects</title>
+      <link>https://jcploquin.github.io/en/blog/project-update-0725/</link>
+      <pubDate>Tue, 22 Jul 2025 11:10:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/project-update-0725/</guid>
+      <description>Hydrophonia – Remix 2025 The 9-minute stereo version of Hydrophonia – Remix 2025 is now available on YouTube.
+At the same time, the piece has been submitted to PAYSAGES | COMPOSÉS 2025, the call for experimental sound works organised by APNÉES. Jury results are expected at the end of August.
+Volume 4 of From Death to Life Writing continues: the manuscript has just passed the 7,000-word mark.
+The title is still to be decided, but the overall structure is locked in:</description>
+    </item>
+    
+    <item>
+      <title>What if... immortality came with a price? - Volume 4 Teaser: The Rise of Homo Permanens</title>
+      <link>https://jcploquin.github.io/en/blog/volume4-focus/</link>
+      <pubDate>Sun, 20 Jul 2025 10:18:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/volume4-focus/</guid>
+      <description>What if&amp;hellip; immortality came with a price? Volume 4 Teaser: The Rise of Homo Permanens Previous volumes recap Volume 1: An ordinary man crosses the ultimate frontier and embarks on an initiatory journey that takes him to the edge of his identity and the galaxy. Questions of passage, memory, and becoming take center stage.
+Volume 2: Several generations later, two singular beings face the mysteries of a new environment where exploration of the world, life, and origins takes an unexpected turn.</description>
+    </item>
+    
+    <item>
+      <title>Hydrophonia - remix (2025): Aquatic Poem and the Anthropocene</title>
+      <link>https://jcploquin.github.io/en/blog/hydrophonia-remix-2025/</link>
+      <pubDate>Wed, 16 Jul 2025 09:45:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/hydrophonia-remix-2025/</guid>
+      <description>Hydrophonia - remix (2025) Aquatic poem and Anthropocene crisis
+Overview Hydrophonia - remix (2025) is an electroacoustic poem tracing the journey of water in all its forms, from its cosmic emergence to the catastrophe of the Anthropocene. The piece explores:
+ the genesis of water, its secret flows, its metamorphoses, its real and mythical landscapes, up to the contamination and destruction caused by modern humanity.  This project offers an immersive listening experience of our contemporary ecological crisis, through the lens of the primordial element—water.</description>
+    </item>
+    
+    <item>
+      <title>Breaking Language Barriers: How My French SF Trilogy Found Its English Voice</title>
+      <link>https://jcploquin.github.io/en/blog/from-death-to-life-english-publication/</link>
+      <pubDate>Mon, 14 Jul 2025 11:23:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/from-death-to-life-english-publication/</guid>
+      <description>Breaking Language Barriers: How My French SF Trilogy Found Its English Voice As an acousmatic music composer, I&amp;rsquo;ve always been fascinated by transformation—how sound can evolve, morph, and transcend its original form. This same fascination with metamorphosis led me to explore a profound question in science fiction: what happens when humanity itself undergoes transformation? Today, I&amp;rsquo;m thrilled to announce that my French science fiction trilogy &amp;lsquo;De la Mort à la Vie&amp;rsquo; is now available worldwide in English as &amp;lsquo;From Death to Life.</description>
+    </item>
+    
+    <item>
+      <title>Review of the 2025 Acousmatic Meetings at CRANE lab</title>
+      <link>https://jcploquin.github.io/en/blog/cranelab-2025/</link>
+      <pubDate>Tue, 08 Jul 2025 11:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/cranelab-2025/</guid>
+      <description>Review of the 2025 Acousmatic Meetings at CRANE lab Back from my vacation, I would like to share the exceptional experience I had at the 2025 Acousmatic Meetings at CRANE lab, held on July 3rd to 5th. This event brought together leading composers and researchers to explore sound spatialization and contemporary acousmatic creation.
+An event dedicated to sonic luxuriance The theme: &amp;ldquo;Giving a voice to a lush, abundant environment like the forest and its countless off-screen spaces in a volumiphonic device.</description>
+    </item>
+    
+    <item>
+      <title>Behind the Scenes: Creating Ascendance</title>
+      <link>https://jcploquin.github.io/en/blog/behind-the-scenes-creation-dascendance/</link>
+      <pubDate>Sat, 05 Jul 2025 15:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/behind-the-scenes-creation-dascendance/</guid>
+      <description>Three weeks after the launch of Ascendance, it&amp;rsquo;s time to lift the veil on the behind-the-scenes of this creation. How do you transform an artistic idea into an interactive work? A look back at a creative process that blends electroacoustic composition and software development.
+The Creative Spark: When Genealogy Meets Acousmatic Music The idea for Ascendance was born from a simple observation: our family trees resemble musical scores. Each branch evokes a melodic line, each generation suggests a tessitura, each ancestor carries within them a unique sonic story.</description>
+    </item>
+    
+    <item>
+      <title>Acousmatic Music in Video Games</title>
+      <link>https://jcploquin.github.io/en/blog/lacousmatique-dans-les-jeux-video/</link>
+      <pubDate>Wed, 02 Jul 2025 11:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/lacousmatique-dans-les-jeux-video/</guid>
+      <description>Long confined to concert halls and artistic installations, acousmatic music today finds an unexpected field of expression: video games. This encounter between electroacoustic tradition and digital interactivity opens fascinating perspectives for contemporary sound art.
+When the Invisible Becomes Playable Acousmatic music, the art of pure listening freed from visual sources, shares a fundamental characteristic with video games: the creation of imaginary universes through sound. In my interactive works, this approach allows listeners to discover the richness of electroacoustic composition through an immersive artistic experience.</description>
+    </item>
+    
+    <item>
+      <title>How Music Adapts to Your Genealogy in Ascendance</title>
+      <link>https://jcploquin.github.io/en/blog/comment-la-musique-sadapte-a-votre-genealogie-dans-ascendance/</link>
+      <pubDate>Sat, 28 Jun 2025 14:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/comment-la-musique-sadapte-a-votre-genealogie-dans-ascendance/</guid>
+      <description>Since the launch of Ascendance a few weeks ago, one question keeps coming up: how can music really adapt to a genealogy? Let&amp;rsquo;s dive into the behind-the-scenes of this interactive musical innovation.
+What is a GEDCOM file? Before exploring the musical magic of Ascendance, let&amp;rsquo;s first understand what makes this experience possible: the GEDCOM file.
+GEDCOM (Genealogical Data Communication) is the standard format for genealogy files. It&amp;rsquo;s a simple text file with the .</description>
+    </item>
+    
+    <item>
+      <title>What is Acousmatic Music?</title>
+      <link>https://jcploquin.github.io/en/blog/quest-ce-que-lacousmatique/</link>
+      <pubDate>Wed, 25 Jun 2025 10:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/quest-ce-que-lacousmatique/</guid>
+      <description>Acousmatic music remains one of the most mysterious and fascinating currents in contemporary sound creation. But what lies behind this enigmatic term?
+The Art of Blind Listening The term &amp;ldquo;acousmatic&amp;rdquo; has its roots in ancient Greece. Pythagoras taught his disciples hidden behind a curtain, deliberately depriving them of any visual information to focus their attention solely on speech. This &amp;ldquo;blind&amp;rdquo; listening allowed for a deeper understanding of the message.
+Pierre Schaeffer, pioneer of musique concrète in the 1940s, revived this concept to define a revolutionary musical art: Acousmatic listening invites us to discover sounds for themselves, freed from their origin.</description>
+    </item>
+    
+    <item>
+      <title>My Journey Toward Musical Interactivity</title>
+      <link>https://jcploquin.github.io/en/blog/my-journey-toward-musical-interactivity/</link>
+      <pubDate>Fri, 13 Jun 2025 11:00:00 +0200</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/my-journey-toward-musical-interactivity/</guid>
+      <description>My path toward creating interactive musical works hasn&amp;rsquo;t been a straight line. Between guitar, electroacoustic music, and digital technology, it&amp;rsquo;s a journey made of determining encounters and sometimes unexpected discoveries that led me to explore these new artistic territories.
+The Determining Influence of Francis Faber Francis Faber, my former teacher, planted the first seeds of my fascination with interactive art through his installation &amp;ldquo;Totem&amp;rdquo;. This revolutionary work made me understand that music could transcend the traditional concert framework to become an immersive and participatory experience.</description>
+    </item>
+    
+    <item>
+      <title>Arthur Gyl interviews Jean-Christophe Ploquin</title>
+      <link>https://jcploquin.github.io/en/blog/arthur-gyl-interviews-jean-christophe-ploquin/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jcploquin.github.io/en/blog/arthur-gyl-interviews-jean-christophe-ploquin/</guid>
+      <description>&lt;strong&gt;Arthur Gyl&lt;/strong&gt; and &lt;strong&gt;Jean-Christophe Ploquin&lt;/strong&gt; discuss the creation of interactive musical games. How to transition from the &lt;em&gt;Music &amp;amp; Me&lt;/em&gt; exhibition to video games? A fascinating conversation about artistic innovation and technical challenges.</description>
+    </item>
+    
+  </channel>
+</rss>

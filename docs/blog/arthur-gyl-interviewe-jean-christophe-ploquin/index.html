@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Exo:400,700&display=swap" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Arthur Gyl interviewe Jean-Christophe Ploquin - Jean-Christophe Ploquin &amp; Arthur Gyl : les deux faces d&#39;un artiste</title>
+   <meta name="description" content="Musique haptique et installations immersives">
+   <link rel="stylesheet" href="/css/style.css">
+   <script data-goatcounter="https://jcploquin.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</head>
+<script>
+window.addEventListener('scroll', function() {
+  const aLaUne = document.getElementById('a-la-une');
+  const header = document.querySelector('.site-header');
+  if (!aLaUne || !header) return;
+  const headerHeight = header.offsetHeight;
+  const scrollY = window.scrollY;
+
+  if (scrollY < 100) {
+    aLaUne.classList.add('floating');
+    aLaUne.style.top = headerHeight + 'px';
+  } else {
+    aLaUne.classList.remove('floating');
+    aLaUne.style.top = '';
+  }
+});
+</script>
+
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            
+            <div class="language-selector-header">
+                
+                    
+                        
+                            <a href="/en/blog/arthur-gyl-interviews-jean-christophe-ploquin/" title="English" class="lang-flag">🇬🇧</a>
+                        
+                    
+                
+                
+                
+                
+                    <span class="lang-flag-header current" title="Français">🇫🇷</span>
+                
+            </div>
+            
+            <h1 class="site-title">
+                <div>DEUX FACES POUR UN ARTISTE</div>
+            </h1>
+            
+            <nav class="site-nav">
+                <div class="nav-flex">
+                    <input type="checkbox" id="menu-toggle"/>
+                    <label for="menu-toggle" class="menu-icon">☰</label>
+                    <ul class="menu">
+                        
+                            <li><a href="/">Accueil</a></li>
+                        
+                            <li><a href="/musique/">Musique</a></li>
+                        
+                            <li><a href="/litterature/">Littérature</a></li>
+                        
+                            <li><a href="/jeux/">Jeux vidéos</a></li>
+                        
+                            <li><a href="/about/">Biographie</a></li>
+                        
+                            <li><a href="/contact/">Contact</a></li>
+                        
+                            <li><a href="/blog/">Blog</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+    
+        <div class="banner-slice">
+            <img src="/img/banniere-tranche.jpg" alt="Bandeau graphique" class="banner-slice-img">
+        </div>
+    
+
+    <main>
+        
+<article class="single-page">
+    <div class="container">
+        <header class="page-header">
+            <h1>Arthur Gyl interviewe Jean-Christophe Ploquin</h1>
+            <p class="article-meta">7 June 2025</p>
+        </header>
+        <div class="page-content markdown-content">
+            <h2 id="arthur-gyl-interviewe-jean-christophe-ploquin">Arthur Gyl interviewe Jean-Christophe Ploquin</h2>
+<p><strong>Arthur Gyl :</strong> Alors Jean-Christophe, on se retrouve encore ! Cette fois, j&rsquo;aimerais comprendre comment tu crées tes jeux musicaux. D&rsquo;où vient cette idée bizarre de mélanger musique et gameplay ?</p>
+<p><strong>Jean-Christophe Ploquin :</strong> <em>[rires]</em> Bizarre, tu dis ? Venant de quelqu&rsquo;un qui écrit de la science-fiction, c&rsquo;est un comble ! Mais sérieusement, tout a commencé avec l&rsquo;exposition acousmatico-plastique <em>&ldquo;Musique &amp; Moi&rdquo;</em> que j&rsquo;ai réalisée avec Louis Jeanne en 2022. Le public avait beaucoup apprécié découvrir la musique acousmatique de façon ludique et interactive. Puis mon fils Alexandre a fini ses études d&rsquo;animation à Laniméa et s&rsquo;est lancé à concevoir un jeu point-and-click. Ça m&rsquo;a fait tilt ! Et si j&rsquo;adaptais <em>&ldquo;Musique &amp; Moi&rdquo;</em> en jeu vidéo ?</p>
+<p><strong>A.G. :</strong> Ah, l&rsquo;influence familiale ! Mais concrètement, comment on passe d&rsquo;une exposition avec des sculptures sonores à un jeu vidéo ? C&rsquo;est pas le même medium du tout !</p>
+<p><strong>J-C.P. :</strong> Exactement ! C&rsquo;est là que ça devient passionnant. Dans l&rsquo;expo, les visiteurs touchaient des sculptures pour déclencher des sons, créaient leurs propres compositions&hellip; Le principe était déjà interactif. Pour le jeu, j&rsquo;ai gardé cette idée : le joueur explore un univers musical, mais au lieu de sculptures, il clique sur des éléments visuels qui déclenchent des séquences sonores. La musique se construit au fur et à mesure de l&rsquo;exploration.</p>
+<p><strong>A.G. :</strong> Attends, tu me dis que la musique change selon ce que fait le joueur ? Comment tu fais ça techniquement ? Parce que moi, quand j&rsquo;écris, mes mots ne changent pas selon qui les lit !</p>
+<p><strong>J-C.P. :</strong> <em>[rires]</em> Ah, mais imagine si tes romans s&rsquo;adaptaient au lecteur ! En fait, j&rsquo;utilise des &ldquo;stems&rdquo; - des couches musicales séparées que je peux activer ou désactiver en temps réel. Avec Godot comme moteur de jeu et Ardour pour l&rsquo;audio, je crée des boucles musicales qui s&rsquo;assemblent différemment selon les actions du joueur. C&rsquo;est comme avoir un orchestre virtuel qui réagit aux clics !</p>
+<p><strong>A.G. :</strong> Godot, Ardour&hellip; Tu parles chinois ! Mais dis-moi, quel a été ton plus gros plantage ? Il a dû y avoir des moments où ça partait en cacophonie totale ?</p>
+<p><strong>J-C.P. :</strong> Oh là là ! <em>[rires]</em> Je me souviens d&rsquo;un bug où toutes les pistes se déclenchaient en même temps au lieu de s&rsquo;alterner. Imagine 15 boucles musicales différentes qui se superposent d&rsquo;un coup ! C&rsquo;était&hellip; disons&hellip; très expérimental ! Mais parfois, ces accidents donnent des idées. Ce bug m&rsquo;a inspiré une séquence où le chaos musical fait partie du gameplay.</p>
+<p><strong>A.G. :</strong> Mais concrètement, tu commences par quoi ? La musique ou le gameplay ?</p>
+<p><strong>J-C.P. :</strong> La musique, bien entendu ! Le gameplay n&rsquo;est que la couche interactive qui vient permettre à l&rsquo;auditeur d&rsquo;agir sur la musique. Tous les possibles musicaux doivent avoir été envisagés en amont, et validés comme musicalement intéressants. C&rsquo;est une écriture non linéaire, une composition par réservoirs, où rien n&rsquo;est vraiment laissé au hasard.</p>
+<p><strong>A.G. :</strong> Quel est le plus gros défi ? Faire de la musique ou faire un jeu ?</p>
+<p><strong>J-C.P. :</strong> Ça n&rsquo;a rien à voir : les deux sont d&rsquo;énormes défis, chacun à sa manière, mais la musique dépend de ma créativité tandis que le jeu dépend de ma technicité.</p>
+<p><strong>A.G. :</strong> Tu veux éduquer les gens à la musique acousmatique ou juste les divertir ?</p>
+<p><strong>J-C.P. :</strong> Trente ans dans l&rsquo;éducation nationale et je continuerais à enseigner ? Non, sérieusement, je cherche à les divertir avant tout. On dit &ldquo;jouer de la musique&rdquo; : c&rsquo;est un jeu ! on doit s&rsquo;amuser ! S&rsquo;ils apprennent des choses en même temps, eh bien tant mieux.</p>
+<p><strong>A.G. :</strong> Et maintenant, tu travailles sur Ascendance&hellip; C&rsquo;est quoi la différence ?</p>
+<p><strong>J-C.P. :</strong> &ldquo;Ascendance&rdquo; est l&rsquo;adaptation d&rsquo;une pièce de théâtre que je n&rsquo;ai jamais eue le plaisir de faire jouer ; un jeu basé sur la généalogie, une autre de mes marottes. Un voyage tragicomique à la rencontre des ancêtres, également construit à base de réservoirs non linéaires. N&rsquo;importe quel arbre généalogique peut être chargé dans le jeu : les voyages sont différents à chaque fois. Mais je n&rsquo;y travaille plus : il est terminé et sort le 9 juin. Je suis déjà sur un autre projet.</p>
+<p><strong>A.G. :</strong> Mais tu ne t&rsquo;arrêtes jamais ! C&rsquo;est de la boulimie ! Et ce sera quoi, cette fois ?</p>
+<p><strong>J-C.P. :</strong> &ldquo;GraviTone&rdquo;, une adaptation de l&rsquo;exposition vidéo-musicale &ldquo;Fluctus Planetarium&rdquo; ; un autre de mes projets avec Louis Jeanne.</p>
+<p><strong>A.G. :</strong> Et après tu t&rsquo;arrêtes !</p>
+<p><strong>J-C.P. :</strong> Jamais de la vie !</p>
+<p><strong>A.G. :</strong> Faudra quand même me laisser écrire de temps en temps&hellip; On me réclame la suite des aventures des homo permanens !</p>
+<p><strong>J-C.P. :</strong> Promis. Je te laisserai un créneau.</p>
+
+        </div>
+        
+        
+        
+        <nav class="article-nav">
+            
+            
+                <a href="/blog/mon-parcours-vers-linteractivit%C3%A9-musicale/" class="next-article">Mon parcours vers l&#39;interactivité musicale →</a>
+            
+        </nav>
+        
+    </div>
+</article>
+
+    </main>
+    <footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 Jean-Christophe Ploquin - Musicien et Écrivain</p>
+        <p>Musique haptique et installations immersives - Romans de Science-fiction</p>
+    </div>
+</footer>
+
+
+    
+</body>
+</html>
+
