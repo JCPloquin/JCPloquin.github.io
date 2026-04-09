@@ -1,6 +1,7 @@
 ---
 title: "L'acousmatique dans les jeux vidéo"
 date: 2025-07-02T11:00:00+02:00
+slug: "lacousmatique-dans-les-jeux-video"
 draft: false
 categories: ["Musique", "Jeux", "Innovation"]
 tags: ["acousmatique", "jeux vidéo", "audio interactif", "électroacoustique", "game audio"]

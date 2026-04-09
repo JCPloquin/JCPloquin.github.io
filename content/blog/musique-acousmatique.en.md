@@ -2,6 +2,7 @@
 title: "What is Acousmatic Music?"
 date: 2025-06-25T10:00:00+02:00
 draft: false
+slug: "quest-ce-que-lacousmatique"
 categories: ["Music", "Education"]
 tags: ["acousmatic", "electroacoustic", "composition", "listening"]
 description: "Discover the fascinating world of acousmatic music, the art of pure listening where sound breaks free from its source to become pure sonic poetry."

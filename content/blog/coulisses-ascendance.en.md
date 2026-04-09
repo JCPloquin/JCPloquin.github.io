@@ -1,6 +1,7 @@
 ---
 title: "Behind the Scenes: Creating Ascendance"
 date: 2025-07-05T15:00:00+02:00
+slug: "behind-the-scenes-creation-dascendance"
 draft: false
 categories: ["Music", "Development", "Creation"]
 tags: ["ascendance", "behind the scenes", "composition", "development", "genealogy"]

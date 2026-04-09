@@ -47,8 +47,8 @@ Un casque audio ou un dispositif surround 5.1 est recommandé.
 
 <div style="display:flex; gap:40px; flex-wrap:wrap; justify-content:center; margin:2rem 0;">
   <div style="width:300px; text-align:center;">
-    <img src="/img/gravitone.png" alt="GraviTone" style="width:100%; border-radius:8px; box-shadow:0 4px 16px #0003;">
-    <div style="margin:0.8em 0 0.5em 0; font-weight:bold;">GraviTone<br>(adaptation de Fluctus Planetarium)</div>
+    <img src="/img/gravitone.png" alt="Fluctus Planetarium" style="width:100%; border-radius:8px; box-shadow:0 4px 16px #0003;">
+    <div style="margin:0.8em 0 0.5em 0; font-weight:bold;">Fluctus Planetarium<br></div>(adaptation de l'exposition vidéo-acousmatique éponyme)
     <div style="font-size:0.96em; color:#b5c9e6; line-height:1.6;">Lancez des astéroïdes et écoutez la musique des planètes qu'ils frôlent ou percutent : c'est l'harmonie des sphères !<br>Un atelier de création vous propose de fabriquer votre propre planète selon les démarches artistiques de Louis Jeanne et Jean-Christophe Ploquin</div>
     <br>
     <a href="https://jcploquin.itch.io" target="blank" class="button">Bientôt disponible</a>

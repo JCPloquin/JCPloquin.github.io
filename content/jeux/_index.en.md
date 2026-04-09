@@ -49,7 +49,7 @@ Headphones or a 5.1 surround system is recommended.
 <div style="display:flex; gap:40px; flex-wrap:wrap; justify-content:center; margin:2rem 0;">
   <div style="width:300px; text-align:center;">
     <img src="/img/gravitone.png" alt="GraviTone" style="width:100%; border-radius:8px; box-shadow:0 4px 16px #0003;">
-    <div style="margin:0.8em 0 0.5em 0; font-weight:bold;">GraviTone<br>(adaptation of Fluctus Planetarium)</div>
+    <div style="margin:0.8em 0 0.5em 0; font-weight:bold;">Fluctus Planetarium<br></div>(adaptation of the eponymous video-acousmatic exhibition)
     <div style="font-size:0.96em; color:#b5c9e6; line-height:1.6;">Launch asteroids and listen to the music of planets they graze or hit: it's the harmony of the spheres!<br>A creation workshop offers you to build your own planet according to the artistic approaches of Louis Jeanne and Jean-Christophe Ploquin</div>
     <br>
     <a href="https://jcploquin.itch.io" target="blank" class="button">Soon available</a>

@@ -3,7 +3,7 @@
     <div class="container">
         <header class="page-header">
             <h1>{{ .Title }}</h1>
-            <p class="article-meta">{{ .Date.Format (i18n "date.format") }}</p>
+            <p class="article-meta">{{ .Date.Format "2 January 2006" }}</p>
         </header>
         <div class="page-content markdown-content">
             {{ .Content }}

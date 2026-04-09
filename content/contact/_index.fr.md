@@ -15,8 +15,8 @@ Pour toute question, projet ou proposition, utilisez le formulaire ci-dessous ou
   <a href="https://www.youtube.com/channel/UCoGaNTbrfMylmXsgKuAjMEg" target="_blank" title="YouTube">
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" style="height: 38px;">
   </a>
-  <a href="https://diaspora-fr.org/people/29a95a307a4d0138a031124c77a41d08" target="_blank" title="Diaspora">
-    <img src="/img/diaspora.png" alt="Diaspora" style="height: 60px;">
+  <a href="https://piaille.fr/@jcploquin" target="_blank" title="Mastodon">
+    <img src="/img/mastodon.png" alt="Diaspora" style="height: 60px;">
   </a>
   <a href="https://www.facebook.com/Jean.Christophe.Ploquin" target="_blank" title="Facebook">
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" alt="Facebook" style="height: 54px;">

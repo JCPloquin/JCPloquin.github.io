@@ -12,7 +12,7 @@
       {{ range $pages }}
         <li>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <span style="color: #666; font-size: 0.9em;"> - {{ .Date.Format (i18n "date.format") }}</span>
+          <span style="color: #666; font-size: 0.9em;"> - {{ .Date.Format "2 January 2006" }}</span>
         </li>
       {{ end }}
     </ul>
@@ -30,7 +30,7 @@ let panier = [];
     titre: "Opus 1 : pièces acousmatiques de jeunesse",
     image: "/img/opus1.jpg",
     prix: "10 €",
-    poids: 90,
+    poids: 100,
     extraits: [
       { titre: "Métalloïdes", fichier: "/mp3/metalloides.mp3" },
       { titre: "Bombay-Paris-Bombay", fichier: "/mp3/bombay.mp3" }
@@ -51,7 +51,7 @@ let panier = [];
     titre: "ReNaissance",
     image: "/img/renaissance.jpg",
     prix: "10 €",
-    poids: 90,
+    poids: 100,
     extraits: [
       { titre: "Cripple Creek (Leo Kottke)", fichier: "/mp3/Cripple_Creek.mp3" }
     ],
@@ -61,17 +61,30 @@ let panier = [];
     titre: "Éclectique",
     image: "/img/eclectique.jpg",
     prix: "10 €",
-    poids: 90,
+    poids: 100,
     extraits: [
-      { titre: "Wayfering Stranger (feat. Juliane Gabriel)", fichier: "/mp3/wayfering.mp3" }
-    ],
+  		{ titre: "Leo Kottke", fichier: "/mp3/Leo_Kottke.mp3" },
+  		{ titre: "Wayfering Stranger (feat. Juliane Gabriel)", fichier: "/mp3/wayfering.mp3" }
+	],
     formUrl: "https://framaforms.org/contactez-moi-1748363436?objet=Commande%20CD%20Éclectique"
+  },
+  'eclectique_bf': {
+    titre: "Éclectique - BLACK FRIDAY",
+    image: "/img/eclectique.jpg",
+    prix: "1,00 €",  // ← Prix promo
+    poids: 100,
+    extraits: [
+  		{ titre: "Leo Kottke", fichier: "/mp3/Leo_Kottke.mp3" },
+  		{ titre: "Wayfering Stranger (feat. Juliane Gabriel)", fichier: "/mp3/wayfering.mp3" }
+	],
+    formUrl: "https://framaforms.org/contactez-moi-1748363436?objet=Commande%20CD%20Éclectique%20Black%20Friday",
+    promo: true  // Flag pour identifier la promo
   },
   'normainn': {
     titre: "From Everywhere To Elsewhere",
     image: "/img/normainn_cd.png",
     prix: "10 €",
-    poids: 90,
+    poids: 100,
     extraits: [
       { titre: "Gary Owen", fichier: "/mp3/garyowen.mp3" }
     ],
@@ -79,7 +92,7 @@ let panier = [];
   },
 };
 
-let modeLivraison = "domicile";
+let modeLivraison = 'lettre-suivie';
 
 function openCdPopup(id) {
   const cd = cdPopups[id];
@@ -115,9 +128,18 @@ function ajouterAuPanier(id) {
   closeCdPopup();
 }
 function calculerFraisDePort(poidsTotal, modeLivraison) {
-  // Tranches de poids en grammes, tarifs en euros
   const tarifs = {
-    domicile: [
+    'lettre-verte': [
+      { poids: 100, prix: 2.78 },
+      { poids: 250, prix: 4.72 },
+      { poids: 500, prix: 6.35 }
+    ],
+    'lettre-suivie': [
+      { poids: 100, prix: 3.28 },
+      { poids: 250, prix: 5.22 },
+      { poids: 500, prix: 7.20 }
+    ],
+    'colissimo': [
       { poids: 250, prix: 5.25 },
       { poids: 500, prix: 7.35 },
       { poids: 750, prix: 8.65 },
@@ -125,7 +147,7 @@ function calculerFraisDePort(poidsTotal, modeLivraison) {
       { poids: 2000, prix: 10.70 },
       { poids: 5000, prix: 16.60 }
     ],
-    relais: [
+    'relais': [
       { poids: 250, prix: 4.55 },
       { poids: 500, prix: 6.65 },
       { poids: 750, prix: 7.95 },
@@ -133,6 +155,7 @@ function calculerFraisDePort(poidsTotal, modeLivraison) {
       { poids: 2000, prix: 10.00 }
     ]
   };
+
   const grille = tarifs[modeLivraison];
   let frais = grille.find(t => poidsTotal <= t.poids)?.prix || grille[grille.length - 1].prix;
   return frais;
@@ -160,10 +183,12 @@ function afficherPanier() {
   panierHtml += `
     <div style="margin-top:1em;">
       <label for="livraison">Mode de livraison :</label>
-      <select id="livraison" style="width:100%; padding:0.5em; margin:0.5em 0;">
-        <option value="domicile">Livraison à domicile</option>
-        <option value="relais">Point relais</option>
-      </select>
+      <select id="livraison" style="width:100%; padding:0.5em; margin:0.5em 0">
+		  <option value="lettre-verte">Lettre Verte (J+3, sans suivi) - dès 2,78€</option>
+		  <option value="lettre-suivie" selected>Lettre Suivie (J+2, avec suivi) ⭐ - dès 3,28€</option>
+ 		  <option value="colissimo">Colissimo Domicile (J+1, suivi complet) - dès 5,25€</option>
+ 		  <option value="relais">Colissimo Point Relais (J+1, suivi complet) - dès 4,55€</option>
+		</select>
     </div>
     <div style="margin-top:0.5em; font-weight:bold;">
       Frais de port : <span id="frais-port"></span>
@@ -219,7 +244,17 @@ function validerPanier() {
   const total = prix_total_cds + frais;
   
   // Génère un résumé simple à recopier
-  const resumeCommande = `Articles: ${panier.map(item => `${item.titre} (${item.quantite})`).join(', ')} - Livraison: ${modeLivraison === 'domicile' ? 'Domicile' : 'Point relais'} - Total: ${total.toFixed(2)} €`;
+// Convertir le code du mode en texte lisible
+const modesLivraisonTexte = {
+  'lettre-verte': 'Lettre Verte - domicile',
+  'lettre-suivie': 'Lettre Suivie - domicile',
+  'colissimo': 'Colissimo - domicile',
+  'relais': 'Colissimo - Point Relais'
+};
+
+const nomLivraison = modesLivraisonTexte[modeLivraison] || modeLivraison;
+
+const resumeCommande = `Articles: ${panier.map(item => `${item.titre} (${item.quantite})`).join(', ')} - Livraison: ${nomLivraison} - Total: ${total.toFixed(2)} €`;
 
   // Affiche le récapitulatif simple
   let panierHtml = `

@@ -104,3 +104,10 @@ nav.music: Musique
 news.ascendance.button: Télécharger maintenant
 news.ascendance.text: est maintenant disponible ! Prenez les commandes d'un vaisseau temporel pour explorer n'importe quelle généalogie.
 news.title: À la une
+news:
+  title: "À la Une"
+  from_death_to_life:
+    text: "🆕 Le Tome 4 Kürşad est maintenant disponible ! Réservez votre exemplaire papier dès maintenant."
+    button_read: "📚 Commander maintenant"
+    button_more: "En savoir plus"
+

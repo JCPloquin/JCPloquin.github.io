@@ -101,3 +101,11 @@ nav.music: Music
 news.ascendance.button: Download now
 news.ascendance.text: is now available! Take control of a time ship to explore any genealogy.
 news.title: Featured
+news:
+  title: "Featured"
+  from_death_to_life:
+    text: "🆕 Volume 4 Kürşad - From Death to Life is now available! Reserve your paperback copy now."
+    button_read: "📚 Order now"
+    button_more: "Learn more"
+
+

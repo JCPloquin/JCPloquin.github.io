@@ -1,6 +1,7 @@
 ---
 title: "Comment la musique s'adapte à votre généalogie dans Ascendance"
 date: 2025-06-28T14:00:00+02:00
+slug: "comment-la-musique-sadapte-a-votre-genealogie-dans-ascendance"
 draft: false
 categories: ["Musique", "Jeux", "Innovation"]
 tags: ["ascendance", "généalogie", "musique adaptative", "interactif", "GEDCOM"]

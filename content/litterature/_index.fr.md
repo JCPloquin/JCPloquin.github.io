@@ -7,6 +7,21 @@ title: "Littérature"
 Passionné par l’imaginaire et les mondes futurs, j’explore dans mes romans et nouvelles les frontières entre science, humanité et destin. Mon univers s’articule autour du cycle « De la mort à la vie », où se mêlent aventure, réflexion et poésie.
 <div><br><br>
 
+## 🆕 NOUVEAUTÉ - TOME 4 DISPONIBLE !
+
+<div style="background:#d4edda; border:2px solid #c3e6cb; border-radius:8px; padding:1.5em; margin:2em 0; color:#155724;">
+  <h3 style="margin-top:0; color:#155724;">📚 "Kürşad - De la Mort à la Vie" - Tome 4</h3>
+  <strong style="font-size:1.1em;">Sortie : 15 septembre 2025</strong><br><br>
+  
+  Le nouveau cycle parallèle de la saga est enfin arrivé ! Ce quatrième tome explore pour la première fois la face cachée terrestre de l'univers, révélant de nouveaux mystères, enjeux géopolitiques inédits et personnages surprenants.<br><br>
+  
+  <strong>Formats disponibles :</strong><br>
+  📖 <strong>Version papier</strong> - Édition limitée (réservation recommandée)<br>
+  📱 <strong>Version ePub</strong> - disponible sur demande via les réseaux sociaux ou la <a href="/contact/">page Contact</a><br><br>
+  
+  <a href="https://www.coollibri.com/bibliotheque-en-ligne/arthur-gyl/kursad_1264349" target="_blank" class="button" style="background:#28a745; color:white;" class="button" style="background:#28a745; color:white;">👉 Réserver votre exemplaire</a>
+</div>
+
 ---
 
 <br></div>
@@ -26,7 +41,8 @@ Une saga de science-fiction où chaque réponse soulève de nouvelles questions,
 <div style="display: flex; justify-content: center; gap: 200px; margin: 2rem 0;">
   <img src="/img/tome1.png" alt="Tome 1" style="width:180px; box-shadow:0 4px 16px #0003;cursor:pointer;" onclick="openModal('https://flipbooks.fleepit.com/f-52656-de_la_mort_a_la_vie')">
   <img src="/img/tome2.png" alt="Tome 2" style="width:180px; box-shadow:0 4px 16px #0003;cursor:pointer;" onclick="openModal('https://flipbooks.fleepit.com/f-53051-abel_cor')">
-  <img src="/img/tome3.png" alt="Tome 3" style="width:180px; box-shadow:0 4px 16px #0003;cursor:pointer;" onclick="openModal('https://flipbooks.fleepit.com/f-90311-de_la_mort__la_vie_t3_les_triades')">
+  <img src="/img/tome3.png" alt="Tome 3" style="width:180px; box-shadow:0 4px 16px #0003;cursor:pointer;" onclick="openModal('https://flipbooks.fleepit.com/f-101133-les_triades_de_la_mort__la_vie_tome_3')">
+  <img src="/img/tome4.png" alt="Tome 4" style="width:180px; box-shadow:0 4px 16px #0003;cursor:pointer;" onclick="openModal('https://flipbooks.fleepit.com/f-99557-krad')">
 </div>
 
 <!-- Popup modal intégré -->
@@ -103,3 +119,19 @@ Un grand merci à Fred Morala, mon ami, mon frère de coeur, qui a su poser les 
     <a href="https://talentdauteur.fr/boutique/roman/roman-fantastique/de-la-mort-a-la-vie-t3-les-triades/" target="blank" class="button">Acheter en epub 4,99€</a>
   </div>
 </div>
+
+---
+
+<div style="display:flex; gap:60px; justify-content:center; margin:2rem 0;">
+  <div style="text-align:center;">
+    <img src="/img/tome4.png" alt="Tome 4" style="width:180px; box-shadow:0 4px 16px #0003; border:3px solid #28a745;">
+    <div style="margin:1em 0;">
+      <strong>🆕 Tome 4 — Kürşad<br>NOUVEAU CYCLE PARALLÈLE ! Découvrez enfin la face cachée terrestre de l'univers "De la mort à la vie". Entre mystères géopolitiques, nouveaux personnages et révélations surprenantes, ce tome inaugure une nouvelle ère de la saga.<br><br>
+      <span style="color:#28a745; font-weight:bold;">🎉 SORTIE DU JOUR - 15 septembre 2025</span></strong><br>
+         </div>
+    <a href="https://www.coollibri.com/bibliotheque-en-ligne/arthur-gyl/kursad_1264349" class="button" target="_blank" style="background:#28a745;">Acheter en papier 11€ + frais d'envoi - STOCKS LIMITÉS</a>
+    <a href="/contact/" class="button">Version ePub 4€ sur demande</a>
+  </div>
+</div>
+
+---

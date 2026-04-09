@@ -16,11 +16,11 @@ La musique s'adapte à chaque arbre généalogique dans ce jeu unique mêlant
   {{< youtube BnqcQcPKJ-s >}}
 </div>
 
-🎮 **Bientôt disponible sur itch.io**  
+🎮 **Maintenant disponible sur itch.io**  
 🎵 **Musique adaptative et immersive**  
 ⏱️ **Gameplay innovant**
 
-[Suivre le développement sur itch.io](https://jcploquin.itch.io)
+[Télécharger gratuitement sur itch.io](https://jcploquin.itch.io/ascendance)
 
 ### Aquastasis (extrait) - Premier mouvement d'"Hydrophonia" - Poème symphonique électroacoustique créé pour le Festival Nautil'Art 2023 à Rouen
 
@@ -70,6 +70,37 @@ La guitare, c’est mon autre voix : du fingerpicking blues à la musique celt
 </div>
 
 ### Albums de guitare
+
+<!-- BLACK FRIDAY 2025 -->
+<div id="black-friday" style="background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); color: white; padding: 30px; border-radius: 12px; margin: 30px auto; max-width: 800px; box-shadow: 0 8px 24px rgba(255, 107, 53, 0.3); text-align: center;">
+  <h2 style="margin-top: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">🔥 BLACK FRIDAY 28-29 NOVEMBRE 2025 🔥</h2>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin: 20px 0;">
+    <img src="/img/eclectique.jpg" alt="Éclectique" style="width: 80px; height: 80px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+    <h3 style="font-size: 1.5em; margin: 0;">Album "Éclectique" à 1€ seulement !</h3>
+  </div>
+  <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; margin: 20px 0;">
+    <p style="font-size: 1.2em; margin: 10px 0;"><strong><img src="/img/acoustic-guitar.png" alt="Guitare acoustique" style="width: 40px; height: 40px;"> Fingerpicking • Blues • Celtique • Baroque</strong></p>
+    <p style="font-size: 1.1em; margin: 10px 0;"><strong>Prix exceptionnel : 1€ + frais d'envoi</strong><span style="text-decoration: line-through; opacity: 0.6; font-size: 0.9em; margin-left: 10px;">10€</span></p>
+    <p style="font-size: 0.95em; margin: 5px 0;">
+      📦 Lettre Verte (2,78€) • Lettre Suivie (3,28€) • Colissimo (5,25€) • Point Relais (4,55€)
+    </p>
+    Frais d'envoi dégressifs suivant le nombre d'albums commandés
+  </div>
+  
+  <p style="font-size: 1.1em; margin: 15px 0;">⏰ <strong>Offre limitée aux derniers exemplaires en stock !</strong></p>
+  <p style="font-size: 0.95em; margin: 10px 0;">Stock final limité - Pas de réimpression prévue !</p>
+  
+  <div style="margin-top: 25px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+    <button onclick="openCdPopup('eclectique_bf')" style="background: #28a745; color: white; padding: 15px 40px; border: none; border-radius: 8px; font-size: 1.1em; font-weight: bold; cursor: pointer; box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4); transition: transform 0.2s;">
+      📦 Commander maintenant
+    </button>
+  </div>
+  
+  <p style="font-size: 0.85em; margin-top: 20px; opacity: 0.9;">
+    <em>Paiement par PayPal ou virement bancaire, une fois la commande confirmée par email<br>
+    📍 Point Relais : merci d'indiquer son adresse complète dans votre commande</em>
+  </p>
+</div>
 
 <div style="display: flex; justify-content: center; gap: 80px; flex-wrap: wrap; margin: 2rem 0;">
   <div style="text-align:center;">

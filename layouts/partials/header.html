@@ -3,20 +3,32 @@
         <div class="header-content">
             <!-- Sélecteur de langue à gauche du titre -->
             <div class="language-selector-header">
-                {{ range .Site.Languages }}
-                    {{ if ne . $.Site.Language }}
+                {{ if .IsTranslated }}
+                    {{ range .Translations }}
                         {{ if eq .Lang "fr" }}
-                            <a href="{{ $.Page.RelPermalink | strings.TrimPrefix "/en" }}" title="Français" class="lang-flag">🇫🇷</a>
+                            <a href="{{ .RelPermalink }}" title="Français" class="lang-flag">🇫🇷</a>
                         {{ else if eq .Lang "en" }}
-                            <a href="/{{ .Lang }}{{ $.Page.RelPermalink }}" title="English" class="lang-flag">🇬🇧</a>
-                        {{ end }}
-                    {{ else }}
-                        {{ if eq .Lang "fr" }}
-                            <span class="lang-flag-header current" title="Français">🇫🇷</span>
-                        {{ else if eq .Lang "en" }}
-                            <span class="lang-flag-header current" title="English">🇬🇧</span>
+                            <a href="{{ .RelPermalink }}" title="English" class="lang-flag">🇬🇧</a>
                         {{ end }}
                     {{ end }}
+                {{ else }}
+                    <!-- Fallback si pas de traduction disponible -->
+                    {{ range .Site.Languages }}
+                        {{ if ne .Lang $.Site.Language.Lang }}
+                            {{ if eq .Lang "fr" }}
+                                <a href="/" title="Français" class="lang-flag">🇫🇷</a>
+                            {{ else if eq .Lang "en" }}
+                                <a href="/en/" title="English" class="lang-flag">🇬🇧</a>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                
+                <!-- Langue actuelle -->
+                {{ if eq .Site.Language.Lang "fr" }}
+                    <span class="lang-flag-header current" title="Français">🇫🇷</span>
+                {{ else if eq .Site.Language.Lang "en" }}
+                    <span class="lang-flag-header current" title="English">🇬🇧</span>
                 {{ end }}
             </div>
             

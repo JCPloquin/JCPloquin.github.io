@@ -11,9 +11,13 @@
     {{ range $pages }}
       <article class="blog-preview">
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        <p class="article-meta">{{ .Date.Format (i18n "date.format") }}</p>
+        <p class="article-meta">{{ .Date.Format "2 January 2006" }}</p>
         <div class="article-summary markdown-content">
-          {{ .Summary | markdownify }}
+          {{ if .Params.excerpt }}
+            {{ .Params.excerpt | markdownify }}
+          {{ else }}
+            {{ .Summary | truncate 250 | markdownify }}
+          {{ end }}
         </div>
         <a href="{{ .RelPermalink }}" class="read-more">{{ i18n "blog.read_more" }}</a>
       </article>

@@ -4,10 +4,14 @@
 		<section class="news-highlight" id="a-la-une">
 		<h2>{{ i18n "news.title" }}</h2>
 		<div class="news-item">
-		<img src="/img/ascendance.png" alt="Ascendance" style="width: 48px; height: 48px; vertical-align: middle; margin-right: 8px; border-radius: 4px;">
-			<strong>Ascendance</strong> — {{ i18n "news.ascendance.text" }}
-<a href="https://jcploquin.itch.io/ascendance" class="button">{{ i18n "news.ascendance.button" }}</a>
-		</div>
+<img src="/img/tome4.png" alt="Kürşad - De la Mort à la Vie" style="width: 64px; height: 96px; vertical-align: middle; margin-right: 8px; border-radius: 4px;">
+	<strong>NOUVEAUTÉ</strong> — {{ i18n "news.from_death_to_life.text" }}
+<a href="https://www.coollibri.com/bibliotheque-en-ligne/arthur-gyl/kursad_1264349" class="button" target="_blank">{{ i18n "news.from_death_to_life.button_read" }}</a>
+<a href="{{ if eq .Site.Language.Lang "en" }}/en/litterature{{ else }}/litterature{{ end }}" class="button secondary">{{ i18n "news.from_death_to_life.button_more" }}</a>
+
+
+</div>
+
 		</section>
 
     </div>

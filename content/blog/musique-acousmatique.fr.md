@@ -1,8 +1,7 @@
-Qu'est-ce que la musique acousmatique ?
-
 ---
 title: "Qu'est-ce que la musique acousmatique ?"
 date: 2025-06-25T10:00:00+02:00
+slug: "quest-ce-que-lacousmatique"
 draft: false
 categories: ["Musique", "Éducation"]
 tags: ["acousmatique", "électroacoustique", "composition", "écoute"]

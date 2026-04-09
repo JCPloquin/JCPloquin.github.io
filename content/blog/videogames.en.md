@@ -1,6 +1,7 @@
 ---
 title: "Acousmatic Music in Video Games"
 date: 2025-07-02T11:00:00+02:00
+slug: "lacousmatique-dans-les-jeux-video"
 draft: false
 categories: ["Music", "Games", "Innovation"]
 tags: ["acousmatic", "video games", "interactive audio", "electroacoustic", "game audio"]

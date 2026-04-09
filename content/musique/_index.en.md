@@ -16,11 +16,11 @@ electroacoustic and genealogy.
   {{< youtube BnqcQcPKJ-s >}}
 </div>
 
-🎮 **Soon available on itch.io**  
+🎮 **Now available on itch.io**  
 🎵 **Adaptive and immersive music**  
 ⏱️ **Innovative gameplay**
 
-[Follow development on itch.io](https://jcploquin.itch.io)
+[Download for free on itch.io](https://jcploquin.itch.io/ascendance)
 
 ### Aquastasis (excerpt) - First movement of "Hydrophonia" - Electroacoustic symphonic poem created for the Nautil'Art 2023 Festival in Rouen
 
