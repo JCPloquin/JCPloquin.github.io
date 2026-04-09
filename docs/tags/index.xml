@@ -550,7 +550,7 @@
     <item>
       <title>francis faber</title>
       <link>https://jcploquin.github.io/tags/francis-faber/</link>
-      <pubDate>Fri, 13 Jun 2025 11:00:00 +0200</pubDate>
+      <pubDate>Fri, 13 Jun 2025 07:00:00 +0200</pubDate>
       
       <guid>https://jcploquin.github.io/tags/francis-faber/</guid>
       <description></description>
@@ -559,7 +559,7 @@
     <item>
       <title>interactivité</title>
       <link>https://jcploquin.github.io/tags/interactivit%C3%A9/</link>
-      <pubDate>Fri, 13 Jun 2025 11:00:00 +0200</pubDate>
+      <pubDate>Fri, 13 Jun 2025 07:00:00 +0200</pubDate>
       
       <guid>https://jcploquin.github.io/tags/interactivit%C3%A9/</guid>
       <description></description>
@@ -568,9 +568,27 @@
     <item>
       <title>parcours artistique</title>
       <link>https://jcploquin.github.io/tags/parcours-artistique/</link>
-      <pubDate>Fri, 13 Jun 2025 11:00:00 +0200</pubDate>
+      <pubDate>Fri, 13 Jun 2025 07:00:00 +0200</pubDate>
       
       <guid>https://jcploquin.github.io/tags/parcours-artistique/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag1</title>
+      <link>https://jcploquin.github.io/tags/tag1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jcploquin.github.io/tags/tag1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag2</title>
+      <link>https://jcploquin.github.io/tags/tag2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jcploquin.github.io/tags/tag2/</guid>
       <description></description>
     </item>
     

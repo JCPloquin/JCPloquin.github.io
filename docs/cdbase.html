@@ -1,0 +1,2942 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+   body {
+        font-family: sans-serif;
+        
+        font-size: 80%;
+        
+        background-color: #fff;
+   }
+   #headerblock {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid black;
+        overflow: auto;
+   }
+   h1.colltitle {
+        padding: 4px;
+        font-size: 2em;
+        margin: 0px;
+   }
+   span.subtitle {
+        margin-left: 20px;
+        font-size: 0.8em;
+   }
+   form {
+        margin: 5px 0 0 0;
+        float: right;
+   }
+   #searchText {
+        background-color: #eee;
+   }
+   input {
+        padding: 0;
+        margin: 0 0 4px 4px;
+   }
+   .button {
+        padding: 0;
+        margin: 0 0 4px 4px;
+   }
+   table, h4 {
+        margin-left: auto;
+        margin-right: auto;
+   }
+   td.groupName {
+        margin-top: 10px;
+        margin-bottom: 2px;
+        padding-left: 4px;
+        background: #ccc;
+        font-size: 1.1em;
+        font-weight: bolder;
+   }
+   th {
+        color: #000;
+        background-color: #ccc;
+        border: 1px solid #999;
+        font-size: 1.1em;
+        font-weight: bold;
+        padding-left: 4px;
+        padding-right: 4px;
+   }
+   thead tr {
+        cursor: pointer;
+   }
+   tr.entry0 {
+        background-color: #eee;
+   }
+   tr.entry1 {
+   }
+   tr.hidden {
+        display: none;
+   }
+   tr.groupEntry0 {
+   }
+   tr.groupEntry1 {
+        background-color: #eee;
+   }
+   td.field {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 1px solid #eee;
+        text-align: left;
+   }
+   a.sortheader {
+        text-decoration: none;
+        /*display: block;*/
+   }
+   </style>
+<script type="text/javascript">
+ var COL_SORT_ARRAY = new Array()
+ 
+  COL_SORT_ARRAY[0] = 0
+  COL_SORT_ARRAY[1] = 0
+  COL_SORT_ARRAY[2] = 1
+  COL_SORT_ARRAY[3] = 0
+  COL_SORT_ARRAY[4] = 0
+  COL_SORT_ARRAY[5] = 0</script><script type="text/javascript" src="cdbase_files/tellico2html.js"></script><title>Ma musique</title>
+</head>
+<body>
+<div id="headerblock">
+<form action="" onsubmit="return false"><div>
+<input type="text" id="searchText"><input type="button" onclick="searchRows()" class="button" value="Chercher"><input type="button" onclick="showAll()" class="button" value="Effacer">
+</div></form>
+<h1 class="colltitle">Ma musique<span class="subtitle"></span>
+</h1>
+</div>
+<table class="sortable" id="table1">
+<thead><tr>
+<th>Album</th>
+<th>Médium</th>
+<th>Rangement</th>
+<th>Genre</th>
+<th>Artiste</th>
+<th>Compositeur</th>
+</tr></thead>
+<tbody>
+<tr class="entry1">
+<td class="field">The Best of Jon and Vangelis</td>
+<td class="field">Vinyle</td>
+<td class="field"></td>
+<td class="field">Pop</td>
+<td class="field">Jon and Vangelis</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Will the Circle Be Unbroken (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">1</td>
+<td class="field">Bluegrass</td>
+<td class="field">The Nitty Gritty Dirt Band</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Will the Circle Be Unbroken (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">1</td>
+<td class="field">Bluegrass</td>
+<td class="field">The Nitty Gritty Dirt Band</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Northern Skies, Southern Blues</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">10</td>
+<td class="field">Blues</td>
+<td class="field">Stefan Grossman &amp; Duck Baker</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Sonatas &amp; Interludes for Prepared Piano</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">100</td>
+<td class="field">Contemporain</td>
+<td class="field">Joshua Pierce</td>
+<td class="field">John Cage</td>
+</tr>
+<tr class="entry0">
+<td class="field">The Last 6 Symphonies (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">101</td>
+<td class="field">Classique</td>
+<td class="field">Columbia Symphony Orchestra, Bruno Walter</td>
+<td class="field">Mozart</td>
+</tr>
+<tr class="entry1">
+<td class="field">The Last 6 Symphonies (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">101</td>
+<td class="field">Classique</td>
+<td class="field">Columbia Symphony Orchestra, Bruno Walter</td>
+<td class="field">Mozart</td>
+</tr>
+<tr class="entry0">
+<td class="field">Carmina Burana</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">102</td>
+<td class="field">Classique</td>
+<td class="field">Eduardo Mata; Barbara Hendricks</td>
+<td class="field">Carl Orff</td>
+</tr>
+<tr class="entry1">
+<td class="field">Light Flight</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">11</td>
+<td class="field">Folk</td>
+<td class="field">Pentangle</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Welcome to the cruel world</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">111</td>
+<td class="field">Blues</td>
+<td class="field">Ben Harper</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Concertos</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">112</td>
+<td class="field">Baroque</td>
+<td class="field">Robert Schwender</td>
+<td class="field">Vivaldi, Corelli</td>
+</tr>
+<tr class="entry0">
+<td class="field">"Les Maîtres du Classique" Antonio Vivaldi - Les Quatre Saisons</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">113</td>
+<td class="field">Baroque</td>
+<td class="field">Baroque Festival Orchestra, Alberto Lizzio</td>
+<td class="field">Antonio Vivaldi</td>
+</tr>
+<tr class="entry1">
+<td class="field">13 Sonates</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">114</td>
+<td class="field">Baroque</td>
+<td class="field">Amalie Foucher</td>
+<td class="field">Domenico Scarlatti</td>
+</tr>
+<tr class="entry0">
+<td class="field">My Personal Choice</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">119</td>
+<td class="field">Jazz</td>
+<td class="field">Oscar Peterson</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Post</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">12</td>
+<td class="field">Pop</td>
+<td class="field">Björk</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Hounds of Love</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">121</td>
+<td class="field">Pop</td>
+<td class="field">Kate Bush</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Ailleurs</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">122</td>
+<td class="field">Variété</td>
+<td class="field">William Sheller</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Les incontournables du jazz</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">123</td>
+<td class="field">Jazz</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">The Definitive Simon and Garfunkel</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">13</td>
+<td class="field">Pop</td>
+<td class="field">Simon &amp; Garfunkel</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Chamber Concerto / Ramifications / String Quartet No. 2 / Aventures / Lux aeterna</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">131</td>
+<td class="field">Contemporain</td>
+<td class="field">Ensemble InterContemporain, Pierre Boulez, LaSalle Quartet</td>
+<td class="field">György Ligeti</td>
+</tr>
+<tr class="entry1">
+<td class="field">Rhapsody in Blue / An American in Paris / Broadway Overtures</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">132</td>
+<td class="field">Classique</td>
+<td class="field">Michael Tilson Thomas</td>
+<td class="field">George Gershwin</td>
+</tr>
+<tr class="entry0">
+<td class="field">Cesar Franck: Symphonie - Psyche Et Eros</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">133</td>
+<td class="field">Classique</td>
+<td class="field">Berliner Philharmoniker &amp; Carlo Maria Giulini</td>
+<td class="field">César Franck</td>
+</tr>
+<tr class="entry1">
+<td class="field">Redemption</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">134</td>
+<td class="field">Classique</td>
+<td class="field">Lambert Wilson, Béatrice Uria‐Monzon, Orfeón Donostiarra, Orchestre du Capitole de Toulouse, Michel Plasson</td>
+<td class="field">Franck</td>
+</tr>
+<tr class="entry0">
+<td class="field">In Paradisum</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">135</td>
+<td class="field">Classique</td>
+<td class="field">Orchestra dell’Accademia Nazionale di Santa Cecilia, Myung-Whun Chung, Cecilia Bartoli, Bryn Terfel</td>
+<td class="field">Gabriel Fauré, Maurice Duruflé</td>
+</tr>
+<tr class="entry1">
+<td class="field">Études Op. 10 &amp; Op. 25</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">136</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry0">
+<td class="field">Chopin-Piano Concertos Nos.1 &amp; 2</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">137</td>
+<td class="field">Classique</td>
+<td class="field">Samson Francois,Louis Fremaux</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry1">
+<td class="field">Les introuvables de Samson François (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">138</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry0">
+<td class="field">Les introuvables de Samson François (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">138</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Schumann, Liszt</td>
+</tr>
+<tr class="entry1">
+<td class="field">Les introuvables de Samson François (disque « 3 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">138</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Prokofiev</td>
+</tr>
+<tr class="entry0">
+<td class="field">Les introuvables de Samson François (disque « 4 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">138</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Hindemith, Samson François</td>
+</tr>
+<tr class="entry1">
+<td class="field">Les introuvables de Samson François (disque « 5 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">139</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">César Franck, Gabriel Fauré</td>
+</tr>
+<tr class="entry0">
+<td class="field">Les introuvables de Samson François (disque « 6 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">139</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Schumann</td>
+</tr>
+<tr class="entry1">
+<td class="field">Les introuvables de Samson François (disque « 7 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">139</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">J-S Bach, César Franck, Mendelssohn, Mozart</td>
+</tr>
+<tr class="entry0">
+<td class="field">Les introuvables de Samson François (disque « 8 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">139</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Scriabine, Prokofiev, Bartok, Ravel, Fauré</td>
+</tr>
+<tr class="entry1">
+<td class="field">Festival Karajan #1</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">14</td>
+<td class="field">Classique</td>
+<td class="field">Herbert Von Karajan</td>
+<td class="field">Mozart;Rossini;Berlioz;Johann Strauss;Bizet;Chabrier</td>
+</tr>
+<tr class="entry0">
+<td class="field">Festival Karajan #2</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">14</td>
+<td class="field">Classique</td>
+<td class="field">Herbert Von Karajan</td>
+<td class="field">Berlioz;Offenbach;Verdi;Borodine;Smetana;Sibelius;Von Suppe</td>
+</tr>
+<tr class="entry1">
+<td class="field">Boléro / Rapsodie espagnole / La valse / Alborada del gracioso</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">140</td>
+<td class="field">Classique</td>
+<td class="field">Orchestre symphonique de Montréal, Charles Dutoit</td>
+<td class="field">Ravel</td>
+</tr>
+<tr class="entry0">
+<td class="field">Les Introuvables de Cziffra, CD1</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">141</td>
+<td class="field">Classique</td>
+<td class="field">Georges Cziffra</td>
+<td class="field">Liszt</td>
+</tr>
+<tr class="entry1">
+<td class="field">Les Introuvables de Cziffra (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">141</td>
+<td class="field">Classique</td>
+<td class="field">Georges Cziffra</td>
+<td class="field">Liszt, Rossini, Vecsey, Johann Strauss, Brahms, Rimsky-Korsakov</td>
+</tr>
+<tr class="entry0">
+<td class="field">Les Introuvables de Cziffra (disque « 3 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">141</td>
+<td class="field">Classique</td>
+<td class="field">Georges Cziffra</td>
+<td class="field">Balakirev, Schumann, Mendelssohn, Hummel, Beethoven, CPE Bach, Krebs, Scarlatti, Couperin, Rameau, Lully</td>
+</tr>
+<tr class="entry1">
+<td class="field">Les Introuvables de Cziffra (disque « 4 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">141</td>
+<td class="field">Classique</td>
+<td class="field">Georges Cziffra</td>
+<td class="field">Beethoven, Chopin, Brahms</td>
+</tr>
+<tr class="entry0">
+<td class="field">Les Introuvables de Cziffra (disque « 5 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">142</td>
+<td class="field">Classique</td>
+<td class="field">Georges Cziffra</td>
+<td class="field">Beethoven</td>
+</tr>
+<tr class="entry1">
+<td class="field">Les Introuvables de Cziffra (disque « 6 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">142</td>
+<td class="field">Classique</td>
+<td class="field">Georges Cziffra</td>
+<td class="field">Schumann</td>
+</tr>
+<tr class="entry0">
+<td class="field">Les Introuvables de Cziffra (disque « 7 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">142</td>
+<td class="field">Classique</td>
+<td class="field">Georges Cziffra</td>
+<td class="field">Liszt, Franck, Grieg</td>
+</tr>
+<tr class="entry1">
+<td class="field">Les Introuvables de Cziffra (disque « 8 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">142</td>
+<td class="field">Classique</td>
+<td class="field">Georges Cziffra</td>
+<td class="field">Liszt, Tchaikovsky</td>
+</tr>
+<tr class="entry0">
+<td class="field">Danses de Terpsichore</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">143</td>
+<td class="field">Baroque</td>
+<td class="field">Musica Antiqua, Christian Mendoze</td>
+<td class="field">Praetorius</td>
+</tr>
+<tr class="entry1">
+<td class="field">Saint-Saëns: Violin Concerto no. 3 / Wieniawski: Violin Concerto no. 2</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">144</td>
+<td class="field">Classique</td>
+<td class="field">Saint‐Saëns, Wieniawski; Orchestre de Paris, Daniel Barenboim, Itzhak Perlman</td>
+<td class="field">Saint-Saens, Wieniawski</td>
+</tr>
+<tr class="entry0">
+<td class="field">Saint-Saens: Introduction &amp; Rondo Capriccioso / Havanaise / Chausson: Poeme / Ravel: Tzigane</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">145</td>
+<td class="field">Classique</td>
+<td class="field">Itzhak Perlman, Orchestre de Paris, Jean Martinon</td>
+<td class="field">Saint-Saens, Chausson, Ravel</td>
+</tr>
+<tr class="entry1">
+<td class="field">Polonaises</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">146</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Frédéric Chopin</td>
+</tr>
+<tr class="entry0">
+<td class="field">Chopin - Valses</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">147</td>
+<td class="field">Classique</td>
+<td class="field">Dinu Lipatti</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry1">
+<td class="field">The Chopin collection</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">148</td>
+<td class="field">Classique</td>
+<td class="field">Arthur Rubinstein</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry0">
+<td class="field">Sonates n° 2 et n° 3</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">149</td>
+<td class="field">Classique</td>
+<td class="field">François‐René Duchâble</td>
+<td class="field">Frédéric Chopin</td>
+</tr>
+<tr class="entry1">
+<td class="field">Matrix 5</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">15</td>
+<td class="field">Contemporain</td>
+<td class="field">Krzysztof Penderecki</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Il cimento dell'armonia e dell'inventione, op. 8 - vol. 2</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">150</td>
+<td class="field">Baroque</td>
+<td class="field">Il giardino armonico</td>
+<td class="field">Antonio Vivaldi</td>
+</tr>
+<tr class="entry1">
+<td class="field">La mer</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">151</td>
+<td class="field">Classique</td>
+<td class="field">Alain Lombard</td>
+<td class="field">Debussy</td>
+</tr>
+<tr class="entry0">
+<td class="field">Alexander Nevsky / Lieutenant Kijé / Scythian Suite</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">152</td>
+<td class="field">Classique</td>
+<td class="field">Claudio Abbado</td>
+<td class="field">Serge Prokofiev</td>
+</tr>
+<tr class="entry1">
+<td class="field">Boris Godounov (Ausschnitte)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">153</td>
+<td class="field">Classique</td>
+<td class="field">Ruggiero Raimondi</td>
+<td class="field">Moussorgski</td>
+</tr>
+<tr class="entry0">
+<td class="field">Selva morale e spirituale: recueil de 1640 (extraits)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">154</td>
+<td class="field">Baroque</td>
+<td class="field">Les Arts Florissants, William Christie</td>
+<td class="field">Claudio Monteverdi</td>
+</tr>
+<tr class="entry1">
+<td class="field">Scaramouche / Le Bal Martiniquais / Paris / Le Carnaval d'Aix / Suite Française / Suite Provençale</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">155</td>
+<td class="field">Classique</td>
+<td class="field">Béroff, Collard, Ivaldi, Lee, Orchestre Philharmonique de Monte‐Carlo, Georges Prêtre</td>
+<td class="field">Milhaud</td>
+</tr>
+<tr class="entry0">
+<td class="field">Falla - The three-cornered hat</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">156</td>
+<td class="field">Classique</td>
+<td class="field">Pittsburgh Symphony Orchestra</td>
+<td class="field">Falla</td>
+</tr>
+<tr class="entry1">
+<td class="field">El amor brujo / El retablo de Maese Pedro</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">157</td>
+<td class="field">Classique</td>
+<td class="field">Orquestra de Cambra Teatre Lliure, Josep Pons</td>
+<td class="field">Manuel de Falla</td>
+</tr>
+<tr class="entry0">
+<td class="field">Symphony no. 9 “From the New World”</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">158</td>
+<td class="field">Classique</td>
+<td class="field">Chicago Symphony Orchestra, Sir Georg Solti</td>
+<td class="field">Dvořák</td>
+</tr>
+<tr class="entry1">
+<td class="field">Dvorak: Cello Concerto / Tchaikovsky: Rococco Variations</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">159</td>
+<td class="field">Classique</td>
+<td class="field">Mstislav Rostropovitch, Seiji Ozawa, Boston Symphony Orchestra</td>
+<td class="field">Dvorak, Tchaikovsky</td>
+</tr>
+<tr class="entry0">
+<td class="field">Taïra - Manoury - Mâche - Dufourt - Varese - Ohana - Kabelac - Xenakis</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">16</td>
+<td class="field">Contemporain</td>
+<td class="field">Les Percussions de Strasbourg</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Percussions de Strasbourg Cd2-2</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">16</td>
+<td class="field">Contemporain</td>
+<td class="field">Percussions de Strasbourg</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">La Boîte à joujoux &amp; Dukas, L'Apprenti sorcier &amp; La Péri</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">160</td>
+<td class="field">Classique</td>
+<td class="field">Ansermet, Orch. de la Suisse Romande</td>
+<td class="field">Debussy, Claude</td>
+</tr>
+<tr class="entry1">
+<td class="field">The Violin Sonatas: "Kreutzer" / "Spring"</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">161</td>
+<td class="field">Classique</td>
+<td class="field">Itzhak Perlman, Vladimir Ashkenazy</td>
+<td class="field">Beethoven</td>
+</tr>
+<tr class="entry0">
+<td class="field">La vida breve</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">162</td>
+<td class="field">Classique</td>
+<td class="field">Frühbeck de Burgos</td>
+<td class="field">Falla</td>
+</tr>
+<tr class="entry1">
+<td class="field">Rimsky-Korsakov: Suite from "Le Coq d'Or", Capricco Espagnol, Russian Easter Overture / Borodin: Polovtsian Dances from "Prince Igor"</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">163</td>
+<td class="field">Classique</td>
+<td class="field">Rimsky-Korsakov, Borodin; Antal Doráti, London Symphony Orchestra</td>
+<td class="field">Rimsky-Korsakov, Borodine</td>
+</tr>
+<tr class="entry0">
+<td class="field">The Complete Edition (disque « 13 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">164</td>
+<td class="field">Classique</td>
+<td class="field">Lorin Maazel</td>
+<td class="field">Maurice Ravel</td>
+</tr>
+<tr class="entry1">
+<td class="field">L’Enfant et les sortilèges</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">165</td>
+<td class="field">Classique</td>
+<td class="field">Lorin Maazel, Françoise Ogéas, Jane Berbié, Jeannine Collard, Sylvaine Gilma, Camille Maurane, Heinz Rehfuss, Michel Sénéchal, Colette Herzog, Orchestre National de la R.T.F.</td>
+<td class="field">Maurice Ravel</td>
+</tr>
+<tr class="entry0">
+<td class="field">Daphnis et Chloé</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">166</td>
+<td class="field">Classique</td>
+<td class="field">Chœur et Orchestre symphonique de Montréal, Charles Dutoit</td>
+<td class="field">Ravel</td>
+</tr>
+<tr class="entry1">
+<td class="field">Complete Orchestral Works (disque « 3 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">167</td>
+<td class="field">Classique</td>
+<td class="field">Orchestre National de France, Eliahu Inbal</td>
+<td class="field">Ravel</td>
+</tr>
+<tr class="entry0">
+<td class="field">Concerti nos. 1 &amp; 2</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">168</td>
+<td class="field">Classique</td>
+<td class="field">Alexander Markov, Rundfunk‐Sinfonieorchester Saarbrücken, Marcello Viotti</td>
+<td class="field">Niccolò Paganini</td>
+</tr>
+<tr class="entry1">
+<td class="field">24 Caprices</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">169</td>
+<td class="field">Classique</td>
+<td class="field">Itzhak Perlman</td>
+<td class="field">Paganini</td>
+</tr>
+<tr class="entry0">
+<td class="field">Mozart Violin Concerti Nos.3 &amp; 5</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">170</td>
+<td class="field">Classique</td>
+<td class="field">Pinchas Zukerman &amp; the Saint Paul Chamber Orchestra</td>
+<td class="field">Mozart</td>
+</tr>
+<tr class="entry1">
+<td class="field">Symphonies nos. 40, K. 550 / Symphony no. 41, K. 551 “Jupiter”</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">171</td>
+<td class="field">Classique</td>
+<td class="field">Columbia Symphony Orchestra, Bruno Walter</td>
+<td class="field">Mozart</td>
+</tr>
+<tr class="entry0">
+<td class="field">14 Valses, 4 Impromptus, 4 Ballades, 4 Scherzos (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">172</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry1">
+<td class="field">14 Valses, 4 Impromptus, 4 Ballades, 4 Scherzos (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">172</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry0">
+<td class="field">9 Symphonien / Ouvertüren (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">173</td>
+<td class="field">Classique</td>
+<td class="field">Berliner Philharmoniker, Herbert von Karajan</td>
+<td class="field">Beethoven</td>
+</tr>
+<tr class="entry1">
+<td class="field">9 Symphonien / Ouvertüren (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">174</td>
+<td class="field">Classique</td>
+<td class="field">Berliner Philharmoniker, Herbert von Karajan</td>
+<td class="field">Beethoven</td>
+</tr>
+<tr class="entry0">
+<td class="field">« Le meilleur de moi-même »</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">175</td>
+<td class="field">Classique</td>
+<td class="field">Maurice André</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Allegri: Miserere</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">176</td>
+<td class="field">Baroque</td>
+<td class="field">Choeur de l'abbaye de Westminster, Stephen Cleobury</td>
+<td class="field">Allegri, Palestrina, Lotti, Victoria, Monteverdi, Cavali, Gabrielli</td>
+</tr>
+<tr class="entry0">
+<td class="field">Beethoven: Violin Concerto</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">177</td>
+<td class="field">Classique</td>
+<td class="field">Itzhak Perlman</td>
+<td class="field">Beethoven</td>
+</tr>
+<tr class="entry1">
+<td class="field">Carmen (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">178</td>
+<td class="field">Classique</td>
+<td class="field">Teresa Berganza, Plácido Domingo, Ileana Cotrubas, Sherrill Milnes, The Ambrosian Singers, London Symphony Orchestra, Claudio Abbado</td>
+<td class="field">Georges Bizet</td>
+</tr>
+<tr class="entry0">
+<td class="field">Carmen (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">178</td>
+<td class="field">Classique</td>
+<td class="field">Teresa Berganza, Plácido Domingo, Ileana Cotrubas, Sherrill Milnes, The Ambrosian Singers, London Symphony Orchestra, Claudio Abbado</td>
+<td class="field">Georges Bizet</td>
+</tr>
+<tr class="entry1">
+<td class="field">Carmen (disque « 3 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">178</td>
+<td class="field">Classique</td>
+<td class="field">Teresa Berganza, Plácido Domingo, Ileana Cotrubas, Sherrill Milnes, The Ambrosian Singers, London Symphony Orchestra, Claudio Abbado</td>
+<td class="field">Georges Bizet</td>
+</tr>
+<tr class="entry0">
+<td class="field">Études op. 10 &amp; op. 25</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">179</td>
+<td class="field">Classique</td>
+<td class="field">François‐René Duchâble</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry1">
+<td class="field">The 6 Cello Suites (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">18</td>
+<td class="field">Baroque</td>
+<td class="field">Maurice Gendron</td>
+<td class="field">J. S. Bach</td>
+</tr>
+<tr class="entry0">
+<td class="field">The 6 Cello Suites (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">18</td>
+<td class="field">Baroque</td>
+<td class="field">Maurice Gendron</td>
+<td class="field">J. S. Bach</td>
+</tr>
+<tr class="entry1">
+<td class="field">Temps pascal</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">18</td>
+<td class="field">Moyen-Âge</td>
+<td class="field">Choeur des moines de l'abbaye Saint-Pierre de Solesmes - Direction Dom Jean Claire</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Miserere / Motets</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">180</td>
+<td class="field">Baroque</td>
+<td class="field">La Chapelle Royale, Philippe Herreweghe</td>
+<td class="field">Marc‐Antoine Charpentier</td>
+</tr>
+<tr class="entry1">
+<td class="field">Symphonie No. 9</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">181</td>
+<td class="field">Classique</td>
+<td class="field">Berliner Philharmoniker, Herbert von Karajan</td>
+<td class="field">Beethoven</td>
+</tr>
+<tr class="entry0">
+<td class="field">Symphonie No. 8 / Overtures - 'Fidelio', 'Leonore III', 'Coriolan'</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">182</td>
+<td class="field">Classique</td>
+<td class="field">Karajan, Berliner Philharmoniker</td>
+<td class="field">Beethoven</td>
+</tr>
+<tr class="entry1">
+<td class="field">Symphonien 4 &amp; 7</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">183</td>
+<td class="field">Classique</td>
+<td class="field">Karajan, Berliner Philharmoniker</td>
+<td class="field">Beethoven</td>
+</tr>
+<tr class="entry0">
+<td class="field">Rhapsody in Blue / Piano Concerto in F: versions for two pianos</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">184</td>
+<td class="field">Classique</td>
+<td class="field">Katia &amp; Marielle Labèque</td>
+<td class="field">Gershwin</td>
+</tr>
+<tr class="entry1">
+<td class="field">Iberia / Navarra / Suite Española (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">185</td>
+<td class="field">Classique</td>
+<td class="field">Alicia de Larrocha</td>
+<td class="field">Isaac Albéniz</td>
+</tr>
+<tr class="entry0">
+<td class="field">Iberia / Navarra / Suite Española (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">185</td>
+<td class="field">Classique</td>
+<td class="field">Alicia de Larrocha</td>
+<td class="field">Isaac Albéniz</td>
+</tr>
+<tr class="entry1">
+<td class="field">Children's Corner / Estampes / Suite bergamasque / Pour le piano</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">186</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Claude Debussy</td>
+</tr>
+<tr class="entry0">
+<td class="field">Goyescas / Allegro de Concierto / Danza Lenta</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">187</td>
+<td class="field">Classique</td>
+<td class="field">Alicia de Larrocha</td>
+<td class="field">Granados</td>
+</tr>
+<tr class="entry1">
+<td class="field">La damoiselle élue / Iberia / Prélude à l’après-midi d’un faune</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">188</td>
+<td class="field">Classique</td>
+<td class="field">Maria Ewing, Brigitte Balleys, London Symphony Chorus, London Symphony Orchestra, Claudio Abbado</td>
+<td class="field">Claude Debussy</td>
+</tr>
+<tr class="entry0">
+<td class="field">La Mer / Nocturnes</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">189</td>
+<td class="field">Classique</td>
+<td class="field">Philharmonia Orchestra, Michael Tilson Thomas</td>
+<td class="field">Debussy</td>
+</tr>
+<tr class="entry1">
+<td class="field">Buena Vista Social Club</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">19</td>
+<td class="field">World</td>
+<td class="field">Buena Vista Social Club</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">French Violin Sonatas</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">190</td>
+<td class="field">Classique</td>
+<td class="field">Jean‐Jacques Kantorow, Jacques Rouvier</td>
+<td class="field">Debussy, Ravel, Lekeu</td>
+</tr>
+<tr class="entry1">
+<td class="field">Symphony</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">191</td>
+<td class="field">Classique</td>
+<td class="field">Michel Plasson</td>
+<td class="field">Ernest Chausson</td>
+</tr>
+<tr class="entry0">
+<td class="field">Piano Concertos / Gaspard de la Nuit</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">192</td>
+<td class="field">Classique</td>
+<td class="field">Samson François, Orchestre de la Société des Concerts du Conservatoire, André Cluytens</td>
+<td class="field">Maurice Ravel</td>
+</tr>
+<tr class="entry1">
+<td class="field">Alexander Nevsky</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">193</td>
+<td class="field">Classique</td>
+<td class="field">Irina Arkhipova, Cleveland Orchestra Chorus, Cleveland Orchestra, Riccardo Chailly</td>
+<td class="field">Prokofiev</td>
+</tr>
+<tr class="entry0">
+<td class="field">Klavierkonzert no. 5 Es-Dur op. 73</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">194</td>
+<td class="field">Classique</td>
+<td class="field">Wiener Philharmoniker, Karl Böhm, Maurizio Pollini</td>
+<td class="field">Ludwig van Beethoven</td>
+</tr>
+<tr class="entry1">
+<td class="field">Klavierkonzert No. 3 (live)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">195</td>
+<td class="field">Classique</td>
+<td class="field">Arturo Benedetti Michelangeli, Wiener Symphoniker, Carlo Maria Giulini</td>
+<td class="field">Ludwig van Beethoven</td>
+</tr>
+<tr class="entry0">
+<td class="field">Mozart Piano Concerto No. 9 &amp; No. 26 &lt;&lt;the crownin</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">196</td>
+<td class="field">Classique</td>
+<td class="field">Lili Kraus, Piano</td>
+<td class="field">Mozart</td>
+</tr>
+<tr class="entry1">
+<td class="field">J.S.Bach: 4 Orchestral Suites</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">197</td>
+<td class="field">Baroque</td>
+<td class="field">Stuttgart Chamber Orchestra</td>
+<td class="field">J-S Bach</td>
+</tr>
+<tr class="entry0">
+<td class="field">J.S.Bach: 4 Orchestral Suites Disc 2</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">197</td>
+<td class="field">Baroque</td>
+<td class="field">Stuttgart Chamber Orchestra</td>
+<td class="field">J-S Bach</td>
+</tr>
+<tr class="entry1">
+<td class="field">Piano Works, Vol. 2</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">198</td>
+<td class="field">Classique</td>
+<td class="field">Vlado Perlemuter</td>
+<td class="field">Ravel</td>
+</tr>
+<tr class="entry0">
+<td class="field">Piano Works, Vol. 1</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">199</td>
+<td class="field">Classique</td>
+<td class="field">Vlado Perlemuter</td>
+<td class="field">Maurice Ravel</td>
+</tr>
+<tr class="entry1">
+<td class="field">Their Satanic Majesties Request</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">2</td>
+<td class="field">Rock</td>
+<td class="field">The Rolling Stones</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Pop Pop</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">20</td>
+<td class="field">Jazz</td>
+<td class="field">Rickie Lee Jones</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Ravel: Sheherazade; Duparc: Seven Songs</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">200</td>
+<td class="field">Classique</td>
+<td class="field">Kiri Te Kanawa-Orchestra of the Belgian National Opera-Pritchard</td>
+<td class="field">Ravel, Duparc</td>
+</tr>
+<tr class="entry0">
+<td class="field">Piano Concerto No. 3</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">201</td>
+<td class="field">Classique</td>
+<td class="field">Vladimir Ashkenazy, Concertgebouw Orchestra, Bernard Haitink</td>
+<td class="field">Rachmaninov</td>
+</tr>
+<tr class="entry1">
+<td class="field">The Piano Concertos / 3 Etudes de Concert</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">202</td>
+<td class="field">Classique</td>
+<td class="field">Claudio Arrau, London Symphony Orchestra, Sir Colin Davis</td>
+<td class="field">Liszt</td>
+</tr>
+<tr class="entry0">
+<td class="field">Lalo: Symphonie espagnole / Berlioz: Rêverie et caprice</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">203</td>
+<td class="field">Classique</td>
+<td class="field">Itzhak Perlman, Orchestre de Paris, Daniel Barenboim</td>
+<td class="field">Lalo, Berlioz</td>
+</tr>
+<tr class="entry1">
+<td class="field">Rachmaninov:Piano Concertos nos.1 &amp; 3</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">204</td>
+<td class="field">Classique</td>
+<td class="field">Byron Janis Piano,Chicago Symphony Orchestra,Fritz Reiner,Boston Symphony Orchestra, Charles Munch</td>
+<td class="field">Rachmaninov</td>
+</tr>
+<tr class="entry0">
+<td class="field">Fantasias for the Viols, 1680</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">205</td>
+<td class="field">Baroque</td>
+<td class="field">Hespèrion XX</td>
+<td class="field">Henry Purcell</td>
+</tr>
+<tr class="entry1">
+<td class="field">L'œuvre pour piano seul (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">206</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Maurice Ravel</td>
+</tr>
+<tr class="entry0">
+<td class="field">L'œuvre pour piano seul (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">206</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Maurice Ravel</td>
+</tr>
+<tr class="entry1">
+<td class="field">Pierre et le Loup</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">207</td>
+<td class="field">Classique</td>
+<td class="field">Gérard Philipe</td>
+<td class="field">Prokofiev</td>
+</tr>
+<tr class="entry0">
+<td class="field">Le Songe d’une nuit d’été</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">208</td>
+<td class="field">Classique</td>
+<td class="field">Heather Harper, Dame Janet Baker, Philharmonia Orchestra, Otto Klemperer</td>
+<td class="field">Felix Mendelssohn</td>
+</tr>
+<tr class="entry1">
+<td class="field">Piano Works (disque « 6 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">209</td>
+<td class="field">Classique</td>
+<td class="field">Jorge Bolet</td>
+<td class="field">Liszt</td>
+</tr>
+<tr class="entry0">
+<td class="field">Quinze ans d’amour</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">21</td>
+<td class="field">Variété</td>
+<td class="field">Jacques Brel</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Hungarian Rhapsodies</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">210</td>
+<td class="field">Classique</td>
+<td class="field">Georges Cziffra</td>
+<td class="field">Liszt</td>
+</tr>
+<tr class="entry0">
+<td class="field">12 études d'éxécution transcendante</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">211</td>
+<td class="field">Classique</td>
+<td class="field">Cziffra</td>
+<td class="field">Liszt</td>
+</tr>
+<tr class="entry1">
+<td class="field">Piano Concerto no. 1 / Rhapsody on a Theme of Paganini</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">212</td>
+<td class="field">Classique</td>
+<td class="field">Vladimir Ashkenazy, Concertgebouw Orchestra, Bernard Haitink</td>
+<td class="field">Rachmaninov</td>
+</tr>
+<tr class="entry0">
+<td class="field">Les Machines absurdes</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">213</td>
+<td class="field">Variété</td>
+<td class="field">William Sheller</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">boucan d'enfer</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">214</td>
+<td class="field">Variété</td>
+<td class="field">Renaud</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">En avant la chanson</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">215</td>
+<td class="field">Variété</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Raï</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">216</td>
+<td class="field">World</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Missa de Beata Virgine - Motets à la Vierge</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">217</td>
+<td class="field">Moyen-Âge</td>
+<td class="field">A Sei Voci, Bernard Fabre-Garrus</td>
+<td class="field">Josquin Desprez</td>
+</tr>
+<tr class="entry1">
+<td class="field">Escales / Flute Concerto / Paris / Bacchanale</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">218</td>
+<td class="field">Classique</td>
+<td class="field">Orchestre symphonique de Montréal, Charles Dutoit, Timothy Hutchins</td>
+<td class="field">Ibert</td>
+</tr>
+<tr class="entry0">
+<td class="field">Dixit Dominus</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">219</td>
+<td class="field">Baroque</td>
+<td class="field">Monteverdi Choir and Orchestra, John Eliot Gardiner</td>
+<td class="field">Georg Friedrich Händel</td>
+</tr>
+<tr class="entry1">
+<td class="field">Southside</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">22</td>
+<td class="field">Rock</td>
+<td class="field">Texas</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Peer Gynt</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">220</td>
+<td class="field">Classique</td>
+<td class="field">Lucia Popp, The Ambrosian Singers, Academy of St Martin in the Fields, Sir Neville Marriner</td>
+<td class="field">Edvard Grieg</td>
+</tr>
+<tr class="entry1">
+<td class="field">Job Chant Grégorien</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">221</td>
+<td class="field">Moyen-Âge</td>
+<td class="field">Choeur Grégorien de Paris</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Immortel Gregorien</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">222</td>
+<td class="field">Moyen-Âge</td>
+<td class="field">Gregorien CD 2</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Symphonies No.3 &amp; No.4 (conducted by Riccardo Muti)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">223</td>
+<td class="field">Classique</td>
+<td class="field">Riccardo Muti</td>
+<td class="field">Felix Mendelssohn</td>
+</tr>
+<tr class="entry0">
+<td class="field">51 Mazurkas / Sonatas 2 &amp; 3 (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">224</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry1">
+<td class="field">Mazurkas, Piano sonatas 2 &amp; 3 (disc 2 of 2)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">224</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry0">
+<td class="field">Pictures at an Exhibition / Night on Bald Mountain</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">225</td>
+<td class="field">Classique</td>
+<td class="field">The Cleveland Orchestra, Lorin Maazel</td>
+<td class="field">Modest Moussorgsky</td>
+</tr>
+<tr class="entry1">
+<td class="field">Pianos Concertos no. 2 &amp; 4</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">226</td>
+<td class="field">Classique</td>
+<td class="field">Maurizio Pollini, Wiener Philharmoniker, Eugen Jochum, Karl Böhm</td>
+<td class="field">Ludwig van Beethoven</td>
+</tr>
+<tr class="entry0">
+<td class="field">Klavierkonzert · Piano Concerto no. 1 C‐dur</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">227</td>
+<td class="field">Classique</td>
+<td class="field">Maurizio Pollini, Wiener Philharmoniker, Eugen Jochum</td>
+<td class="field">Ludwig van Beethoven</td>
+</tr>
+<tr class="entry1">
+<td class="field">Concertos pour Piano Nos. 2 &amp; 4 - Duchâble, Lombard</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">228</td>
+<td class="field">Classique</td>
+<td class="field">Alain Lombard</td>
+<td class="field">Saint-Saens</td>
+</tr>
+<tr class="entry0">
+<td class="field">Symphonies n° 3 &amp; 4</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">229</td>
+<td class="field">Classique</td>
+<td class="field">Charles Munch/Concerts Lamoureux</td>
+<td class="field">Albert Roussel</td>
+</tr>
+<tr class="entry1">
+<td class="field">à Bercy (vol.1)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">23</td>
+<td class="field">Variété</td>
+<td class="field">Jacques Higelin</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Roussel - Bacchus &amp; ArianeOp. 43 - Le Festin De L' Araignée - Orchestre National De France - Georges Prêtre - 1132</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">230</td>
+<td class="field">Classique</td>
+<td class="field">Orch National De France - Georges Prêtre</td>
+<td class="field">Roussel</td>
+</tr>
+<tr class="entry1">
+<td class="field">Concierto de Aranjuez / Fantasía para un gentilhombre</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">231</td>
+<td class="field">Classique</td>
+<td class="field">Narciso Yepes, Philharmonia Orchestra, English Chamber Orchestra, García Navarro</td>
+<td class="field">Joaquín Rodrigo</td>
+</tr>
+<tr class="entry0">
+<td class="field">Schéhérazade - La grande pâque russe</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">232</td>
+<td class="field">Classique</td>
+<td class="field">Armin Jordan</td>
+<td class="field">Rimski-Korsakov</td>
+</tr>
+<tr class="entry1">
+<td class="field">Piano Concertos Nos. 2 &amp; 4</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">233</td>
+<td class="field">Classique</td>
+<td class="field">Vladimir Ashkenazy, Concertgebouw Orchestra, Bernard Haitink</td>
+<td class="field">Rachmaninov</td>
+</tr>
+<tr class="entry0">
+<td class="field">live 2005</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">234</td>
+<td class="field">World</td>
+<td class="field">David Wilcox</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Bury the hatchet</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">235</td>
+<td class="field">Pop</td>
+<td class="field">Cranberries</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Wake up and smell the coffee</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">235</td>
+<td class="field">Pop</td>
+<td class="field">Cranberries</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Les Plus Grands Moments du jazz</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">236</td>
+<td class="field">Jazz</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Super Vocal &amp; Dub Session</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">237</td>
+<td class="field">Techno</td>
+<td class="field">IMPROVISATORS DUB</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Mister Blues</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">238</td>
+<td class="field">Blues</td>
+<td class="field">Bill Deraime</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Orgue Kern de l'église saint-Maclou</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">239</td>
+<td class="field">Classique</td>
+<td class="field">Jean-Louis Durand</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">à Bercy (vol.2)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">24</td>
+<td class="field">Variété</td>
+<td class="field">Jacques Higelin</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Chants de l'extase (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">240</td>
+<td class="field">Classique</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Chants de l'extase (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">240</td>
+<td class="field">Classique</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Songs From the Road (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">241</td>
+<td class="field">Pop</td>
+<td class="field">Leonard Cohen</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Planète tubes</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">242</td>
+<td class="field">Variété</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">La Guitare à Dadi, Volume 1</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">243</td>
+<td class="field">Folk</td>
+<td class="field">Marcel Dadi</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">La Guitare à Dadi, Volume 2</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">244</td>
+<td class="field">Folk</td>
+<td class="field">Marcel Dadi</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Stravinsky : Le sacre du printemps, Petrouchka</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">245</td>
+<td class="field">Classique</td>
+<td class="field">Pierre Boulez</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Florilège de musique ancienne</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">246</td>
+<td class="field">Moyen-Âge</td>
+<td class="field">Divers</td>
+<td class="field">Caserta, Pipelare, Ockeghem, Dufay, Perotin, Daniel, Desprez, Ventadorn</td>
+</tr>
+<tr class="entry0">
+<td class="field">Masoala</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">247</td>
+<td class="field">World</td>
+<td class="field">Ny Malagasy Orkestra</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Le chaos</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">248</td>
+<td class="field">Rock</td>
+<td class="field">Mama Béa</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Pour un bébé robot...</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">249</td>
+<td class="field">Rock</td>
+<td class="field">Mama Béa</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Musiques de films de science-fiction</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">250</td>
+<td class="field">Bande son</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Live 2004</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">251</td>
+<td class="field">Folk</td>
+<td class="field">Planxty</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Balance</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">252</td>
+<td class="field">World</td>
+<td class="field">Leo Kottke</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Altiplanos</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">253</td>
+<td class="field">Folk</td>
+<td class="field">Pierre Bensusan</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Du côté de chez Léo</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">254</td>
+<td class="field">Variété</td>
+<td class="field">Mama Béa</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Southbound</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">255</td>
+<td class="field">Folk</td>
+<td class="field">Doc Watson</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Symphonic Dances, op. 64 / Norwegian Dances, op. 35 / Lyric Suite, op. 54</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">256</td>
+<td class="field">Classique</td>
+<td class="field">Gothenburg Symphony Orchestra, Neeme Järvi</td>
+<td class="field">Edvard Grieg</td>
+</tr>
+<tr class="entry0">
+<td class="field">Les Fleurs du Mal</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">257</td>
+<td class="field">Variété</td>
+<td class="field">Léo Ferré</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">la légende latino</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">258</td>
+<td class="field">World</td>
+<td class="field">Compay Segundo</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Gibraltar</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">259</td>
+<td class="field">Rap</td>
+<td class="field">Abd al Malik</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Dixit Dominus</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">26</td>
+<td class="field">Baroque</td>
+<td class="field">Monteverdi Choir and Orchestra, John Eliot Gardiner</td>
+<td class="field">Haendel</td>
+</tr>
+<tr class="entry0">
+<td class="field">La folle</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">260</td>
+<td class="field">Rock</td>
+<td class="field">Mama Béa</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Faudrait rallumer la lumière dans ce foutu compartiment</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">261</td>
+<td class="field">Rock</td>
+<td class="field">Mama Béa</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">The Very Best of Nina Simone</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">262</td>
+<td class="field">Jazz</td>
+<td class="field">Nina Simone</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Italian Opera Arias</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">263</td>
+<td class="field">Classique</td>
+<td class="field">Rolando Villazón, Münchner Rundfunkorchester, Marcello Viotti</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Eclectique</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">264</td>
+<td class="field">Folk</td>
+<td class="field">Jean-Christophe Ploquin</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Gurrumul</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">265</td>
+<td class="field">World</td>
+<td class="field">Geoffrey Gurrumul Yunupingu</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Live</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">266</td>
+<td class="field">World</td>
+<td class="field">Stefan Grossman</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">String Quartets</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">267</td>
+<td class="field">Classique</td>
+<td class="field">Orlando Quartet</td>
+<td class="field">Debussy, Ravel</td>
+</tr>
+<tr class="entry0">
+<td class="field">Spices</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">268</td>
+<td class="field">Folk</td>
+<td class="field">Pierre Bensusan</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">The Ultimate Collection (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">269</td>
+<td class="field">Pop</td>
+<td class="field">Bob Dylan</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">The Ultimate Collection (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">269</td>
+<td class="field">Pop</td>
+<td class="field">Bob Dylan</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Dans mon univers</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">270</td>
+<td class="field">Variété</td>
+<td class="field">Laurent Touceul</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Banda Brasil</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">271</td>
+<td class="field">World</td>
+<td class="field">Marinha do Brasil</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Altiplanos</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">272</td>
+<td class="field">Folk</td>
+<td class="field">Pierre Bensusan</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Voix Françaises</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">273</td>
+<td class="field">Variété</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Symphonie N°10 Remix</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">274</td>
+<td class="field">Contemporain</td>
+<td class="field">Pierre Henry</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Fallen</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">275</td>
+<td class="field">Rock</td>
+<td class="field">Evanescence</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">From everywhere to elsewhere</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">276</td>
+<td class="field">Folk</td>
+<td class="field">Normainn</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Violin Concertos 1 &amp; 2 / Concerto for 2 Violins</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">277</td>
+<td class="field">Baroque</td>
+<td class="field">Jaap Schröder, Christopher Hirons, The Academy of Ancient Music, Christopher Hogwood</td>
+<td class="field">Johann Sebastian Bach</td>
+</tr>
+<tr class="entry1">
+<td class="field">Brandenburgische Konzerte nos. 4-6</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">278</td>
+<td class="field">Baroque</td>
+<td class="field">The English Concert, Trevor Pinnock</td>
+<td class="field">Johann Sebastian Bach</td>
+</tr>
+<tr class="entry0">
+<td class="field">Nocturnes et préludes (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">279</td>
+<td class="field">Classique</td>
+<td class="field">Samson François</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry1">
+<td class="field">Chopin: Nocturnes forwardslash Preludes (Disc2)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">279</td>
+<td class="field">Classique</td>
+<td class="field">Samson Francois</td>
+<td class="field">Chopin</td>
+</tr>
+<tr class="entry0">
+<td class="field">Les choeurs de l'armée rouge</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">28</td>
+<td class="field">Folk</td>
+<td class="field">Les choeurs de l'armée rouge</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Flûte de pan &amp; orgue</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">280</td>
+<td class="field">Classique</td>
+<td class="field">Dorian</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Vélo va</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">281</td>
+<td class="field">Variété</td>
+<td class="field">Dick Annegarn</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Mozart Portraits</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">282</td>
+<td class="field">Classique</td>
+<td class="field">Cecilia Bartoli, Vienna Chamber Orchestra, György Fischer</td>
+<td class="field">Wolfgang Amadeus Mozart</td>
+</tr>
+<tr class="entry0">
+<td class="field">Kaamelott - Premier Volet (Bande originale du film)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">283</td>
+<td class="field">Bande son</td>
+<td class="field">Alexandre Astier</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Carestini</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">284</td>
+<td class="field">Baroque</td>
+<td class="field">Jaroussky, Philippe</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Works for Orchestra (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">285</td>
+<td class="field">Baroque</td>
+<td class="field">Trevor Pinnock</td>
+<td class="field">J.S. Bach</td>
+</tr>
+<tr class="entry1">
+<td class="field">Christmas Concertos</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">286</td>
+<td class="field">Baroque</td>
+<td class="field">I Musici</td>
+<td class="field">Corelli, Manfredini, Torelli, Locatelli</td>
+</tr>
+<tr class="entry0">
+<td class="field">Alfred Brendel Collection Vol. 3</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">287</td>
+<td class="field">Classique</td>
+<td class="field">Alfred Brendel</td>
+<td class="field">Ludwig van Beethoven</td>
+</tr>
+<tr class="entry1">
+<td class="field">Tir na nOg</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">288</td>
+<td class="field">Folk</td>
+<td class="field">Spaarkles</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Graceland</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">289</td>
+<td class="field">Pop</td>
+<td class="field">Paul Simon</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Musique de la Grèce antique</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">29</td>
+<td class="field">Antique</td>
+<td class="field">Atrium Musicæ de Madrid, Gregorio Paniagua</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Midi 20</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">290</td>
+<td class="field">Rap</td>
+<td class="field">Grand Corps Malade</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Plutôt guitare</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">291</td>
+<td class="field">Variété</td>
+<td class="field">Maxime Le Forestier</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Maria</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">292</td>
+<td class="field">Classique</td>
+<td class="field">Cecilia Bartoli</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Joyful</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">293</td>
+<td class="field">Pop</td>
+<td class="field">Ayo</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Enregistrements d'archives inédits</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">294</td>
+<td class="field">World</td>
+<td class="field">Choeurs de l'armée rouge, Boris Alexandrov</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Hydrophonia</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">295</td>
+<td class="field">Contemporain</td>
+<td class="field">Jean-Christophe Ploquin</td>
+<td class="field">Jean-Christophe Ploquin</td>
+</tr>
+<tr class="entry0">
+<td class="field">Hydrophonia</td>
+<td class="field">DVD</td>
+<td class="field" style="text-align: center; padding-left: 5px">295</td>
+<td class="field">Contemporain</td>
+<td class="field">Jean-Christophe Ploquin</td>
+<td class="field">Jean-Christophe Ploquin</td>
+</tr>
+<tr class="entry1">
+<td class="field">ReNaissance</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">296</td>
+<td class="field">Folk</td>
+<td class="field">Jean-Christophe Ploquin</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">10 masters Rock Classics</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">297</td>
+<td class="field">Rock</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Tourist</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">298</td>
+<td class="field">Jazz</td>
+<td class="field">St Germain</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Quadra 2</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">299</td>
+<td class="field">Rock</td>
+<td class="field">Quadra</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">C'est déjà ça</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">3</td>
+<td class="field">Variété</td>
+<td class="field">Alain Souchon</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Water Music / Music for the Royal Fireworks</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">30</td>
+<td class="field">Baroque</td>
+<td class="field">Orchestre de chambre Jean‐François Paillard, Jean-François Paillard</td>
+<td class="field">Haendel</td>
+</tr>
+<tr class="entry1">
+<td class="field">Maléfices</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">300</td>
+<td class="field">Rock</td>
+<td class="field">Quadra</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Rogamar</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">301</td>
+<td class="field">World</td>
+<td class="field">Cesária Évora</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Nha Sentimento</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">302</td>
+<td class="field">World</td>
+<td class="field">Cesaria Evora</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Bouge Encore</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">303</td>
+<td class="field">Blues</td>
+<td class="field">Bill Deraime</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Carnaval des animaux / Danse macabre etc.</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">304</td>
+<td class="field">Classique</td>
+<td class="field">Cristina Ortiz, Pascal Rogé, Charles Dutoit, London Sinfonietta, Philharmonia Orchestra</td>
+<td class="field">Saint‐Saëns</td>
+</tr>
+<tr class="entry0">
+<td class="field">Broadway sur Seine</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">305</td>
+<td class="field">Jazz</td>
+<td class="field">Broadway's Comedy</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Mind the Gap</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">306</td>
+<td class="field">Folk</td>
+<td class="field">Rebsie Fairholm</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Près de Paris</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">307</td>
+<td class="field">Folk</td>
+<td class="field">Pierre Bensusan</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Listen !</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">308</td>
+<td class="field">Gospel</td>
+<td class="field">Broadway's Gospel Group</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Emmène-moi</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">309</td>
+<td class="field">Folk</td>
+<td class="field">Graeme Allwright</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">La Musique de la bible révélée</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">31</td>
+<td class="field">Antique</td>
+<td class="field">Suzanne Haïk‐Vantoura</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Opera proibita</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">310</td>
+<td class="field">Baroque</td>
+<td class="field">Cecilia Bartoli, Les Musiciens du Louvre - Marc Minkowski</td>
+<td class="field">Haendel, Scarlatti, Caldara</td>
+</tr>
+<tr class="entry1">
+<td class="field">Promised land</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">311</td>
+<td class="field">Folk</td>
+<td class="field">Spaarkles</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Sunrise Over Sea</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">312</td>
+<td class="field">Blues</td>
+<td class="field">The John Butler Trio</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Sunrise Over Sea (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">312</td>
+<td class="field">Blues</td>
+<td class="field">The John Butler Trio</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Pulse</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">313</td>
+<td class="field">Classique</td>
+<td class="field">Shani Diluka</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Document #1 Backstage concerto</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">314</td>
+<td class="field">Rock</td>
+<td class="field">Stephan Eicher</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Musique Maestro</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">315</td>
+<td class="field">Classique</td>
+<td class="field">Grands compositeurs</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">The Best of Ireland Disc 2: Irish Pub Songs Collection</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">316</td>
+<td class="field">Folk</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">The Session</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">317</td>
+<td class="field">Folk</td>
+<td class="field">Na Connerys</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Dimanche à Bamako</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">318</td>
+<td class="field">World</td>
+<td class="field">Amadou Et Mariam</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">If on a Winter's Night...</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">319</td>
+<td class="field">Pop</td>
+<td class="field">Sting</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Life for Rent</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">32</td>
+<td class="field">Pop</td>
+<td class="field">Dido</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Bach: Magnificat / Handel: Utrecht Te Deum</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">320</td>
+<td class="field">Baroque</td>
+<td class="field">Concentus Musicus Wien, Nikolaus Harnoncourt</td>
+<td class="field">Bach; Handel</td>
+</tr>
+<tr class="entry1">
+<td class="field">Symphonien nos. 5 &amp; 6 "Pastorale"</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">321</td>
+<td class="field">Classique</td>
+<td class="field">Berliner Philharmoniker, Herbert von Karajan</td>
+<td class="field">Beethoven</td>
+</tr>
+<tr class="entry0">
+<td class="field">Toccatas, BWV 910-916 (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">322</td>
+<td class="field">Baroque</td>
+<td class="field">Glenn Gould</td>
+<td class="field">Johann Sebastian Bach</td>
+</tr>
+<tr class="entry1">
+<td class="field">Toccatas, BWV 910-916 (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">322</td>
+<td class="field">Baroque</td>
+<td class="field">Glenn Gould</td>
+<td class="field">Johann Sebastian Bach</td>
+</tr>
+<tr class="entry0">
+<td class="field">Deux Rives, un Rêve</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">323</td>
+<td class="field">World</td>
+<td class="field">Idir</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">100 Tubes français année 80 CD1</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">324</td>
+<td class="field">Variété</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Le quattro stagioni</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">325</td>
+<td class="field">Baroque</td>
+<td class="field">Alberto Lizzio, Musici di San Marco</td>
+<td class="field">Antonio Vivaldi</td>
+</tr>
+<tr class="entry1">
+<td class="field">Transformer</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">326</td>
+<td class="field">Pop</td>
+<td class="field">Lou Reed</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Berlin</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">327</td>
+<td class="field">Rock</td>
+<td class="field">Lou Reed</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Rock n Roll Animal</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">328</td>
+<td class="field">Rock</td>
+<td class="field">Lou Reed</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Merci Monsieur Brassens</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">329</td>
+<td class="field">Variété</td>
+<td class="field">Georges Brassens</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">No Angel</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">33</td>
+<td class="field">Pop</td>
+<td class="field">Dido</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Le Jour de clarté</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">330</td>
+<td class="field">Variété</td>
+<td class="field">Graeme Allwright</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Suzanne</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">330</td>
+<td class="field">Variété</td>
+<td class="field">Graeme Allwright</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">The Best of Jon and Vangelis</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">331</td>
+<td class="field">Pop</td>
+<td class="field">Jon and Vangelis</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Intuite</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">332</td>
+<td class="field">World</td>
+<td class="field">Pierre Bensusan</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Solilaï</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">332</td>
+<td class="field">World</td>
+<td class="field">Pierre Bensusan</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Rise</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">333</td>
+<td class="field">World</td>
+<td class="field">Anoushka Shankar</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Country Blues Guitar Festival</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">334</td>
+<td class="field">Blues</td>
+<td class="field">Stefan Grossman</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Ummagumma</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">335</td>
+<td class="field">Pop</td>
+<td class="field">Pink Floyd</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Meddle</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">336</td>
+<td class="field">Pop</td>
+<td class="field">Pink Floyd</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">The Dark Side of the Moon</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">336</td>
+<td class="field">Pop</td>
+<td class="field">Pink Floyd</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Machine Head (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">337</td>
+<td class="field">Rock</td>
+<td class="field">Deep Purple</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Machine Head (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">337</td>
+<td class="field">Rock</td>
+<td class="field">Deep Purple</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Tubular Bells</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">338</td>
+<td class="field">Pop</td>
+<td class="field">Mike Oldfield</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Music of the Spheres</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">338</td>
+<td class="field">Pop</td>
+<td class="field">Mike Oldfield</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Cheap Thrills</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">339</td>
+<td class="field">Rock</td>
+<td class="field">Janis Joplin, Big Brother &amp; the Holding Company</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">The Best of John Renbourn</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">34</td>
+<td class="field">Folk</td>
+<td class="field">John Renbourn</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Deep Purple in Rock</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">340</td>
+<td class="field">Rock</td>
+<td class="field">Deep Purple</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Complete works for cello and piano</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">341</td>
+<td class="field">Classique</td>
+<td class="field">Shani Diluka</td>
+<td class="field">Beethoven</td>
+</tr>
+<tr class="entry0">
+<td class="field">Renaissance</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">342</td>
+<td class="field">Baroque</td>
+<td class="field">Shani Diluka</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Les hits du mapouka</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">35</td>
+<td class="field">World</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Mar Azul</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">36</td>
+<td class="field">World</td>
+<td class="field">Cesária Évora</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Trois mornas de Césaria Evora</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">37</td>
+<td class="field">World</td>
+<td class="field">Evora Césaria</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Distino Di Belita</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">38</td>
+<td class="field">World</td>
+<td class="field">Cesária Évora</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Desireless</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">39</td>
+<td class="field">Pop</td>
+<td class="field">Eagle-Eye Cherry</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Scary Monsters</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">4</td>
+<td class="field">Pop</td>
+<td class="field">David Bowie</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Crossroads</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">40</td>
+<td class="field">Pop</td>
+<td class="field">Tracy Chapman</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Fight for Your Mind</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">41</td>
+<td class="field">Blues</td>
+<td class="field">Ben Harper</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">First Light: Chicago 1969-71</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">42</td>
+<td class="field">Blues</td>
+<td class="field">Terry Callier</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Fantaisie militaire</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">43</td>
+<td class="field">Variété</td>
+<td class="field">Alain Bashung</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Jazz &amp; Blues Collection 1: Ella Fitzgerald</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">44</td>
+<td class="field">Jazz</td>
+<td class="field">Ella Fitzgerald</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Sarbacane</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">45</td>
+<td class="field">Variété</td>
+<td class="field">Francis Cabrel</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Baïda</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">46</td>
+<td class="field">Variété</td>
+<td class="field">Faudel</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">The Will to Live</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">47</td>
+<td class="field">Pop</td>
+<td class="field">Ben Harper</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Homogenic</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">48</td>
+<td class="field">Pop</td>
+<td class="field">Björk</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Deguello</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">49</td>
+<td class="field">Rock</td>
+<td class="field">ZZ TOP</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Legend: The Best of Bob Marley and The Wailers</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">50</td>
+<td class="field">Reggae</td>
+<td class="field">Bob Marley &amp; The Wailers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Osez Joséphine</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">51</td>
+<td class="field">Variété</td>
+<td class="field">Alain Bashung</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Revolver</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">52</td>
+<td class="field">Pop</td>
+<td class="field">The Beatles</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">The Black Balloon</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">53</td>
+<td class="field">Folk</td>
+<td class="field">John Renbourn</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Harvest</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">54</td>
+<td class="field">Pop</td>
+<td class="field">Neil Young</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Folk Songs From Africa</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">55</td>
+<td class="field">World</td>
+<td class="field">Miriam Makeba</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">The Cool World / Dizzy Goes Hollywood</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">56</td>
+<td class="field">Jazz</td>
+<td class="field">Dizzy Gillespie</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Stormy Weather</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">57</td>
+<td class="field">Jazz</td>
+<td class="field">Eric Dolphy</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Les Génies du Jazz (Tome 6, No. 10): Sun Ra (and His Arkestra)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">58</td>
+<td class="field">Jazz</td>
+<td class="field">Sun Ra</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Black Classical Music - les genies du jazz vol6   2</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">59</td>
+<td class="field">Jazz</td>
+<td class="field">Roland Kirk</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Magnificathy: The Many Voices of Cathy Berberian</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">6</td>
+<td class="field">Contemporain</td>
+<td class="field">Cathy Berberian</td>
+<td class="field">Claudio Monteverdi;Claude Debussy;John Cage;Sylvano Bussoti;Kurt Weill;Paul McCartney;George Gershwin;Cathy Berberian</td>
+</tr>
+<tr class="entry0">
+<td class="field">Negro Spirituals (Volume 2)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">60</td>
+<td class="field">Gospel</td>
+<td class="field">The Golden Gate Quartet</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">The Greatest Hits (1999)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">61</td>
+<td class="field">Pop</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Best of</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">62</td>
+<td class="field">Variété</td>
+<td class="field">Barbara</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Best Of</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">63</td>
+<td class="field">Jazz</td>
+<td class="field">Miles Davis</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">The Best of Fela Kuti: The Black President (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">64</td>
+<td class="field">Reggae</td>
+<td class="field">Fela Kuti</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">The Best of Fela Kuti: The Black President (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">64</td>
+<td class="field">Reggae</td>
+<td class="field">Fela Kuti</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Bruxelles...</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">65</td>
+<td class="field">Variété</td>
+<td class="field">Dick Annegarn</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Le sommeil du monstre</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">66</td>
+<td class="field">Bande son</td>
+<td class="field">Divers</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Rickie Lee Jones</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">67</td>
+<td class="field">Pop</td>
+<td class="field">Rickie Lee Jones</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Your heart and soul</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">68</td>
+<td class="field">Soul</td>
+<td class="field">Barry White</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Symphonie du nouveau monde</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">69</td>
+<td class="field">Classique</td>
+<td class="field">Herbert Von Karajan</td>
+<td class="field">Dvorak</td>
+</tr>
+<tr class="entry1">
+<td class="field">Motion - Emotion</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">7</td>
+<td class="field">Contemporain</td>
+<td class="field">François Bayle</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Nosso mundo</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">70</td>
+<td class="field">World</td>
+<td class="field">Trio Esperança</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">The Best of 80-90</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">71</td>
+<td class="field">Rock</td>
+<td class="field">U2</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">The Best of 80-90</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">71</td>
+<td class="field">Pop</td>
+<td class="field">U2</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">10 Remixes</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">72</td>
+<td class="field">Variété</td>
+<td class="field">Les Négresses Vertes</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">10 Remixes</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">72</td>
+<td class="field">Variété</td>
+<td class="field">Les Négresses Vertes</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Cesaria</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">73</td>
+<td class="field">World</td>
+<td class="field">Cesária Évora</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Mustt Mustt</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">74</td>
+<td class="field">World</td>
+<td class="field">Nusrat Fateh Ali Khan</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">In the Pocket</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">75</td>
+<td class="field">Pop</td>
+<td class="field">James Taylor</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Tracy Chapman</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">76</td>
+<td class="field">Pop</td>
+<td class="field">Tracy Chapman</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Vespertine</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">77</td>
+<td class="field">Pop</td>
+<td class="field">Björk</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Mlah</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">78</td>
+<td class="field">Variété</td>
+<td class="field">Les Négresses Vertes</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Prose Combat</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">79</td>
+<td class="field">Rap</td>
+<td class="field">MC Solaar</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Aura</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">8</td>
+<td class="field">Jazz</td>
+<td class="field">Miles Davis</td>
+<td class="field">Miles Davis</td>
+</tr>
+<tr class="entry1">
+<td class="field">Hors‐saison</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">80</td>
+<td class="field">Variété</td>
+<td class="field">Francis Cabrel</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Future Mix</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">81</td>
+<td class="field">Techno</td>
+<td class="field">Technasia</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">L'archiviste b…</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">82</td>
+<td class="field">Rock</td>
+<td class="field">Quadra</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Qui sème le vent récolte le tempo</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">83</td>
+<td class="field">Rap</td>
+<td class="field">MC Solaar</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">1967–1970 (disque « 1 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">84</td>
+<td class="field">Pop</td>
+<td class="field">The Beatles</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">1967–1970 (disque « 2 »)</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">84</td>
+<td class="field">Pop</td>
+<td class="field">The Beatles</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">Best of</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">86</td>
+<td class="field">Pop</td>
+<td class="field">Brian Ferry &amp; Roxy Music</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Glassworks</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">87</td>
+<td class="field">Contemporain</td>
+<td class="field">Philip Glass</td>
+<td class="field">Philip Glass</td>
+</tr>
+<tr class="entry1">
+<td class="field">Life on planet groove</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">88</td>
+<td class="field">Jazz</td>
+<td class="field">Maceo Parker</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">Classic Yes</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">89</td>
+<td class="field">Pop</td>
+<td class="field">Yes</td>
+<td class="field"></td>
+</tr>
+<tr class="entry1">
+<td class="field">(What’s the Story) Morning Glory?</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">9</td>
+<td class="field">Rock</td>
+<td class="field">Oasis</td>
+<td class="field"></td>
+</tr>
+<tr class="entry0">
+<td class="field">L'Art de la Fugue</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">91</td>
+<td class="field">Baroque</td>
+<td class="field">Sir Neville Mariner / Academy St Martin In The Fields</td>
+<td class="field">Johann Sebastian Bach</td>
+</tr>
+<tr class="entry1">
+<td class="field">L'Offrande Musicale</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">92</td>
+<td class="field">Baroque</td>
+<td class="field">Sir Neville Mariner / Academy St Martin In The Fields</td>
+<td class="field">Johann Sebastian Bach</td>
+</tr>
+<tr class="entry0">
+<td class="field">Concerti per Mandolini RV 93, 425, 532 &amp; 558</td>
+<td class="field">Compact Disc</td>
+<td class="field" style="text-align: center; padding-left: 5px">96</td>
+<td class="field"></td>
+<td class="field">I Solisti Veneti, Claudio Scimone</td>
+<td class="field">Vivaldi</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a href="https://tellico-project.org">Généré par Tellico</a></p>
+</body>
+</html>
