@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>développement on Jean-Christophe Ploquin &amp; Arthur Gyl : les deux faces d&#39;un artiste</title>
-    <link>https://jcploquin.github.io/tags/d%C3%A9veloppement/</link>
-    <description>Recent content in développement on Jean-Christophe Ploquin &amp; Arthur Gyl : les deux faces d&#39;un artiste</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>fr</language>
-    <lastBuildDate>Sat, 05 Jul 2025 15:00:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/tags/d%C3%A9veloppement/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Behind the scenes : Création d&#39;Ascendance</title>
-      <link>https://jcploquin.github.io/blog/behind-the-scenes-creation-dascendance/</link>
-      <pubDate>Sat, 05 Jul 2025 15:00:00 +0200</pubDate>
-      
-      <guid>https://jcploquin.github.io/blog/behind-the-scenes-creation-dascendance/</guid>
-      <description>Trois semaines après le lancement d&#39;Ascendance, il est temps de lever le voile sur les coulisses de cette création. Comment transforme-t-on une idée artistique en œuvre interactive ? Retour sur un processus créatif qui mêle composition électroacoustique et développement logiciel.
-L&amp;rsquo;étincelle créative : quand la généalogie rencontre l&amp;rsquo;acousmatique L&amp;rsquo;idée d&#39;Ascendance est née d&amp;rsquo;une observation simple : nos arbres généalogiques ressemblent à des partitions. Chaque branche évoque une ligne mélodique, chaque génération suggère une tessiture, chaque ancêtre porte en lui une histoire sonore unique.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>développement on Jean-Christophe Ploquin &amp; Arthur Gyl : les deux faces d'un artiste</title><link>https://jcploquin.github.io/tags/d%C3%A9veloppement/</link><description>Recent content in développement on Jean-Christophe Ploquin &amp; Arthur Gyl : les deux faces d'un artiste</description><generator>Hugo -- gohugo.io</generator><language>fr</language><lastBuildDate>Sat, 05 Jul 2025 15:00:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/tags/d%C3%A9veloppement/index.xml" rel="self" type="application/rss+xml"/><item><title>Behind the scenes : Création d'Ascendance</title><link>https://jcploquin.github.io/blog/behind-the-scenes-creation-dascendance/</link><pubDate>Sat, 05 Jul 2025 15:00:00 +0200</pubDate><guid>https://jcploquin.github.io/blog/behind-the-scenes-creation-dascendance/</guid><description>Trois semaines après le lancement d'Ascendance, il est temps de lever le voile sur les coulisses de cette création. Comment transforme-t-on une idée artistique en œuvre interactive ? Retour sur un processus créatif qui mêle composition électroacoustique et développement logiciel.
+L&amp;rsquo;étincelle créative : quand la généalogie rencontre l&amp;rsquo;acousmatique L&amp;rsquo;idée d'Ascendance est née d&amp;rsquo;une observation simple : nos arbres généalogiques ressemblent à des partitions. Chaque branche évoque une ligne mélodique, chaque génération suggère une tessiture, chaque ancêtre porte en lui une histoire sonore unique.</description></item></channel></rss>

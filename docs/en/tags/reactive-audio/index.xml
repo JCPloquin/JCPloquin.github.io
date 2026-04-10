@@ -1,22 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>reactive audio on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</title>
-    <link>https://jcploquin.github.io/en/tags/reactive-audio/</link>
-    <description>Recent content in reactive audio on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>fr</language>
-    <lastBuildDate>Thu, 18 Sep 2025 12:09:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/en/tags/reactive-audio/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Fluctus Planetarium: Everything About the Imminent Stable Release</title>
-      <link>https://jcploquin.github.io/en/blog/fluctus-planetarium-version-stable-imminente/</link>
-      <pubDate>Thu, 18 Sep 2025 12:09:00 +0200</pubDate>
-      
-      <guid>https://jcploquin.github.io/en/blog/fluctus-planetarium-version-stable-imminente/</guid>
-      <description>🎵 Fluctus Planetarium: The Stable Version Is Coming! Final game icon
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>reactive audio on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</title><link>https://jcploquin.github.io/en/tags/reactive-audio/</link><description>Recent content in reactive audio on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</description><generator>Hugo -- gohugo.io</generator><language>fr</language><lastBuildDate>Thu, 18 Sep 2025 12:09:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/en/tags/reactive-audio/index.xml" rel="self" type="application/rss+xml"/><item><title>Fluctus Planetarium: Everything About the Imminent Stable Release</title><link>https://jcploquin.github.io/en/blog/fluctus-planetarium-version-stable-imminente/</link><pubDate>Thu, 18 Sep 2025 12:09:00 +0200</pubDate><guid>https://jcploquin.github.io/en/blog/fluctus-planetarium-version-stable-imminente/</guid><description>🎵 Fluctus Planetarium: The Stable Version Is Coming! Final game icon
 Current Project Status Fluctus Planetarium is entering its final development phase with a stable version scheduled for September 2025. We are therefore in the critical period where this new version should see the light very soon.
-Final Steps Before Release Technical Finalization  Event cards balancing: Completed last week Rules proofreading: In progress, version 1.14.18 Printed prototypes: Finalized, &amp;ldquo;blind play&amp;rdquo; tests were conducted in August  Testing Phase The game adaptation has entered the polishing phase, a crucial step that determines the final quality of the user experience.</description>
-    </item>
-    
-  </channel>
-</rss>
+Final Steps Before Release Technical Finalization Event cards balancing: Completed last week Rules proofreading: In progress, version 1.14.18 Printed prototypes: Finalized, &amp;ldquo;blind play&amp;rdquo; tests were conducted in August Testing Phase The game adaptation has entered the polishing phase, a crucial step that determines the final quality of the user experience.</description></item></channel></rss>

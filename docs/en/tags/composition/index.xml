@@ -1,42 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>composition on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</title>
-    <link>https://jcploquin.github.io/en/tags/composition/</link>
-    <description>Recent content in composition on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>fr</language>
-    <lastBuildDate>Sat, 05 Jul 2025 15:00:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/en/tags/composition/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Behind the Scenes: Creating Ascendance</title>
-      <link>https://jcploquin.github.io/en/blog/behind-the-scenes-creation-dascendance/</link>
-      <pubDate>Sat, 05 Jul 2025 15:00:00 +0200</pubDate>
-      
-      <guid>https://jcploquin.github.io/en/blog/behind-the-scenes-creation-dascendance/</guid>
-      <description>Three weeks after the launch of Ascendance, it&amp;rsquo;s time to lift the veil on the behind-the-scenes of this creation. How do you transform an artistic idea into an interactive work? A look back at a creative process that blends electroacoustic composition and software development.
-The Creative Spark: When Genealogy Meets Acousmatic Music The idea for Ascendance was born from a simple observation: our family trees resemble musical scores. Each branch evokes a melodic line, each generation suggests a tessitura, each ancestor carries within them a unique sonic story.</description>
-    </item>
-    
-    <item>
-      <title>What is Acousmatic Music?</title>
-      <link>https://jcploquin.github.io/en/blog/quest-ce-que-lacousmatique/</link>
-      <pubDate>Wed, 25 Jun 2025 10:00:00 +0200</pubDate>
-      
-      <guid>https://jcploquin.github.io/en/blog/quest-ce-que-lacousmatique/</guid>
-      <description>Acousmatic music remains one of the most mysterious and fascinating currents in contemporary sound creation. But what lies behind this enigmatic term?
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>composition on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</title><link>https://jcploquin.github.io/en/tags/composition/</link><description>Recent content in composition on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</description><generator>Hugo -- gohugo.io</generator><language>fr</language><lastBuildDate>Sat, 05 Jul 2025 15:00:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/en/tags/composition/index.xml" rel="self" type="application/rss+xml"/><item><title>Behind the Scenes: Creating Ascendance</title><link>https://jcploquin.github.io/en/blog/behind-the-scenes-creation-dascendance/</link><pubDate>Sat, 05 Jul 2025 15:00:00 +0200</pubDate><guid>https://jcploquin.github.io/en/blog/behind-the-scenes-creation-dascendance/</guid><description>Three weeks after the launch of Ascendance, it&amp;rsquo;s time to lift the veil on the behind-the-scenes of this creation. How do you transform an artistic idea into an interactive work? A look back at a creative process that blends electroacoustic composition and software development.
+The Creative Spark: When Genealogy Meets Acousmatic Music The idea for Ascendance was born from a simple observation: our family trees resemble musical scores. Each branch evokes a melodic line, each generation suggests a tessitura, each ancestor carries within them a unique sonic story.</description></item><item><title>What is Acousmatic Music?</title><link>https://jcploquin.github.io/en/blog/quest-ce-que-lacousmatique/</link><pubDate>Wed, 25 Jun 2025 10:00:00 +0200</pubDate><guid>https://jcploquin.github.io/en/blog/quest-ce-que-lacousmatique/</guid><description>Acousmatic music remains one of the most mysterious and fascinating currents in contemporary sound creation. But what lies behind this enigmatic term?
 The Art of Blind Listening The term &amp;ldquo;acousmatic&amp;rdquo; has its roots in ancient Greece. Pythagoras taught his disciples hidden behind a curtain, deliberately depriving them of any visual information to focus their attention solely on speech. This &amp;ldquo;blind&amp;rdquo; listening allowed for a deeper understanding of the message.
-Pierre Schaeffer, pioneer of musique concrète in the 1940s, revived this concept to define a revolutionary musical art: Acousmatic listening invites us to discover sounds for themselves, freed from their origin.</description>
-    </item>
-    
-    <item>
-      <title>My Journey Toward Musical Interactivity</title>
-      <link>https://jcploquin.github.io/en/blog/my-journey-toward-musical-interactivity/</link>
-      <pubDate>Fri, 13 Jun 2025 07:00:00 +0200</pubDate>
-      
-      <guid>https://jcploquin.github.io/en/blog/my-journey-toward-musical-interactivity/</guid>
-      <description>My path toward creating interactive musical works hasn&amp;rsquo;t been a straight line. Between guitar, electroacoustic music, and digital technology, it&amp;rsquo;s a journey made of determining encounters and sometimes unexpected discoveries that led me to explore these new artistic territories.
-The Determining Influence of Francis Faber Francis Faber, my former teacher, planted the first seeds of my fascination with interactive art through his installation &amp;ldquo;Totem&amp;rdquo;. This revolutionary work made me understand that music could transcend the traditional concert framework to become an immersive and participatory experience.</description>
-    </item>
-    
-  </channel>
-</rss>
+Pierre Schaeffer, pioneer of musique concrète in the 1940s, revived this concept to define a revolutionary musical art: Acousmatic listening invites us to discover sounds for themselves, freed from their origin.</description></item><item><title>My Journey Toward Musical Interactivity</title><link>https://jcploquin.github.io/en/blog/my-journey-toward-musical-interactivity/</link><pubDate>Fri, 13 Jun 2025 07:00:00 +0200</pubDate><guid>https://jcploquin.github.io/en/blog/my-journey-toward-musical-interactivity/</guid><description>My path toward creating interactive musical works hasn&amp;rsquo;t been a straight line. Between guitar, electroacoustic music, and digital technology, it&amp;rsquo;s a journey made of determining encounters and sometimes unexpected discoveries that led me to explore these new artistic territories.
+The Determining Influence of Francis Faber Francis Faber, my former teacher, planted the first seeds of my fascination with interactive art through his installation &amp;ldquo;Totem&amp;rdquo;. This revolutionary work made me understand that music could transcend the traditional concert framework to become an immersive and participatory experience.</description></item></channel></rss>

@@ -56,6 +56,24 @@
       details { display: block !important; }
       details summary { display: none; }
     }
+    .manquant {
+  background: #fff8e1;
+  border: 1px solid #ffb300;
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #7a5700;
+}
+.badge-manquant {
+  display: inline-block;
+  background: #ffb300;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-left: 6px;
+  font-size: 0.8em;
+}
   </style>
 </head>
 <body>
@@ -1366,26 +1384,49 @@
       listeDiv.appendChild(label);
     });
 
-    function filtrerRecettes() {
-      const coches = [...document.querySelectorAll('#liste-ingredients input:checked')]
-        .map(cb => cb.value);
-      document.querySelectorAll('.recette').forEach(recette => {
-        if (coches.length === 0) { recette.style.display = ''; return; }
-        const ings = [...recette.querySelectorAll('table.ingredients tr td:first-child')]
-          .map(td => td.textContent.trim().toLowerCase());
-        const ok = ings.every(c => coches.includes(c));
-        recette.style.display = ok ? '' : 'none';
-      });
-      document.querySelectorAll('h2').forEach(h2 => {
-        let next = h2.nextElementSibling;
-        let visible = false;
-        while (next && next.tagName !== 'H2') {
-          if (next.classList.contains('recette') && next.style.display !== 'none') visible = true;
-          next = next.nextElementSibling;
-        }
-        h2.style.display = visible ? '' : 'none';
-      });
+function filtrerRecettes() {
+  const coches = [...document.querySelectorAll('#liste-ingredients input:checked')]
+    .map(cb => cb.value);
+
+  document.querySelectorAll('.recette').forEach(recette => {
+    // Nettoyer les bandeaux précédents
+    recette.querySelectorAll('.alerte-manquant').forEach(el => el.remove());
+
+    if (coches.length === 0) { recette.style.display = ''; return; }
+
+    const ings = [...recette.querySelectorAll('table.ingredients tr td:first-child')]
+      .map(td => td.textContent.trim().toLowerCase());
+
+    const manquants = ings.filter(ing => !coches.includes(ing));
+
+    if (manquants.length === 0) {
+      // ✅ Tout dispo
+      recette.style.display = '';
+    } else if (manquants.length === 1) {
+      // ⚠️ Un seul manquant : on affiche avec alerte
+      recette.style.display = '';
+      const alerte = document.createElement('div');
+      alerte.className = 'manquant alerte-manquant';
+      alerte.innerHTML = '⚠️ Il vous manque 1 ingrédient : <strong>'
+        + manquants[0] + '</strong><span class="badge-manquant">À se procurer</span>';
+      recette.appendChild(alerte);
+    } else {
+      // ❌ 2+ manquants : masquée
+      recette.style.display = 'none';
     }
+  });
+
+  // Masquer les h2 sans recettes visibles
+  document.querySelectorAll('h2').forEach(h2 => {
+    let next = h2.nextElementSibling;
+    let visible = false;
+    while (next && next.tagName !== 'H2') {
+      if (next.classList.contains('recette') && next.style.display !== 'none') visible = true;
+      next = next.nextElementSibling;
+    }
+    h2.style.display = visible ? '' : 'none';
+  });
+}
 
     function resetFiltres() {
       document.querySelectorAll('#liste-ingredients input').forEach(cb => cb.checked = false);

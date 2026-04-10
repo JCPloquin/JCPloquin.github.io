@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>video games on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</title>
-    <link>https://jcploquin.github.io/en/tags/video-games/</link>
-    <description>Recent content in video games on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>fr</language>
-    <lastBuildDate>Wed, 02 Jul 2025 11:00:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/en/tags/video-games/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Acousmatic Music in Video Games</title>
-      <link>https://jcploquin.github.io/en/blog/lacousmatique-dans-les-jeux-video/</link>
-      <pubDate>Wed, 02 Jul 2025 11:00:00 +0200</pubDate>
-      
-      <guid>https://jcploquin.github.io/en/blog/lacousmatique-dans-les-jeux-video/</guid>
-      <description>Long confined to concert halls and artistic installations, acousmatic music today finds an unexpected field of expression: video games. This encounter between electroacoustic tradition and digital interactivity opens fascinating perspectives for contemporary sound art.
-When the Invisible Becomes Playable Acousmatic music, the art of pure listening freed from visual sources, shares a fundamental characteristic with video games: the creation of imaginary universes through sound. In my interactive works, this approach allows listeners to discover the richness of electroacoustic composition through an immersive artistic experience.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>video games on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</title><link>https://jcploquin.github.io/en/tags/video-games/</link><description>Recent content in video games on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</description><generator>Hugo -- gohugo.io</generator><language>fr</language><lastBuildDate>Wed, 02 Jul 2025 11:00:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/en/tags/video-games/index.xml" rel="self" type="application/rss+xml"/><item><title>Acousmatic Music in Video Games</title><link>https://jcploquin.github.io/en/blog/lacousmatique-dans-les-jeux-video/</link><pubDate>Wed, 02 Jul 2025 11:00:00 +0200</pubDate><guid>https://jcploquin.github.io/en/blog/lacousmatique-dans-les-jeux-video/</guid><description>Long confined to concert halls and artistic installations, acousmatic music today finds an unexpected field of expression: video games. This encounter between electroacoustic tradition and digital interactivity opens fascinating perspectives for contemporary sound art.
+When the Invisible Becomes Playable Acousmatic music, the art of pure listening freed from visual sources, shares a fundamental characteristic with video games: the creation of imaginary universes through sound. In my interactive works, this approach allows listeners to discover the richness of electroacoustic composition through an immersive artistic experience.</description></item></channel></rss>

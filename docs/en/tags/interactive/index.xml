@@ -1,22 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>interactive on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</title>
-    <link>https://jcploquin.github.io/en/tags/interactive/</link>
-    <description>Recent content in interactive on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>fr</language>
-    <lastBuildDate>Sat, 28 Jun 2025 14:00:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/en/tags/interactive/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How Music Adapts to Your Genealogy in Ascendance</title>
-      <link>https://jcploquin.github.io/en/blog/comment-la-musique-sadapte-a-votre-genealogie-dans-ascendance/</link>
-      <pubDate>Sat, 28 Jun 2025 14:00:00 +0200</pubDate>
-      
-      <guid>https://jcploquin.github.io/en/blog/comment-la-musique-sadapte-a-votre-genealogie-dans-ascendance/</guid>
-      <description>Since the launch of Ascendance a few weeks ago, one question keeps coming up: how can music really adapt to a genealogy? Let&amp;rsquo;s dive into the behind-the-scenes of this interactive musical innovation.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>interactive on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</title><link>https://jcploquin.github.io/en/tags/interactive/</link><description>Recent content in interactive on Jean-Christophe Ploquin &amp; Arthur Gyl: two faces of an artist</description><generator>Hugo -- gohugo.io</generator><language>fr</language><lastBuildDate>Sat, 28 Jun 2025 14:00:00 +0200</lastBuildDate><atom:link href="https://jcploquin.github.io/en/tags/interactive/index.xml" rel="self" type="application/rss+xml"/><item><title>How Music Adapts to Your Genealogy in Ascendance</title><link>https://jcploquin.github.io/en/blog/comment-la-musique-sadapte-a-votre-genealogie-dans-ascendance/</link><pubDate>Sat, 28 Jun 2025 14:00:00 +0200</pubDate><guid>https://jcploquin.github.io/en/blog/comment-la-musique-sadapte-a-votre-genealogie-dans-ascendance/</guid><description>Since the launch of Ascendance a few weeks ago, one question keeps coming up: how can music really adapt to a genealogy? Let&amp;rsquo;s dive into the behind-the-scenes of this interactive musical innovation.
 What is a GEDCOM file? Before exploring the musical magic of Ascendance, let&amp;rsquo;s first understand what makes this experience possible: the GEDCOM file.
-GEDCOM (Genealogical Data Communication) is the standard format for genealogy files. It&amp;rsquo;s a simple text file with the .</description>
-    </item>
-    
-  </channel>
-</rss>
+GEDCOM (Genealogical Data Communication) is the standard format for genealogy files. It&amp;rsquo;s a simple text file with the .</description></item></channel></rss>
