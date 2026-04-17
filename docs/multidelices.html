@@ -90,9 +90,9 @@
 <div class="recalc">
 <label for="nb_pots">Nombre de pots voulu :</label><input type="number" id="nb_pots" value="6" min="1" max="12"><span style="margin-left:10px;color:#888;">Adaptez les quantités selon le nombre de pots souhaité.</span>
 </div>
-<button onclick="document.getElementById('dialog-filtres').showModal()" style="background:#b55a00; color:#fff; border:none; border-radius:6px; padding:8px 18px; font-size:1em; cursor:pointer; margin-bottom:20px;">
-    🔍 Filtrer par ingrédients
-  </button><nav class="sommaire" id="sommaire"><strong style="color:#b55a00; font-size:1.1em;">Sommaire</strong><ul>
+<button onclick="document.getElementById('dialog-filtres').showModal()" style="background:#b55a00; color:#fff; border:none; border-radius:6px; padding:8px 18px; font-size:1em; cursor:pointer; margin-bottom:20px; transition:background 0.2s, box-shadow 0.2s;" onmouseover="this.style.background='#8a3d00'; this.style.boxShadow='0 5px 14px rgba(181,90,0,0.35)'" onmouseout="this.style.background='#b55a00'; this.style.boxShadow='none'">
+  🔍 Filtrer par ingrédients
+</button><nav class="sommaire" id="sommaire"><strong style="color:#b55a00; font-size:1.1em;">Sommaire</strong><ul>
 <li>
 <strong><a href="#prog1">Programme P1</a></strong><ul><li><a href="#recette-1">Yaourt lait de vache P1</a></li></ul>
 </li>
@@ -1535,9 +1535,9 @@
 </div></div>
 <div style="position:fixed; bottom:0; left:0; right:0; background:#b55a00; color:#fff; text-align:center; padding:10px; z-index:9999;">
   Vous avez une recette Multi Délices ? 
-  <button onclick="document.getElementById('popup-recette').style.display='flex'" style="background:#fff; color:#b55a00; border:none; border-radius:4px; padding:4px 12px; font-weight:bold; cursor:pointer; margin-left:10px;">
-    La soumettre ici
-  </button>
+  <button onclick="document.getElementById('popup-recette').style.display='flex'" style="background:#fff; color:#b55a00; border:none; border-radius:4px; padding:4px 12px; font-weight:bold; cursor:pointer; margin-left:10px; transition:background 0.2s, color 0.2s;" onmouseover="this.style.background='#ffe0b2'" onmouseout="this.style.background='#fff'">
+  La soumettre ici
+</button>
 </div>
 <script>
     // --- RECALCUL POTS ---
