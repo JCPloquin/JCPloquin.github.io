@@ -1,0 +1,320 @@
+<html xmlns:tc="http://periapsis.org/tellico/">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Recettes Air Fryer</title>
+<style>
+          body { font-family: Georgia, serif; background: #fdf6ec; color: #333; max-width: 960px; margin: auto; padding: 20px; }
+          h1 { color: #5a7a00; border-bottom: 2px solid #5a7a00; padding-bottom: 8px; }
+          h2 { color: #5a7a00; margin-top: 40px; border-left: 5px solid #5a7a00; padding-left: 10px; }
+          .recette { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin-bottom: 20px; }
+          .recette h3 { margin: 0 0 8px 0; color: #333; }
+          .meta { font-size: 0.85em; color: #888; margin-bottom: 10px; }
+          .badge { display:inline-block; background:#5a7a00; color:#fff; border-radius:4px; padding:2px 8px; margin-right:6px; font-size:0.85em; }
+          .badge-temp { background:#6f8f2f; }
+          .badge-turn { background:#8aa122; }
+          table.ingredients { border-collapse: collapse; width: 100%; margin-top: 10px; }
+          table.ingredients th { background: #5a7a00; color: #fff; padding: 6px 10px; text-align: left; }
+          table.ingredients td { padding: 5px 10px; border-bottom: 1px solid #eee; }
+          table.ingredients tr:nth-child(even) td { background: #fdf0e0; }
+          .quantite { font-weight: bold; }
+          .compat { background: #e8f4e8; border: 1px solid #6aaa6a; border-radius: 6px; padding: 8px 14px; margin-top: 10px; font-size: 0.9em; color: #2a6a2a; }
+          .recalc { margin: 20px 0; background:#eef3dd; border:1px solid #a9bc6a; border-radius:8px; padding:14px; }
+          .recalc label { font-weight:bold; margin-right:10px; }
+          input[type=number] { width:60px; font-size:1.1em; padding:4px; }
+          nav.sommaire { background:#eef3dd; border:1px solid #a9bc6a; border-radius:8px; padding:14px 20px; margin-bottom:30px; }
+          nav.sommaire > ul { column-width:220px; column-gap:30px; column-rule:1px solid #a9bc6a; margin:8px 0 0 0; padding-left:20px; }
+          nav.sommaire > ul > li { break-inside:avoid; margin-top:6px; }
+          nav.sommaire li { margin-top:4px; }
+          nav.sommaire a { color:#5a7a00; text-decoration:none; }
+          nav.sommaire a:hover { text-decoration:underline; }
+          nav.sommaire ul ul { margin:4px 0 0 0; padding-left:16px; }
+          nav.sommaire ul ul a { color:#555; }
+          .btn-recette {
+            display: inline-block;
+            background: #5a7a00;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 28px;
+            font-size: 1em;
+            font-family: Georgia, serif;
+            cursor: pointer;
+            box-shadow: 0 3px 8px rgba(181,90,0,0.25);
+            letter-spacing: 0.03em;
+            transition: background 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+          }
+          .btn-recette:hover { background: #445c00; box-shadow: 0 5px 14px rgba(181,90,0,0.35); }
+          .btn-recette-wrap { text-align: center; margin: 24px 0 10px 0; }
+          #popup-recette { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.65); justify-content:center; align-items:center; z-index:9999; }
+          #popup-recette-inner { background:#fdf6ec; border:2px solid #5a7a00; padding:12px; border-radius:10px; width:92%; max-width:700px; position:relative; }
+          #popup-recette-close { position:absolute; top:6px; right:12px; font-size:1.3em; background:none; border:none; color:#5a7a00; cursor:pointer; font-weight:bold; }
+          @media print {
+            body > *:not(.impression-active) { display: none !important; }
+            .impression-active { display: block !important; }
+            button { display: none !important; }
+            details { display: block !important; }
+            details summary { display: none; }
+          }
+          .manquant {
+            background: #f3f7e7;
+            border: 1px solid #8aa122;
+            border-radius: 6px;
+            padding: 8px 14px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #7a5700;
+          }
+          .badge-manquant {
+            display: inline-block;
+            background: #8aa122;
+            color: #fff;
+            border-radius: 4px;
+            padding: 2px 8px;
+            margin-left: 6px;
+            font-size: 0.8em;
+          }
+        </style>
+</head>
+<body>
+<div style="background:#5a7a00; color:#fff; padding:10px 20px; border-radius:8px; margin-bottom:20px; font-size:1.4em;">
+<div style="font-size:0.75em; font-weight:normal; opacity:0.85; margin-bottom:4px;">Visitez mon site complet :</div>
+<a href="http://jcploquin.free.fr/index.html" style="color:#dfe8b8; font-weight:bold;">
+            Arthur Gyl &amp; Jean-Christophe Ploquin, deux faces pour un artiste
+          </a>
+</div>
+<h1 style="text-align:center;">Recettes Air Fryer</h1>
+<div class="btn-recette-wrap"><button class="btn-recette" onclick="document.getElementById('popup-recette').style.display='flex'">
+            🍴 Soumettre une recette
+          </button></div>
+<div class="recalc">
+<label for="nb_personnes">Nombre de personnes voulu :</label><input type="number" id="nb_personnes" value="4" min="1" max="12"><span style="margin-left:10px;color:#888;">Adaptez les quantités selon le nombre de personnes.</span>
+</div>
+<button onclick="document.getElementById('dialog-filtres').showModal()" style="background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:8px 18px; font-size:1em; cursor:pointer; margin-bottom:20px; transition:background 0.2s, box-shadow 0.2s;" onmouseover="this.style.background='#445c00'; this.style.boxShadow='0 5px 14px rgba(181,90,0,0.35)'" onmouseout="this.style.background='#5a7a00'; this.style.boxShadow='none'">
+          🔍 Filtrer par ingrédients
+        </button><nav class="sommaire" id="sommaire"><strong style="color:#5a7a00; font-size:1.1em;">Sommaire</strong><ul>
+<li>
+<strong><a href="#catL%C3%A9gumes">Légumes</a></strong><ul><li><a href="#recette-2">Frites de patate douce</a></li></ul>
+</li>
+<li>
+<strong><a href="#catVolaille">Volaille</a></strong><ul><li><a href="#recette-1">Cuisses de poulet croustillantes</a></li></ul>
+</li>
+</ul></nav><h2 id="catLégumes">Légumes</h2>
+<div class="recette">
+<div style="display:flex; justify-content:space-between; align-items:baseline;">
+<h3 id="recette-2" style="margin:0;">Frites de patate douce</h3>
+<a href="#sommaire" style="font-size:0.8em; color:#5a7a00; text-decoration:none; white-space:nowrap; margin-left:10px;">↑ Sommaire</a>
+</div>
+<div class="meta">
+<span class="badge">Légumes</span><span class="badge badge-temp">200 °C</span><span class="badge">18 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
+                ↗ Quantités pour <span class="nb-personnes-affiche">2</span> personnes
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+                🖨 Imprimer
+              </button>
+</div>
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
+                Ingrédients (cliquer pour développer)
+              </summary><table class="ingredients">
+<tr>
+<th>Ingrédient</th>
+<th>Quantité</th>
+<th>Unité</th>
+</tr>
+<tr>
+<td></td>
+<td class="quantite" data-base="Patates douces" data-ref="2">Patates douces</td>
+<td>2</td>
+</tr>
+<tr>
+<td>c.s.</td>
+<td class="quantite" data-base="Huile d'olive" data-ref="2">Huile d'olive</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td class="quantite" data-base="Sel" data-ref="2">Sel</td>
+<td></td>
+</tr>
+<tr>
+<td>c.c.</td>
+<td class="quantite" data-base="Cumin" data-ref="2">Cumin</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>c.c.</td>
+<td class="quantite" data-base="Piment doux" data-ref="2">Piment doux</td>
+<td>0.5</td>
+</tr>
+</table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
+<strong>Notes :</strong>Ne pas surcharger le panier : en plusieurs fournées si nécessaire. La régularité de la coupe est clé pour une cuisson homogène.</div>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
+                  Préparation (cliquer pour développer)
+                </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Couper en bâtonnets réguliers de 1 cm.<br/>Enrober d'huile et d'épices dans un saladier.<br/>Cuire 18 min en secouant le panier à mi-cuisson.</p></details>
+</div>
+<h2 id="catVolaille">Volaille</h2>
+<div class="recette">
+<div style="display:flex; justify-content:space-between; align-items:baseline;">
+<h3 id="recette-1" style="margin:0;">Cuisses de poulet croustillantes</h3>
+<a href="#sommaire" style="font-size:0.8em; color:#5a7a00; text-decoration:none; white-space:nowrap; margin-left:10px;">↑ Sommaire</a>
+</div>
+<div class="meta">
+<span class="badge">Volaille</span><span class="badge badge-temp">190 °C</span><span class="badge">25 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
+                ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+                🖨 Imprimer
+              </button>
+</div>
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
+                Ingrédients (cliquer pour développer)
+              </summary><table class="ingredients">
+<tr>
+<th>Ingrédient</th>
+<th>Quantité</th>
+<th>Unité</th>
+</tr>
+<tr>
+<td></td>
+<td class="quantite" data-base="Cuisses de poulet" data-ref="4">Cuisses de poulet</td>
+<td>4</td>
+</tr>
+<tr>
+<td>c.s.</td>
+<td class="quantite" data-base="Huile d'olive" data-ref="4">Huile d'olive</td>
+<td>2</td>
+</tr>
+<tr>
+<td>c.c.</td>
+<td class="quantite" data-base="Paprika fumé" data-ref="4">Paprika fumé</td>
+<td>1</td>
+</tr>
+<tr>
+<td>c.c.</td>
+<td class="quantite" data-base="Ail en poudre" data-ref="4">Ail en poudre</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td class="quantite" data-base="Sel, poivre" data-ref="4">Sel, poivre</td>
+<td></td>
+</tr>
+</table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
+<strong>Notes :</strong>La peau est parfaitement croustillante sans excès de matière grasse. Mariner 30 min au réfrigérateur pour plus de saveur.</div>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
+                  Préparation (cliquer pour développer)
+                </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Badigeonner les cuisses d'huile et d'épices.<br/>Placer dans le panier sans superposer.<br/>Cuire 25 min en retournant à mi-cuisson.</p></details>
+</div>
+<dialog id="dialog-filtres" style="border:2px solid #5a7a00; border-radius:10px; padding:24px; max-width:600px; width:90%; font-family:Georgia,serif;"><h2 style="color:#5a7a00; margin-top:0;">🔍 Ingrédients disponibles</h2>
+<p style="font-size:0.85em; color:#888; margin:0 0 12px 0;">
+            Cochez les ingrédients que vous avez : les recettes réalisables avec ces ingrédients s'affichent.
+          </p>
+<div id="liste-ingredients" style="column-width:180px; column-gap:20px; max-height:50vh; overflow-y:auto; border:1px solid #eee; padding:10px; border-radius:6px;"></div>
+<div style="margin-top:14px; display:flex; gap:10px;">
+<button onclick="resetFiltres()" style="background:#888; color:#fff; border:none; border-radius:4px; padding:6px 16px; cursor:pointer;">
+              Réinitialiser
+            </button><button onclick="document.getElementById('dialog-filtres').close()" style="background:#5a7a00; color:#fff; border:none; border-radius:4px; padding:6px 16px; cursor:pointer;">
+              Fermer
+            </button>
+</div></dialog><div id="popup-recette" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.65); justify-content:center; align-items:center; z-index:9999;"><div id="popup-recette-inner" style="background:#fdf6ec; border:2px solid #5a7a00; padding:12px; border-radius:10px; width:92%; max-width:700px; position:relative;">
+<button id="popup-recette-close" onclick="document.getElementById('popup-recette').style.display='none'" style="position:absolute; top:6px; right:12px; font-size:1.3em; background:none; border:none; color:#5a7a00; cursor:pointer; font-weight:bold;">✕</button><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSehjsOEE-IwuWlufcBbmjOmhND8kap07W8dHgPZmTc3nHvXGQ/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+</div></div>
+<div style="position:fixed; bottom:0; left:0; right:0; background:#5a7a00; color:#fff; text-align:center; padding:10px; z-index:9999;">
+          Vous avez une recette Air Fryer ?
+          <button onclick="document.getElementById('popup-recette').style.display='flex'" style="background:#fff; color:#5a7a00; border:none; border-radius:4px; padding:4px 12px; font-weight:bold; cursor:pointer; margin-left:10px; transition:background 0.2s, color 0.2s;" onmouseover="this.style.background='#dfe8b8'" onmouseout="this.style.background='#fff'">
+            🍴 La soumettre ici
+          </button>
+</div>
+<script>
+          // --- RECALCUL PERSONNES ---
+          const input = document.getElementById('nb_personnes');
+          function recalcul() {
+            const nb = parseFloat(input.value) || 4;
+            document.querySelectorAll('.quantite').forEach(el => {
+              const base = parseFloat(el.dataset.base);
+              const ref = parseFloat(el.dataset.ref) || 4;
+              if (!isNaN(base) && base > 0) {
+                const result = base / ref * nb;
+                el.textContent = Number.isInteger(result) ? result : Math.round(result);
+              }
+            });
+            document.querySelectorAll('.nb-personnes-affiche').forEach(el => el.textContent = Math.round(nb));
+          }
+          input.addEventListener('input', recalcul);
+          recalcul();
+
+          // --- FILTRE INGRÉDIENTS ---
+          const ingredientsSet = new Set();
+          document.querySelectorAll('table.ingredients tr td:first-child').forEach(td => {
+            const val = td.textContent.trim().toLowerCase();
+            if (val) ingredientsSet.add(val);
+          });
+
+          const listeDiv = document.getElementById('liste-ingredients');
+          [...ingredientsSet].sort().forEach(ing => {
+            const label = document.createElement('label');
+            label.style.cssText = 'display:block; margin-bottom:4px; font-size:0.9em;';
+            const cb = document.createElement('input');
+            cb.type = 'checkbox';
+            cb.value = ing;
+            cb.addEventListener('change', filtrerRecettes);
+            label.appendChild(cb);
+            label.appendChild(document.createTextNode(' ' + ing));
+            listeDiv.appendChild(label);
+          });
+
+          function filtrerRecettes() {
+            const coches = [...document.querySelectorAll('#liste-ingredients input:checked')]
+              .map(cb => cb.value);
+
+            document.querySelectorAll('.recette').forEach(recette => {
+              recette.querySelectorAll('.alerte-manquant').forEach(el => el.remove());
+
+              if (coches.length === 0) { recette.style.display = ''; return; }
+
+              const ings = [...recette.querySelectorAll('table.ingredients tr td:first-child')]
+                .map(td => td.textContent.trim().toLowerCase());
+
+              const manquants = ings.filter(ing => !coches.includes(ing));
+
+              if (manquants.length === 0) {
+                recette.style.display = '';
+              } else if (manquants.length === 1) {
+                recette.style.display = '';
+                const alerte = document.createElement('div');
+                alerte.className = 'manquant alerte-manquant';
+                alerte.innerHTML = '⚠️ Il vous manque 1 ingrédient : <strong>'
+                  + manquants[0] + '</strong><span class="badge-manquant">À se procurer</span>';
+                recette.appendChild(alerte);
+              } else {
+                recette.style.display = 'none';
+              }
+            });
+
+            document.querySelectorAll('h2').forEach(h2 => {
+              let next = h2.nextElementSibling;
+              let visible = false;
+              while (next && next.tagName !== 'H2') {
+                if (next.classList.contains('recette') && next.style.display !== 'none') visible = true;
+                next = next.nextElementSibling;
+              }
+              h2.style.display = visible ? '' : 'none';
+            });
+          }
+
+          function resetFiltres() {
+            document.querySelectorAll('#liste-ingredients input').forEach(cb => cb.checked = false);
+            filtrerRecettes();
+          }
+
+          // --- IMPRIMER UNE RECETTE ---
+          function imprimerRecette(btn) {
+            const recette = btn.closest('.recette');
+            recette.querySelectorAll('details').forEach(d => d.open = true);
+            recette.classList.add('impression-active');
+            window.print();
+            recette.classList.remove('impression-active');
+            recette.querySelectorAll('details').forEach(d => d.open = false);
+          }
+        </script>
+</body>
+</html>
