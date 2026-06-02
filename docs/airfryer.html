@@ -40,12 +40,12 @@
             font-size: 1em;
             font-family: Georgia, serif;
             cursor: pointer;
-            box-shadow: 0 3px 8px rgba(181,90,0,0.25);
+            box-shadow: 0 3px 8px rgba(90,122,0,0.25);
             letter-spacing: 0.03em;
             transition: background 0.2s, box-shadow 0.2s;
             text-decoration: none;
           }
-          .btn-recette:hover { background: #445c00; box-shadow: 0 5px 14px rgba(181,90,0,0.35); }
+          .btn-recette:hover { background: #445c00; box-shadow: 0 5px 14px rgba(90,122,0,0.35); }
           .btn-recette-wrap { text-align: center; margin: 24px 0 10px 0; }
           #popup-recette { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.65); justify-content:center; align-items:center; z-index:9999; }
           #popup-recette-inner { background:#fdf6ec; border:2px solid #5a7a00; padding:12px; border-radius:10px; width:92%; max-width:700px; position:relative; }
@@ -89,9 +89,9 @@
             🍴 Soumettre une recette
           </button></div>
 <div class="recalc">
-<label for="nb_personnes">Nombre de personnes voulu :</label><input type="number" id="nb_personnes" value="4" min="1" max="12"><span style="margin-left:10px;color:#888;">Adaptez les quantités selon le nombre de personnes.</span>
+<label for="nb_personnes">Nombre de personnes voulu :</label><input type="number" id="nb_personnes" value="4" min="1" max="12" step="0.1"><span style="margin-left:10px;color:#888;">Adaptez les quantités selon le nombre de personnes.</span>
 </div>
-<button onclick="document.getElementById('dialog-filtres').showModal()" style="background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:8px 18px; font-size:1em; cursor:pointer; margin-bottom:20px; transition:background 0.2s, box-shadow 0.2s;" onmouseover="this.style.background='#445c00'; this.style.boxShadow='0 5px 14px rgba(181,90,0,0.35)'" onmouseout="this.style.background='#5a7a00'; this.style.boxShadow='none'">
+<button onclick="document.getElementById('dialog-filtres').showModal()" style="background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:8px 18px; font-size:1em; cursor:pointer; margin-bottom:20px; transition:background 0.2s, box-shadow 0.2s;" onmouseover="this.style.background='#445c00'; this.style.boxShadow='0 5px 14px rgba(90,122,0,0.35)'" onmouseout="this.style.background='#5a7a00'; this.style.boxShadow='none'">
           🔍 Filtrer par ingrédients
         </button><nav class="sommaire" id="sommaire"><strong style="color:#5a7a00; font-size:1.1em;">Sommaire</strong><ul>
 <li>
@@ -151,7 +151,7 @@
 <div class="meta">
 <span class="badge">Desserts</span><span class="badge badge-temp">175 °C</span><span class="badge">4 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -167,37 +167,37 @@
 </tr>
 <tr>
 <td>Lait</td>
-<td class="quantite" data-base="Lait" data-ref="4">240</td>
+<td class="quantite" data-base="240" data-ref="4">240</td>
 <td>ml</td>
 </tr>
 <tr>
 <td>Levure</td>
-<td class="quantite" data-base="Levure" data-ref="4">2.5</td>
+<td class="quantite" data-base="2.5" data-ref="4">2.5</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Sucre</td>
-<td class="quantite" data-base="Sucre" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Oeuf</td>
-<td class="quantite" data-base="Oeuf" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td></td>
 </tr>
 <tr>
 <td>Beurre frais</td>
-<td class="quantite" data-base="Beurre frais" data-ref="4">55</td>
+<td class="quantite" data-base="55" data-ref="4">55</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Farine</td>
-<td class="quantite" data-base="Farine" data-ref="4">360</td>
+<td class="quantite" data-base="360" data-ref="4">360</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Huile en spray</td>
-<td class="quantite" data-base="Huile en spray" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -212,7 +212,7 @@
 <div class="meta">
 <span class="badge">Desserts</span><span class="badge badge-temp">165 °C</span><span class="badge">13 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -228,37 +228,37 @@
 </tr>
 <tr>
 <td>Crème fouettée</td>
-<td class="quantite" data-base="Crème fouettée" data-ref="4">120</td>
+<td class="quantite" data-base="120" data-ref="4">120</td>
 <td>ml</td>
 </tr>
 <tr>
 <td>Cerises douces</td>
-<td class="quantite" data-base="Cerises douces" data-ref="4">150</td>
+<td class="quantite" data-base="150" data-ref="4">150</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Sucre</td>
-<td class="quantite" data-base="Sucre" data-ref="4">50</td>
+<td class="quantite" data-base="50" data-ref="4">50</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Pépites de chocolat mi-amer</td>
-<td class="quantite" data-base="Pépites de chocolat mi-amer" data-ref="4">80</td>
+<td class="quantite" data-base="80" data-ref="4">80</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Jaune d'oeuf</td>
-<td class="quantite" data-base="Jaune d'oeuf" data-ref="4">4</td>
+<td class="quantite" data-base="4" data-ref="4">4</td>
 <td></td>
 </tr>
 <tr>
 <td>Cannelle</td>
-<td class="quantite" data-base="Cannelle" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Beignets</td>
-<td class="quantite" data-base="Beignets" data-ref="4">6</td>
+<td class="quantite" data-base="6" data-ref="4">6</td>
 <td></td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -273,7 +273,7 @@
 <div class="meta">
 <span class="badge">Desserts</span><span class="badge badge-temp">150 °C</span><span class="badge">30 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -289,36 +289,36 @@
 </tr>
 <tr>
 <td>Beurre salé</td>
-<td class="quantite" data-base="Beurre salé" data-ref="4">6</td>
+<td class="quantite" data-base="6" data-ref="4">6</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Crackers Graham</td>
-<td class="quantite" data-base="Crackers Graham" data-ref="4">138</td>
+<td class="quantite" data-base="138" data-ref="4">138</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Fromage frais</td>
-<td class="quantite" data-base="Fromage frais" data-ref="4">680</td>
+<td class="quantite" data-base="680" data-ref="4">680</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Oeuf</td>
-<td class="quantite" data-base="Oeuf" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td></td>
 </tr>
 <tr>
 <td>Lait concentré sucré</td>
-<td class="quantite" data-base="Lait concentré sucré" data-ref="4">400</td>
+<td class="quantite" data-base="400" data-ref="4">400</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Extrait de vanille</td>
-<td class="quantite" data-base="Extrait de vanille" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
-<strong>Notes :</strong>On peut recouvrir de garniture pour gâteau aux cerises.</div>
+<strong>Notes :</strong> On peut recouvrir de garniture pour gâteau aux cerises.</div>
 <details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
                   Préparation (cliquer pour développer)
                 </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Beurrer le moule ou l’insert Air Fryer.<br/>Mélanger crackers et beurre fondu, tasser au fond du moule.<br/>Battre le fromage frais jusqu’à lisse.<br/>Ajouter œufs, lait concentré et vanille, mixer jusqu’à homogène.<br/>Verser sur la croûte.<br/>Cuire 25–35 min à 150°C, jusqu’à légère dorure et centre encore tremblant.<br/>Laisser 1 h à température ambiante, puis 6–8 h au froid.<br/>Démouler, couper au couteau chaud, garnir de cerises si souhaité.<br/><br/></p></details>
@@ -331,7 +331,7 @@
 <div class="meta">
 <span class="badge">Desserts</span><span class="badge badge-temp">160 °C</span><span class="badge">17 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -347,27 +347,27 @@
 </tr>
 <tr>
 <td>Pâte feuilletée</td>
-<td class="quantite" data-base="Pâte feuilletée" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td></td>
 </tr>
 <tr>
 <td>Garniture pour tarte aux cerises</td>
-<td class="quantite" data-base="Garniture pour tarte aux cerises" data-ref="4">600</td>
+<td class="quantite" data-base="600" data-ref="4">600</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Jaune d'oeuf</td>
-<td class="quantite" data-base="Jaune d'oeuf" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td></td>
 </tr>
 <tr>
 <td>Sucre</td>
-<td class="quantite" data-base="Sucre" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 <tr>
 <td>Lait</td>
-<td class="quantite" data-base="Lait" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.s.</td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -382,7 +382,7 @@
 <div class="meta">
 <span class="badge">Desserts</span><span class="badge badge-temp">175 °C</span><span class="badge">20 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -398,37 +398,37 @@
 </tr>
 <tr>
 <td>Pêche</td>
-<td class="quantite" data-base="Pêche" data-ref="4">250</td>
+<td class="quantite" data-base="250" data-ref="4">250</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Sucre</td>
-<td class="quantite" data-base="Sucre" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Sucre blanc</td>
-<td class="quantite" data-base="Sucre blanc" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Sucre brun</td>
-<td class="quantite" data-base="Sucre brun" data-ref="4">100</td>
+<td class="quantite" data-base="100" data-ref="4">100</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Flocons d'avoine</td>
-<td class="quantite" data-base="Flocons d'avoine" data-ref="4">40</td>
+<td class="quantite" data-base="40" data-ref="4">40</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Cannelle</td>
-<td class="quantite" data-base="Cannelle" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Noix de pécan</td>
-<td class="quantite" data-base="Noix de pécan" data-ref="4">3</td>
+<td class="quantite" data-base="3" data-ref="4">3</td>
 <td>c.s.</td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -444,7 +444,7 @@
 <div class="meta">
 <span class="badge">Féculents</span><span class="badge badge-temp">180 °C</span><span class="badge">10 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -460,46 +460,46 @@
 </tr>
 <tr>
 <td>Macaronis cuits</td>
-<td class="quantite" data-base="Macaronis cuits" data-ref="4">250</td>
+<td class="quantite" data-base="250" data-ref="4">250</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Cheddar</td>
-<td class="quantite" data-base="Cheddar" data-ref="4">150</td>
+<td class="quantite" data-base="150" data-ref="4">150</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Chapelure</td>
-<td class="quantite" data-base="Chapelure" data-ref="4">4</td>
+<td class="quantite" data-base="4" data-ref="4">4</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Farine</td>
-<td class="quantite" data-base="Farine" data-ref="4">90</td>
+<td class="quantite" data-base="90" data-ref="4">90</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Oeuf</td>
-<td class="quantite" data-base="Oeuf" data-ref="4">3</td>
+<td class="quantite" data-base="3" data-ref="4">3</td>
 <td></td>
 </tr>
 <tr>
 <td>Lait</td>
-<td class="quantite" data-base="Lait" data-ref="4">480</td>
+<td class="quantite" data-base="480" data-ref="4">480</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Sel</td>
-<td class="quantite" data-base="Sel" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 <tr>
 <td>Ail</td>
-<td class="quantite" data-base="Ail" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
-<strong>Notes :</strong>On peut remplacer l'ail par du paprika.</div>
+<strong>Notes :</strong> On peut remplacer l'ail par du paprika.</div>
 <details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
                   Préparation (cliquer pour développer)
                 </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger les macaronis cuits avec le cheddar râpé, saler et assaisonner (ail en poudre ou paprika).<br/>Mettre la chapelure dans un bol, le mélange œufs + lait dans une assiette creuse, et la farine dans un autre récipient.<br/>Former des boulettes de macaronis au fromage (petite cuillère à glace).<br/>Rouler d’abord dans la farine, puis dans le mélange œufs‑lait, puis dans la chapelure en appuyant bien.<br/>Disposer dans le panier Air Fryer.<br/>Cuire 10 min à 180°C, jusqu’à légère coloration dorée.<br/></p></details>
@@ -512,7 +512,7 @@
 <div class="meta">
 <span class="badge">Féculents</span><span class="badge badge-temp">200 °C</span><span class="badge">8 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -528,27 +528,27 @@
 </tr>
 <tr>
 <td>Croquettes de pommes de terre surgelées</td>
-<td class="quantite" data-base="Croquettes de pommes de terre surgelées" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>grand sac</td>
 </tr>
 <tr>
 <td>Bacon</td>
-<td class="quantite" data-base="Bacon" data-ref="4">450</td>
+<td class="quantite" data-base="450" data-ref="4">450</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Cheddar</td>
-<td class="quantite" data-base="Cheddar" data-ref="4">100</td>
+<td class="quantite" data-base="100" data-ref="4">100</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Oignon</td>
-<td class="quantite" data-base="Oignon" data-ref="4">4</td>
+<td class="quantite" data-base="4" data-ref="4">4</td>
 <td>pièces</td>
 </tr>
 <tr>
 <td>Crème aigre</td>
-<td class="quantite" data-base="Crème aigre" data-ref="4">3</td>
+<td class="quantite" data-base="3" data-ref="4">3</td>
 <td>c.s.</td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -564,7 +564,7 @@
 <div class="meta">
 <span class="badge">Légumes</span><span class="badge badge-temp">200 °C</span><span class="badge">18 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">2</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -580,31 +580,31 @@
 </tr>
 <tr>
 <td>Patates douces</td>
-<td class="quantite" data-base="Patates douces" data-ref="2">2</td>
+<td class="quantite" data-base="2" data-ref="2">2</td>
 <td></td>
 </tr>
 <tr>
 <td>Huile d'olive</td>
-<td class="quantite" data-base="Huile d'olive" data-ref="2">1</td>
+<td class="quantite" data-base="1" data-ref="2">1</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Sel</td>
-<td class="quantite" data-base="Sel" data-ref="2"></td>
+<td class="quantite" data-base="" data-ref="2"></td>
 <td></td>
 </tr>
 <tr>
 <td>Cumin</td>
-<td class="quantite" data-base="Cumin" data-ref="2">0.5</td>
+<td class="quantite" data-base="0.5" data-ref="2">0.5</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Piment doux</td>
-<td class="quantite" data-base="Piment doux" data-ref="2">0.5</td>
+<td class="quantite" data-base="0.5" data-ref="2">0.5</td>
 <td>c.c.</td>
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
-<strong>Notes :</strong>Ne pas surcharger le panier : en plusieurs fournées si nécessaire. La régularité de la coupe est clé pour une cuisson homogène.</div>
+<strong>Notes :</strong> Ne pas surcharger le panier : en plusieurs fournées si nécessaire. La régularité de la coupe est clé pour une cuisson homogène.</div>
 <details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
                   Préparation (cliquer pour développer)
                 </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Couper en bâtonnets réguliers de 1 cm.<br/>Enrober d'huile et d'épices dans un saladier.<br/>Cuire 18 min en secouant le panier à mi-cuisson.</p></details>
@@ -617,7 +617,7 @@
 <div class="meta">
 <span class="badge">Légumes</span><span class="badge badge-temp">180 °C</span><span class="badge">10 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -633,61 +633,61 @@
 </tr>
 <tr>
 <td>Oignon</td>
-<td class="quantite" data-base="Oignon" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>gros</td>
 </tr>
 <tr>
 <td>Farine</td>
-<td class="quantite" data-base="Farine" data-ref="4">120</td>
+<td class="quantite" data-base="120" data-ref="4">120</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Paprika</td>
-<td class="quantite" data-base="Paprika" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Gros sel</td>
-<td class="quantite" data-base="Gros sel" data-ref="4">0.5</td>
+<td class="quantite" data-base="0.5" data-ref="4">0.5</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Poivre de Cayenne</td>
-<td class="quantite" data-base="Poivre de Cayenne" data-ref="4">0.75</td>
+<td class="quantite" data-base="0.75" data-ref="4">0.75</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Origan</td>
-<td class="quantite" data-base="Origan" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Cumin</td>
-<td class="quantite" data-base="Cumin" data-ref="4">0.75</td>
+<td class="quantite" data-base="0.75" data-ref="4">0.75</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Ail en poudre</td>
-<td class="quantite" data-base="Ail en poudre" data-ref="4">0.75</td>
+<td class="quantite" data-base="0.75" data-ref="4">0.75</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Poivre noir</td>
-<td class="quantite" data-base="Poivre noir" data-ref="4">0.5</td>
+<td class="quantite" data-base="0.5" data-ref="4">0.5</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Oeuf</td>
-<td class="quantite" data-base="Oeuf" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td></td>
 </tr>
 <tr>
 <td>Lait</td>
-<td class="quantite" data-base="Lait" data-ref="4">120</td>
+<td class="quantite" data-base="120" data-ref="4">120</td>
 <td>g</td>
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
-<strong>Notes :</strong>On peut remplacer le lait par du babeurre (à récupérer par exemple dans une préparation de faisselle).</div>
+<strong>Notes :</strong> On peut remplacer le lait par du babeurre (à récupérer par exemple dans une préparation de faisselle).</div>
 <details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
                   Préparation (cliquer pour développer)
                 </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Couper l’extrémité tige, éplucher l’oignon, puis faire 8 incisions pour obtenir 16 quartiers sans séparer complètement la base.<br/>Faire tremper dans l’eau glacée au moins 2 h, égoutter et ouvrir les pétales.<br/>Mélanger farine et épices.<br/>Réserver environ 80 g de ce mélange, fariner l’oignon.<br/>Fouetter œufs, lait ou babeurre et sel restant, puis enrober l’oignon.<br/>Saupoudrer avec le mélange réservé.<br/>Mettre dans le panier, couvrir légèrement d’aluminium.<br/>Cuire 10 min à 180°C</p></details>
@@ -701,7 +701,7 @@
 <div class="meta">
 <span class="badge">Poisson</span><span class="badge badge-temp">175 °C</span><span class="badge">10 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -717,32 +717,32 @@
 </tr>
 <tr>
 <td>Crevettes crues</td>
-<td class="quantite" data-base="Crevettes crues" data-ref="4">12</td>
+<td class="quantite" data-base="12" data-ref="4">12</td>
 <td>pièces</td>
 </tr>
 <tr>
 <td>Chapelure</td>
-<td class="quantite" data-base="Chapelure" data-ref="4">60</td>
+<td class="quantite" data-base="60" data-ref="4">60</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Noix de coco</td>
-<td class="quantite" data-base="Noix de coco" data-ref="4">60</td>
+<td class="quantite" data-base="60" data-ref="4">60</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Fécule de maïs</td>
-<td class="quantite" data-base="Fécule de maïs" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Farine</td>
-<td class="quantite" data-base="Farine" data-ref="4">60</td>
+<td class="quantite" data-base="60" data-ref="4">60</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Blanc d'oeuf</td>
-<td class="quantite" data-base="Blanc d'oeuf" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td></td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -758,7 +758,7 @@
 <div class="meta">
 <span class="badge">Snacks</span><span class="badge badge-temp">200 °C</span><span class="badge">7 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -774,27 +774,27 @@
 </tr>
 <tr>
 <td>Mozzarella</td>
-<td class="quantite" data-base="Mozzarella" data-ref="4">450</td>
+<td class="quantite" data-base="450" data-ref="4">450</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Chapelure</td>
-<td class="quantite" data-base="Chapelure" data-ref="4">100</td>
+<td class="quantite" data-base="100" data-ref="4">100</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Oeuf</td>
-<td class="quantite" data-base="Oeuf" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td></td>
 </tr>
 <tr>
 <td>Lait</td>
-<td class="quantite" data-base="Lait" data-ref="4">3</td>
+<td class="quantite" data-base="3" data-ref="4">3</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Farine</td>
-<td class="quantite" data-base="Farine" data-ref="4">30</td>
+<td class="quantite" data-base="30" data-ref="4">30</td>
 <td>g</td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -809,7 +809,7 @@
 <div class="meta">
 <span class="badge">Snacks</span><span class="badge badge-temp">180 °C</span><span class="badge">12 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -825,37 +825,37 @@
 </tr>
 <tr>
 <td>Pâte à pizza</td>
-<td class="quantite" data-base="Pâte à pizza" data-ref="4">450</td>
+<td class="quantite" data-base="450" data-ref="4">450</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Ail</td>
-<td class="quantite" data-base="Ail" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>gousse</td>
 </tr>
 <tr>
 <td>Sel</td>
-<td class="quantite" data-base="Sel" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Persil</td>
-<td class="quantite" data-base="Persil" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Parmesan</td>
-<td class="quantite" data-base="Parmesan" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Huile d'olive</td>
-<td class="quantite" data-base="Huile d'olive" data-ref="4">3</td>
+<td class="quantite" data-base="3" data-ref="4">3</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Sauce marinara</td>
-<td class="quantite" data-base="Sauce marinara" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -870,7 +870,7 @@
 <div class="meta">
 <span class="badge">Snacks</span><span class="badge badge-temp">180 °C</span><span class="badge">15 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -886,37 +886,37 @@
 </tr>
 <tr>
 <td>Pâte à pizza</td>
-<td class="quantite" data-base="Pâte à pizza" data-ref="4">340</td>
+<td class="quantite" data-base="340" data-ref="4">340</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Jambon cuit</td>
-<td class="quantite" data-base="Jambon cuit" data-ref="4">150</td>
+<td class="quantite" data-base="150" data-ref="4">150</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Cheddar</td>
-<td class="quantite" data-base="Cheddar" data-ref="4">120</td>
+<td class="quantite" data-base="120" data-ref="4">120</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Mozarella</td>
-<td class="quantite" data-base="Mozarella" data-ref="4">120</td>
+<td class="quantite" data-base="120" data-ref="4">120</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Poivron rouge</td>
-<td class="quantite" data-base="Poivron rouge" data-ref="4">90</td>
+<td class="quantite" data-base="90" data-ref="4">90</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Jaune d'oeuf</td>
-<td class="quantite" data-base="Jaune d'oeuf" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td></td>
 </tr>
 <tr>
 <td>Lait</td>
-<td class="quantite" data-base="Lait" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -931,7 +931,7 @@
 <div class="meta">
 <span class="badge">Snacks</span><span class="badge badge-temp">180 °C</span><span class="badge">10 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -947,52 +947,52 @@
 </tr>
 <tr>
 <td>Huile de pépins de raisin</td>
-<td class="quantite" data-base="Huile de pépins de raisin" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Champignons shiitake</td>
-<td class="quantite" data-base="Champignons shiitake" data-ref="4">225</td>
+<td class="quantite" data-base="225" data-ref="4">225</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Chou</td>
-<td class="quantite" data-base="Chou" data-ref="4">150</td>
+<td class="quantite" data-base="150" data-ref="4">150</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Gingembre</td>
-<td class="quantite" data-base="Gingembre" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Ail</td>
-<td class="quantite" data-base="Ail" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>gousse</td>
 </tr>
 <tr>
 <td>Oignons</td>
-<td class="quantite" data-base="Oignons" data-ref="4">3</td>
+<td class="quantite" data-base="3" data-ref="4">3</td>
 <td></td>
 </tr>
 <tr>
 <td>Châtaignes d'eau</td>
-<td class="quantite" data-base="Châtaignes d'eau" data-ref="4">200</td>
+<td class="quantite" data-base="200" data-ref="4">200</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Crevettes cuites</td>
-<td class="quantite" data-base="Crevettes cuites" data-ref="4">0.5</td>
+<td class="quantite" data-base="0.5" data-ref="4">0.5</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Jaune d'oeuf</td>
-<td class="quantite" data-base="Jaune d'oeuf" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td></td>
 </tr>
 <tr>
 <td>Feuilles pour rouleaux de printemps</td>
-<td class="quantite" data-base="Feuilles pour rouleaux de printemps" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -1008,7 +1008,7 @@
 <div class="meta">
 <span class="badge">Viande</span><span class="badge badge-temp">205 °C</span><span class="badge">20 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -1024,41 +1024,41 @@
 </tr>
 <tr>
 <td>Roulade de boeuf</td>
-<td class="quantite" data-base="Roulade de boeuf" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td>pièces</td>
 </tr>
 <tr>
 <td>Pesto</td>
-<td class="quantite" data-base="Pesto" data-ref="4">3</td>
+<td class="quantite" data-base="3" data-ref="4">3</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Épinards</td>
-<td class="quantite" data-base="Épinards" data-ref="4">50</td>
+<td class="quantite" data-base="50" data-ref="4">50</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Sel</td>
-<td class="quantite" data-base="Sel" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Poivre noir</td>
-<td class="quantite" data-base="Poivre noir" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Mozzarella</td>
-<td class="quantite" data-base="Mozzarella" data-ref="4">6</td>
+<td class="quantite" data-base="6" data-ref="4">6</td>
 <td>tranches</td>
 </tr>
 <tr>
 <td>Poivrons rouges</td>
-<td class="quantite" data-base="Poivrons rouges" data-ref="4">80</td>
+<td class="quantite" data-base="80" data-ref="4">80</td>
 <td>g</td>
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
-<strong>Notes :</strong>On peut remplacer la mozarella par du provolone.</div>
+<strong>Notes :</strong> On peut remplacer la mozarella par du provolone.</div>
 <details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
                   Préparation (cliquer pour développer)
                 </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Poser les roulades à plat, tartiner de pesto.<br/>Disposer épinards, fromage et poivrons grillés sur environ 3/4 de la surface.<br/>Rouler, fixer avec des cure‑dents, saler et poivrer.<br/>Placer dans le panier Air Fryer.<br/>Cuire 20–25 min à 205°C.<br/>Retourner vers 10–12 min et poursuivre la cuisson.<br/>Laisser reposer 10 min avant de trancher.<br/><br/></p></details>
@@ -1071,7 +1071,7 @@
 <div class="meta">
 <span class="badge">Viande</span><span class="badge badge-temp">175 °C</span><span class="badge">10 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -1087,62 +1087,62 @@
 </tr>
 <tr>
 <td>Boeuf haché</td>
-<td class="quantite" data-base="Boeuf haché" data-ref="4">450</td>
+<td class="quantite" data-base="450" data-ref="4">450</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Huile d'olive</td>
-<td class="quantite" data-base="Huile d'olive" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Poivron vert</td>
-<td class="quantite" data-base="Poivron vert" data-ref="4">0.5</td>
+<td class="quantite" data-base="0.5" data-ref="4">0.5</td>
 <td>pièce</td>
 </tr>
 <tr>
 <td>Cumin</td>
-<td class="quantite" data-base="Cumin" data-ref="4">0.5</td>
+<td class="quantite" data-base="0.5" data-ref="4">0.5</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Tomates hachées</td>
-<td class="quantite" data-base="Tomates hachées" data-ref="4">60</td>
+<td class="quantite" data-base="60" data-ref="4">60</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Jaune d'oeuf</td>
-<td class="quantite" data-base="Jaune d'oeuf" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td></td>
 </tr>
 <tr>
 <td>Lait</td>
-<td class="quantite" data-base="Lait" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Ail</td>
-<td class="quantite" data-base="Ail" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td>gousses</td>
 </tr>
 <tr>
 <td>Oignon</td>
-<td class="quantite" data-base="Oignon" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td></td>
 </tr>
 <tr>
 <td>Sel</td>
-<td class="quantite" data-base="Sel" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 <tr>
 <td>Poivre</td>
-<td class="quantite" data-base="Poivre" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 <tr>
 <td>Coquilles d'empanadas</td>
-<td class="quantite" data-base="Coquilles d'empanadas" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -1158,7 +1158,7 @@
 <div class="meta">
 <span class="badge">Volaille</span><span class="badge badge-temp">190 °C</span><span class="badge">25 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -1174,31 +1174,31 @@
 </tr>
 <tr>
 <td>Cuisse de poulet</td>
-<td class="quantite" data-base="Cuisse de poulet" data-ref="4">4</td>
+<td class="quantite" data-base="4" data-ref="4">4</td>
 <td></td>
 </tr>
 <tr>
 <td>Huile d'olive</td>
-<td class="quantite" data-base="Huile d'olive" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Paprika fumé</td>
-<td class="quantite" data-base="Paprika fumé" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Ail en poudre</td>
-<td class="quantite" data-base="Ail en poudre" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Sel, poivre</td>
-<td class="quantite" data-base="Sel, poivre" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
-<strong>Notes :</strong>La peau est parfaitement croustillante sans excès de matière grasse. Mariner 30 min au réfrigérateur pour plus de saveur.</div>
+<strong>Notes :</strong> La peau est parfaitement croustillante sans excès de matière grasse. Mariner 30 min au réfrigérateur pour plus de saveur.</div>
 <details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
                   Préparation (cliquer pour développer)
                 </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Badigeonner les cuisses d'huile et d'épices.<br/>Placer dans le panier sans superposer.<br/>Cuire 25 min en retournant à mi-cuisson.</p></details>
@@ -1211,7 +1211,7 @@
 <div class="meta">
 <span class="badge">Volaille</span><span class="badge badge-temp">180 °C</span><span class="badge">27 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">6</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -1227,51 +1227,51 @@
 </tr>
 <tr>
 <td>Cuisse de poulet</td>
-<td class="quantite" data-base="Cuisse de poulet" data-ref="6">6</td>
+<td class="quantite" data-base="6" data-ref="6">6</td>
 <td></td>
 </tr>
 <tr>
 <td>Lait</td>
-<td class="quantite" data-base="Lait" data-ref="6">750</td>
+<td class="quantite" data-base="750" data-ref="6">750</td>
 <td>ml</td>
 </tr>
 <tr>
 <td>Sel</td>
-<td class="quantite" data-base="Sel" data-ref="6">1</td>
+<td class="quantite" data-base="1" data-ref="6">1</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Poivre noir</td>
-<td class="quantite" data-base="Poivre noir" data-ref="6">1</td>
+<td class="quantite" data-base="1" data-ref="6">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Farine</td>
-<td class="quantite" data-base="Farine" data-ref="6">240</td>
+<td class="quantite" data-base="240" data-ref="6">240</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Paprika</td>
-<td class="quantite" data-base="Paprika" data-ref="6">2</td>
+<td class="quantite" data-base="2" data-ref="6">2</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Ail en poudre</td>
-<td class="quantite" data-base="Ail en poudre" data-ref="6">1</td>
+<td class="quantite" data-base="1" data-ref="6">1</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Oignon en poudre</td>
-<td class="quantite" data-base="Oignon en poudre" data-ref="6">1</td>
+<td class="quantite" data-base="1" data-ref="6">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Huile d'olive</td>
-<td class="quantite" data-base="Huile d'olive" data-ref="6">1</td>
+<td class="quantite" data-base="1" data-ref="6">1</td>
 <td>c.s.</td>
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
-<strong>Notes :</strong>On peut remplacer le lait par du babeurre (à récupérer par exemple dans une préparation de faisselle).</div>
+<strong>Notes :</strong> On peut remplacer le lait par du babeurre (à récupérer par exemple dans une préparation de faisselle).</div>
 <details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
                   Préparation (cliquer pour développer)
                 </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger lait, sel et poivre dans un sac ou récipient.<br/>Ajouter le poulet et laisser mariner au froid au moins 1 h ou toute une nuit.<br/>Mélanger farine, paprika, ail en poudre, oignon en poudre, sel et poivre.<br/>Ajouter 2 à 3 cuillères à soupe de marinade dans la farine pour former de petits grumeaux.<br/>Préchauffer la friteuse à 180°C et huiler légèrement le panier.<br/>Enrober les cuisses, secouer l’excédent, disposer côté peau vers le haut.<br/>Cuire environ 27 min, en vérifiant toutes les 10 min et en retournant.<br/>Saler légèrement en sortie</p></details>
@@ -1284,7 +1284,7 @@
 <div class="meta">
 <span class="badge">Volaille</span><span class="badge badge-temp">180 °C</span><span class="badge">30 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -1300,31 +1300,31 @@
 </tr>
 <tr>
 <td>Aile de poulet</td>
-<td class="quantite" data-base="Aile de poulet" data-ref="4">900</td>
+<td class="quantite" data-base="900" data-ref="4">900</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Sel</td>
-<td class="quantite" data-base="Sel" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 <tr>
 <td>Beurre frais</td>
-<td class="quantite" data-base="Beurre frais" data-ref="4">4</td>
+<td class="quantite" data-base="4" data-ref="4">4</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Sauce piquante</td>
-<td class="quantite" data-base="Sauce piquante" data-ref="4">150</td>
+<td class="quantite" data-base="150" data-ref="4">150</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Vinaigrette</td>
-<td class="quantite" data-base="Vinaigrette" data-ref="4"></td>
+<td class="quantite" data-base="" data-ref="4"></td>
 <td></td>
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
-<strong>Notes :</strong>On peut remplacer la vinaigrette par du fromage bleu.</div>
+<strong>Notes :</strong> On peut remplacer la vinaigrette par du fromage bleu.</div>
 <details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
                   Préparation (cliquer pour développer)
                 </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Séparer les ailes si besoin et retirer les pointes.<br/>Éponger puis saler généreusement.<br/>Disposer sans chevauchement dans le panier.<br/>Cuire 12 min à 180°C.<br/>Retourner, cuire encore 12 min à 180°C.<br/>Retourner à nouveau, monter à 200°C et cuire encore environ 6 min.<br/>Faire fondre le beurre, ajouter la sauce piquante.<br/>Enrober les ailes et servir avec la sauce</p></details>
@@ -1337,7 +1337,7 @@
 <div class="meta">
 <span class="badge">Volaille</span><span class="badge badge-temp">180 °C</span><span class="badge">10 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">6</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -1353,46 +1353,46 @@
 </tr>
 <tr>
 <td>Filet de poulet</td>
-<td class="quantite" data-base="Filet de poulet" data-ref="6">6</td>
+<td class="quantite" data-base="6" data-ref="6">6</td>
 <td></td>
 </tr>
 <tr>
 <td>Chapelure</td>
-<td class="quantite" data-base="Chapelure" data-ref="6">60</td>
+<td class="quantite" data-base="60" data-ref="6">60</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Huile</td>
-<td class="quantite" data-base="Huile" data-ref="6">1</td>
+<td class="quantite" data-base="1" data-ref="6">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Farine</td>
-<td class="quantite" data-base="Farine" data-ref="6">60</td>
+<td class="quantite" data-base="60" data-ref="6">60</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Oeuf</td>
-<td class="quantite" data-base="Oeuf" data-ref="6">3</td>
+<td class="quantite" data-base="3" data-ref="6">3</td>
 <td></td>
 </tr>
 <tr>
 <td>Lait</td>
-<td class="quantite" data-base="Lait" data-ref="6">240</td>
+<td class="quantite" data-base="240" data-ref="6">240</td>
 <td>g</td>
 </tr>
 <tr>
 <td>Sel</td>
-<td class="quantite" data-base="Sel" data-ref="6">1</td>
+<td class="quantite" data-base="1" data-ref="6">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Poivre noir</td>
-<td class="quantite" data-base="Poivre noir" data-ref="6">0.5</td>
+<td class="quantite" data-base="0.5" data-ref="6">0.5</td>
 <td>c.c.</td>
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
-<strong>Notes :</strong>Encore meilleur avec de la chapelure panko.</div>
+<strong>Notes :</strong> Encore meilleur avec de la chapelure panko.</div>
 <details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
                   Préparation (cliquer pour développer)
                 </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mettre le poulet sur une assiette.<br/>Mélanger la chapelure avec l’huile.<br/>Mettre la farine dans un bol.<br/>Fouetter lait et œufs dans un autre bol.<br/>Passer le poulet dans la farine, puis dans l’œuf, puis dans la chapelure.<br/>Placer dans le panier.<br/>Cuire 10 min à 180°C.<br/>Retourner après 5 min</p></details>
@@ -1405,7 +1405,7 @@
 <div class="meta">
 <span class="badge">Volaille</span><span class="badge badge-temp">200 °C</span><span class="badge">50 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -1421,22 +1421,22 @@
 </tr>
 <tr>
 <td>Poitrine de dinde</td>
-<td class="quantite" data-base="Poitrine de dinde" data-ref="4">2.7</td>
+<td class="quantite" data-base="2.7" data-ref="4">2.7</td>
 <td>kg</td>
 </tr>
 <tr>
 <td>Sel</td>
-<td class="quantite" data-base="Sel" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Poivre noir</td>
-<td class="quantite" data-base="Poivre noir" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.s.</td>
 </tr>
 <tr>
 <td>Huile d'olive</td>
-<td class="quantite" data-base="Huile d'olive" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td>c.s.</td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -1451,7 +1451,7 @@
 <div class="meta">
 <span class="badge">Volaille</span><span class="badge badge-temp">200 °C</span><span class="badge">65 min</span><a href="#nb_personnes" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de personnes">
                 ↗ Quantités pour <span class="nb-personnes-affiche">4</span> personnes
-              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
+              </a><span class="badge badge-turn">Retourner à mi-cuisson</span><a href="https://www.facebook.com/groups/944094383436904/permalink/1299118137934525/" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#5a7a00; text-decoration:none;">
                   📄 Voir la source
                 </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#5a7a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
                 🖨 Imprimer
@@ -1467,42 +1467,42 @@
 </tr>
 <tr>
 <td>Poulet</td>
-<td class="quantite" data-base="Poulet" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td>kg</td>
 </tr>
 <tr>
 <td>Ail en poudre</td>
-<td class="quantite" data-base="Ail en poudre" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Oignon en poudre</td>
-<td class="quantite" data-base="Oignon en poudre" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Sel</td>
-<td class="quantite" data-base="Sel" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Poivre noir</td>
-<td class="quantite" data-base="Poivre noir" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Romarin</td>
-<td class="quantite" data-base="Romarin" data-ref="4">1</td>
+<td class="quantite" data-base="1" data-ref="4">1</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Thym</td>
-<td class="quantite" data-base="Thym" data-ref="4">0.5</td>
+<td class="quantite" data-base="0.5" data-ref="4">0.5</td>
 <td>c.c.</td>
 </tr>
 <tr>
 <td>Huile d'olive</td>
-<td class="quantite" data-base="Huile d'olive" data-ref="4">2</td>
+<td class="quantite" data-base="2" data-ref="4">2</td>
 <td>c.s.</td>
 </tr>
 </table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#5a7a00;">
@@ -1529,33 +1529,52 @@
             🍴 La soumettre ici
           </button>
 </div>
-<script>
-          // --- RECALCUL PERSONNES ---
+<script type="text/javascript"><!--
           const input = document.getElementById('nb_personnes');
+
+          function parseNombre(val) {
+            if (val === undefined || val === null) return NaN;
+            const txt = String(val).replace(',', '.').trim();
+            if (txt === '') return NaN;
+            return parseFloat(txt);
+          }
+
+          function formatNombre(val) {
+            if (Math.abs(val - Math.round(val)) < 0.0000001) {
+              return String(Math.round(val));
+            }
+            return (Math.round(val * 100) / 100).toString().replace('.', ',');
+          }
+
           function recalcul() {
-            const nb = parseFloat(input.value) || 4;
-            document.querySelectorAll('.quantite').forEach(el => {
-              const base = parseFloat(el.dataset.base);
-              const ref = parseFloat(el.dataset.ref) || 4;
-              if (!isNaN(base) && base > 0) {
-                const result = base / ref * nb;
-                el.textContent = Number.isInteger(result) ? result : Math.round(result);
+            const nb = parseNombre(input.value) || 4;
+
+            document.querySelectorAll('.quantite').forEach(function(el) {
+              const base = parseNombre(el.dataset.base);
+              const ref = parseNombre(el.dataset.ref) || 4;
+
+              if (!isNaN(base) && !isNaN(ref) && ref > 0) {
+                const result = (base / ref) * nb;
+                el.textContent = formatNombre(result);
               }
             });
-            document.querySelectorAll('.nb-personnes-affiche').forEach(el => el.textContent = Math.round(nb));
+
+            document.querySelectorAll('.nb-personnes-affiche').forEach(function(el) {
+              el.textContent = formatNombre(nb);
+            });
           }
+
           input.addEventListener('input', recalcul);
           recalcul();
 
-          // --- FILTRE INGRÉDIENTS ---
           const ingredientsSet = new Set();
-          document.querySelectorAll('table.ingredients tr td:first-child').forEach(td => {
+          document.querySelectorAll('table.ingredients tr td:first-child').forEach(function(td) {
             const val = td.textContent.trim().toLowerCase();
             if (val) ingredientsSet.add(val);
           });
 
           const listeDiv = document.getElementById('liste-ingredients');
-          [...ingredientsSet].sort().forEach(ing => {
+          Array.from(ingredientsSet).sort().forEach(function(ing) {
             const label = document.createElement('label');
             label.style.cssText = 'display:block; margin-bottom:4px; font-size:0.9em;';
             const cb = document.createElement('input');
@@ -1568,18 +1587,27 @@
           });
 
           function filtrerRecettes() {
-            const coches = [...document.querySelectorAll('#liste-ingredients input:checked')]
-              .map(cb => cb.value);
+            const coches = Array.from(document.querySelectorAll('#liste-ingredients input:checked')).map(function(cb) {
+              return cb.value;
+            });
 
-            document.querySelectorAll('.recette').forEach(recette => {
-              recette.querySelectorAll('.alerte-manquant').forEach(el => el.remove());
+            document.querySelectorAll('.recette').forEach(function(recette) {
+              recette.querySelectorAll('.alerte-manquant').forEach(function(el) {
+                el.remove();
+              });
 
-              if (coches.length === 0) { recette.style.display = ''; return; }
+              if (coches.length === 0) {
+                recette.style.display = '';
+                return;
+              }
 
-              const ings = [...recette.querySelectorAll('table.ingredients tr td:first-child')]
-                .map(td => td.textContent.trim().toLowerCase());
+              const ings = Array.from(recette.querySelectorAll('table.ingredients tr td:first-child')).map(function(td) {
+                return td.textContent.trim().toLowerCase();
+              });
 
-              const manquants = ings.filter(ing => !coches.includes(ing));
+              const manquants = ings.filter(function(ing) {
+                return !coches.includes(ing);
+              });
 
               if (manquants.length === 0) {
                 recette.style.display = '';
@@ -1587,19 +1615,20 @@
                 recette.style.display = '';
                 const alerte = document.createElement('div');
                 alerte.className = 'manquant alerte-manquant';
-                alerte.innerHTML = '⚠️ Il vous manque 1 ingrédient : <strong>'
-                  + manquants[0] + '</strong><span class="badge-manquant">À se procurer</span>';
+                alerte.innerHTML = '⚠️ Il vous manque 1 ingrédient : <strong>' + manquants[0] + '</strong> <span class="badge-manquant">À se procurer</span>';
                 recette.appendChild(alerte);
               } else {
                 recette.style.display = 'none';
               }
             });
 
-            document.querySelectorAll('h2').forEach(h2 => {
+            document.querySelectorAll('h2').forEach(function(h2) {
               let next = h2.nextElementSibling;
               let visible = false;
               while (next && next.tagName !== 'H2') {
-                if (next.classList.contains('recette') && next.style.display !== 'none') visible = true;
+                if (next.classList.contains('recette') && next.style.display !== 'none') {
+                  visible = true;
+                }
                 next = next.nextElementSibling;
               }
               h2.style.display = visible ? '' : 'none';
@@ -1607,19 +1636,24 @@
           }
 
           function resetFiltres() {
-            document.querySelectorAll('#liste-ingredients input').forEach(cb => cb.checked = false);
+            document.querySelectorAll('#liste-ingredients input').forEach(function(cb) {
+              cb.checked = false;
+            });
             filtrerRecettes();
           }
 
-          // --- IMPRIMER UNE RECETTE ---
           function imprimerRecette(btn) {
             const recette = btn.closest('.recette');
-            recette.querySelectorAll('details').forEach(d => d.open = true);
+            recette.querySelectorAll('details').forEach(function(d) {
+              d.open = true;
+            });
             recette.classList.add('impression-active');
             window.print();
             recette.classList.remove('impression-active');
-            recette.querySelectorAll('details').forEach(d => d.open = false);
+            recette.querySelectorAll('details').forEach(function(d) {
+              d.open = false;
+            });
           }
-        </script>
+          --></script>
 </body>
 </html>
