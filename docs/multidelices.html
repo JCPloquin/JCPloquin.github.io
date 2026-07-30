@@ -29,23 +29,9 @@
     nav.sommaire a:hover { text-decoration:underline; }
     nav.sommaire ul ul { margin:4px 0 0 0; padding-left:16px; }
     nav.sommaire ul ul a { color:#555; }
-    .btn-recette {
-      display: inline-block;
-      background: #b55a00;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      padding: 12px 28px;
-      font-size: 1em;
-      font-family: Georgia, serif;
-      cursor: pointer;
-      box-shadow: 0 3px 8px rgba(181,90,0,0.25);
-      letter-spacing: 0.03em;
-      transition: background 0.2s, box-shadow 0.2s;
-      text-decoration: none;
-    }
-    .btn-recette:hover { background: #8a3d00; box-shadow: 0 5px 14px rgba(181,90,0,0.35); }
-    .btn-recette-wrap { text-align: center; margin: 24px 0 10px 0; }
+    .btn-recette { display:inline-block; background:#b55a00; color:#fff; border:none; border-radius:8px; padding:12px 28px; font-size:1em; font-family:Georgia,serif; cursor:pointer; box-shadow:0 3px 8px rgba(181,90,0,0.25); letter-spacing:0.03em; transition:background 0.2s, box-shadow 0.2s; text-decoration:none; }
+    .btn-recette:hover { background:#8a3d00; box-shadow:0 5px 14px rgba(181,90,0,0.35); }
+    .btn-recette-wrap { text-align:center; margin:24px 0 10px 0; }
     #popup-recette { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.65); justify-content:center; align-items:center; z-index:9999; }
     #popup-recette-inner { background:#fdf6ec; border:2px solid #b55a00; padding:12px; border-radius:10px; width:92%; max-width:700px; position:relative; }
     #popup-recette-close { position:absolute; top:6px; right:12px; font-size:1.3em; background:none; border:none; color:#b55a00; cursor:pointer; font-weight:bold; }
@@ -56,24 +42,8 @@
       details { display: block !important; }
       details summary { display: none; }
     }
-    .manquant {
-  background: #fff8e1;
-  border: 1px solid #ffb300;
-  border-radius: 6px;
-  padding: 8px 14px;
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: #7a5700;
-}
-.badge-manquant {
-  display: inline-block;
-  background: #ffb300;
-  color: #fff;
-  border-radius: 4px;
-  padding: 2px 8px;
-  margin-left: 6px;
-  font-size: 0.8em;
-}
+    .manquant { background: #fff8e1; border: 1px solid #ffb300; border-radius: 6px; padding: 8px 14px; margin-top: 10px; font-size: 0.9em; color: #7a5700; }
+    .badge-manquant { display: inline-block; background: #ffb300; color: #fff; border-radius: 4px; padding: 2px 8px; margin-left: 6px; font-size: 0.8em; }
   </style>
 </head>
 <body>
@@ -159,12 +129,10 @@
 </div>
 <div class="meta">
 <span class="badge">Annexes</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -177,9 +145,7 @@
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Le laisser 2 ou 3 jours au frigo pour permettre au ferment de bien se faire ; on peut le congeler ensuite pour l'utiliser plus tard. Le décongeler tout doucement au frigo et le sortir suffisamment à l'avance pour le remettre à température ambiante avant utilisation.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Avec le petit lait récupéré lors de l'égouttage des faisselles, on peut :<br/>1. paner des escalopes<br/>2. déglacer une sauce crème<br/>3. faire du skyr<br/>4. remplacer le lait dans les crêpes ou les gâteaux, notamment pour faire des pitch au chocolat (https://www.facebook.com/photo/?fbid=26622699617369477)<br/></p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Avec le petit lait récupéré lors de l'égouttage des faisselles, on peut :<br/>1. paner des escalopes<br/>2. déglacer une sauce crème<br/>3. faire du skyr<br/>4. remplacer le lait dans les crêpes ou les gâteaux, notamment pour faire des pitch au chocolat (https://www.facebook.com/photo/?fbid=26622699617369477)<br/></p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -188,12 +154,10 @@
 </div>
 <div class="meta">
 <span class="badge">Annexes</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -216,9 +180,7 @@
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Pour faire du lait concentré non sucré, il suffit juste d'ôter le sucre.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mettre le tout dans une casserole,<br/>Faire chauffer à feu moyen jusqu'à épaississement en remuant souvent.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mettre le tout dans une casserole,<br/>Faire chauffer à feu moyen jusqu'à épaississement en remuant souvent.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -227,14 +189,12 @@
 </div>
 <div class="meta">
 <span class="badge">Annexes</span><a href="https://www.facebook.com/photo/?fbid=10234325992991267" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -260,9 +220,7 @@
 <td class="quantite" data-base="250" data-ref="6">250</td>
 <td>ml</td>
 </tr>
-</table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mettre dans une casserole le sucre, le vinaigre et l'eau,<br/>Chauffer à feu doux jusqu'à ce que le sucre soit dissous,<br/>Laisser cuire jusqu'à obtenir un caramel blond,<br/>Hors du feu, ajouter doucement l'eau bouillante,<br/>Remettre sur le feu et faire bouillir encore 1 minute,<br/>Retirer du feu et laisser refroidir.</p></details>
+</table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mettre dans une casserole le sucre, le vinaigre et l'eau,<br/>Chauffer à feu doux jusqu'à ce que le sucre soit dissous,<br/>Laisser cuire jusqu'à obtenir un caramel blond,<br/>Hors du feu, ajouter doucement l'eau bouillante,<br/>Remettre sur le feu et faire bouillir encore 1 minute,<br/>Retirer du feu et laisser refroidir.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -271,18 +229,10 @@
 </div>
 <div class="meta">
 <span class="badge">Annexes</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients"><tr>
-<th>Ingrédient</th>
-<th>Quantité</th>
-<th>Unité</th>
-</tr></table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Fraises Tagada → Coulis de fraises naturel<br/>Faire fondre 250g de fraises fraîches ou surgelées avec 2 cuillères à soupe de miel ou sucre de canne à feu doux 10 min. Filtrer et utiliser comme les Tagada dans les recettes — même résultat aromatique, sans colorants ni gélatine industrielle.<br/><br/>Nesquik → Cacao pur + sucrant naturel<br/>Mélanger 1 cuillère à café de cacao en poudre non sucré (Van Houten ou bio) + 1 cuillère à café de miel ou sucre de canne dilués dans un peu de lait tiède avant d'incorporer au reste. Ajouter une pointe de vanille (en poudre ou en arôme naturel) pour reproduire le côté arrondi du Nesquik.<br/><br/>Mars / KitKat → Chocolat noir 70%+ fondu<br/>Faire fondre 50 à 70g de chocolat noir à 70% minimum au bain-marie. Pour reproduire le côté caramel du Mars, ajouter 1 cuillère à soupe de purée de dattes. Pour le côté croustillant du KitKat, incorporer des éclats de noisettes ou d'amandes torréfiés (à la poêle ou au four).<br/><br/></p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Fraises Tagada → Coulis de fraises naturel<br/>Faire fondre 250g de fraises fraîches ou surgelées avec 2 cuillères à soupe de miel ou sucre de canne à feu doux 10 min. Filtrer et utiliser comme les Tagada dans les recettes — même résultat aromatique, sans colorants ni gélatine industrielle.<br/><br/>Nesquik → Cacao pur + sucrant naturel<br/>Mélanger 1 cuillère à café de cacao en poudre non sucré (Van Houten ou bio) + 1 cuillère à café de miel ou sucre de canne dilués dans un peu de lait tiède avant d'incorporer au reste. Ajouter une pointe de vanille (en poudre ou en arôme naturel) pour reproduire le côté arrondi du Nesquik.<br/><br/>Mars / KitKat → Chocolat noir 70%+ fondu<br/>Faire fondre 50 à 70g de chocolat noir à 70% minimum au bain-marie. Pour reproduire le côté caramel du Mars, ajouter 1 cuillère à soupe de purée de dattes. Pour le côté croustillant du KitKat, incorporer des éclats de noisettes ou d'amandes torréfiés (à la poêle ou au four).<br/><br/></p></details>
 </div>
 <h2 id="prog1">Programme P1</h2>
 <div class="recette">
@@ -292,14 +242,12 @@
 </div>
 <div class="meta">
 <span class="badge">P1</span><span class="badge">240 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -317,9 +265,7 @@
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Possibilité de remplacer le yaourt par des ferments lactiques en sachet : 1 sachet = 1 yaourt. En période de fortes chaleurs, il faut diminuer le temps de cuisson d'une heure.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Bien mélanger le yaourt avec un peu de lait jusqu'à ce que la préparation soit homogène,<br/>Ajouter le reste du lait et mélanger à nouveau,<br/>Verser dans les pots,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Bien mélanger le yaourt avec un peu de lait jusqu'à ce que la préparation soit homogène,<br/>Ajouter le reste du lait et mélanger à nouveau,<br/>Verser dans les pots,<br/>Lancer la yaourtière.</p></details>
 </div>
 <h2 id="prog2">Programme P2</h2>
 <div class="recette">
@@ -329,14 +275,12 @@
 </div>
 <div class="meta">
 <span class="badge">P2</span><span class="badge">480 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -358,9 +302,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Possibilité de remplacer le yaourt par des ferments lactiques en sachet : 1 sachet = 1 yaourt. En période de fortes chaleurs, il faut diminuer le temps de cuisson d'une heure.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Bien mélanger le yaourt avec un peu de lait jusqu'à ce que la préparation soit homogène,<br/>Ajouter le reste du lait et mélanger à nouveau,<br/>Verser dans les pots,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Bien mélanger le yaourt avec un peu de lait jusqu'à ce que la préparation soit homogène,<br/>Ajouter le reste du lait et mélanger à nouveau,<br/>Verser dans les pots,<br/>Lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -369,14 +311,12 @@
 </div>
 <div class="meta">
 <span class="badge">P2</span><span class="badge">480 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -406,14 +346,12 @@
 </div>
 <div class="meta">
 <span class="badge">P2</span><span class="badge">480 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -460,9 +398,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Possibilité de remplacer le yaourt par des ferments lactiques en sachet : 1 sachet = 1 yaourt. En période de fortes chaleurs, il faut diminuer le temps de cuisson d'une heure.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Éplucher les pommes et les couper en cubes,<br/>Dans une casserole, faire fondre le beurre à feu doux, ajouter les morceaux de pommes, la cannelle, et laisser cuire 5 minutes avant d'ajouter le sucre,<br/>Laisser compoter puis caraméliser pendant encore 10 minutes en ajoutant un peu d'eau si les fruits ne rendent pas assez de jus,<br/>Laisser reposer avant de répartir dans les pots,<br/>Mélanger le yaourt avec un peu de lait jusqu'à ce que la préparation soit homogène,<br/>Ajouter le reste du lait et la crème liquide, mélanger à nouveau puis verser dans les pots,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Éplucher les pommes et les couper en cubes,<br/>Dans une casserole, faire fondre le beurre à feu doux, ajouter les morceaux de pommes, la cannelle, et laisser cuire 5 minutes avant d'ajouter le sucre,<br/>Laisser compoter puis caraméliser pendant encore 10 minutes en ajoutant un peu d'eau si les fruits ne rendent pas assez de jus,<br/>Laisser reposer avant de répartir dans les pots,<br/>Mélanger le yaourt avec un peu de lait jusqu'à ce que la préparation soit homogène,<br/>Ajouter le reste du lait et la crème liquide, mélanger à nouveau puis verser dans les pots,<br/>Lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -471,14 +407,12 @@
 </div>
 <div class="meta">
 <span class="badge">P2</span><span class="badge">480 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -520,9 +454,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>On peut mélanger le jus de fraise de la casserole avec le mascarpone au basilic, à condition qu'il soit bien sucré sinon ça fait tourner le lait. En période de fortes chaleurs, il faut diminuer le temps de cuisson d'une heure.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Laver, équeter puis couper la moitié des fraises,<br/>Les faire compoter à la casserole sur feu doux avec le sucre et 1 cuillère à soupe d'eau, jusqu'à ce qu'elles soient fondantes et enrobées de sucre,<br/>Laisser tiédir puis déposer les fraises au fond des pots,<br/>Passer le mascarpone et les feuilles de basilic ciselées au mixeur jusqu'à obtention d'une purée verte,<br/>Mélanger le yaourt avec un peu de lait jusqu'à ce que la préparation soit homogène,<br/>Ajouter le reste du lait puis mélanger,<br/>Ajouter la préparation de mascarpone-basilic et mélanger à nouveau,<br/>Verser très délicatement sur les fraises,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Laver, équeter puis couper la moitié des fraises,<br/>Les faire compoter à la casserole sur feu doux avec le sucre et 1 cuillère à soupe d'eau, jusqu'à ce qu'elles soient fondantes et enrobées de sucre,<br/>Laisser tiédir puis déposer les fraises au fond des pots,<br/>Passer le mascarpone et les feuilles de basilic ciselées au mixeur jusqu'à obtention d'une purée verte,<br/>Mélanger le yaourt avec un peu de lait jusqu'à ce que la préparation soit homogène,<br/>Ajouter le reste du lait puis mélanger,<br/>Ajouter la préparation de mascarpone-basilic et mélanger à nouveau,<br/>Verser très délicatement sur les fraises,<br/>Lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -531,16 +463,14 @@
 </div>
 <div class="meta">
 <span class="badge">P2</span><span class="badge">480 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><a href="https://www.facebook.com/photo/?fbid=2048017569469091" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><a href="https://www.facebook.com/photo/?fbid=2048017569469091" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -577,9 +507,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Le ferment peut être remplacé par un yaourt nature. En période de fortes chaleurs, il faut diminuer le temps de cuisson d'une heure.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger le lait en poudre et le ferment,<br/>Ajouter le lait, la crème de coco et le sucre,<br/>Mélanger,<br/>Verser dans les pots,<br/>Lancer la yaourtière,<br/>Laisser au frais 3 h minimum.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger le lait en poudre et le ferment,<br/>Ajouter le lait, la crème de coco et le sucre,<br/>Mélanger,<br/>Verser dans les pots,<br/>Lancer la yaourtière,<br/>Laisser au frais 3 h minimum.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -588,16 +516,14 @@
 </div>
 <div class="meta">
 <span class="badge">P2</span><span class="badge">360 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><a href="https://www.facebook.com/photo/?fbid=10232377327878817" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><a href="https://www.facebook.com/photo/?fbid=10232377327878817" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -624,10 +550,8 @@
 <td>gouttes</td>
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
-<strong>Notes :</strong> En période de fortes chaleurs, il faut diminuer le temps de cuisson d'une heure.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger le lait et le lait en poudre,<br/>Ajouter le lait concentré sucré,<br/>Ajouter la présure,<br/>Mélanger le tout,<br/>Verser dans les pots,<br/>Lancer la yaourtière,<br/>Laisser 4 heures au frais avant de déguster.</p></details>
+<strong>Notes :</strong>En période de fortes chaleurs, il faut diminuer le temps de cuisson d'une heure.</div>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger le lait et le lait en poudre,<br/>Ajouter le lait concentré sucré,<br/>Ajouter la présure,<br/>Mélanger le tout,<br/>Verser dans les pots,<br/>Lancer la yaourtière,<br/>Laisser 4 heures au frais avant de déguster.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -636,16 +560,14 @@
 </div>
 <div class="meta">
 <span class="badge">P2</span><span class="badge">510 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><a href="https://www.facebook.com/photo/?fbid=122214092798497138" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><a href="https://www.facebook.com/photo/?fbid=122214092798497138" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -677,10 +599,8 @@
 <td>g</td>
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
-<strong>Notes :</strong> En période de fortes chaleurs, il faut diminuer le temps de cuisson d'une heure.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire tiédir le lait,<br/>Incorporer le mascarpone préalablement détendu ainsi que le sucre,<br/>Si besoin, remettre quelques secondes au micro-ondes pour bien lisser le tout,<br/>Laisser tiédir,<br/>Ajouter le yaourt (ou ferment),<br/>Verser dans les pots,<br/>Lancer la yaourtière,<br/>Une fois les yaourts refroidis, ajouter les copeaux de chocolat rapé et mélanger,<br/>Laisser figer au frais une nuit.</p></details>
+<strong>Notes :</strong>En période de fortes chaleurs, il faut diminuer le temps de cuisson d'une heure.</div>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire tiédir le lait,<br/>Incorporer le mascarpone préalablement détendu ainsi que le sucre,<br/>Si besoin, remettre quelques secondes au micro-ondes pour bien lisser le tout,<br/>Laisser tiédir,<br/>Ajouter le yaourt (ou ferment),<br/>Verser dans les pots,<br/>Lancer la yaourtière,<br/>Une fois les yaourts refroidis, ajouter les copeaux de chocolat rapé et mélanger,<br/>Laisser figer au frais une nuit.</p></details>
 </div>
 <h2 id="prog3">Programme P3</h2>
 <div class="recette">
@@ -690,14 +610,12 @@
 </div>
 <div class="meta">
 <span class="badge">P3</span><span class="badge">960 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -730,14 +648,12 @@
 </div>
 <div class="meta">
 <span class="badge">P3</span><span class="badge">840 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -769,9 +685,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Le jus de citron doit être non traité ! Pour une consistance plus ferme, prolonger l'égouttage. On peut mélanger avec une poignée de céréales au miel et quelques minis dés de poire ou de pomme au moment de servir !</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Bien mélanger le fromage blanc avec un peu de lait, jusqu'à ce que la préparation soit homogène,<br/>Ajouter le reste du lait et mélanger,<br/>Ajouter le jus de citron et mélanger à nouveau,<br/>Verser dans les égouttoirs installés dans les pots,<br/>Lancer la yaourtière,<br/>À l'issue de la cuisson, tourner les égouttoirs d'un quart de tour dans les pots pour les mettre en position égouttage, <br/>Laisser égoutter 12 heures au réfrigérateur en prenant soin de retirer le petit-lait régulièrement pour favoriser l'égouttage,<br/>Démouler les  fromages dans un saladier et mélanger avec la crème liquide,<br/>Répartir dans le spots préalablement rincés et conserver au frais.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Bien mélanger le fromage blanc avec un peu de lait, jusqu'à ce que la préparation soit homogène,<br/>Ajouter le reste du lait et mélanger,<br/>Ajouter le jus de citron et mélanger à nouveau,<br/>Verser dans les égouttoirs installés dans les pots,<br/>Lancer la yaourtière,<br/>À l'issue de la cuisson, tourner les égouttoirs d'un quart de tour dans les pots pour les mettre en position égouttage, <br/>Laisser égoutter 12 heures au réfrigérateur en prenant soin de retirer le petit-lait régulièrement pour favoriser l'égouttage,<br/>Démouler les  fromages dans un saladier et mélanger avec la crème liquide,<br/>Répartir dans le spots préalablement rincés et conserver au frais.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -780,16 +694,14 @@
 </div>
 <div class="meta">
 <span class="badge">P3</span><span class="badge">720 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><a href="https://www.facebook.com/groups/2392217524883105/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><a href="https://www.facebook.com/groups/2392217524883105/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -802,9 +714,7 @@
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>À la dégustation, ajouter sucre, coulis, caramel ou autre. Ne rien ajouter avant !</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mettre les petits égouttoirs en position basse,<br/>Verser dans les pots,<br/>Lancer la yaourtière,<br/>Laisser reposer 2 heures,<br/>Égoutter 8 heures au frigo, égouttoirs en position haute.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mettre les petits égouttoirs en position basse,<br/>Verser dans les pots,<br/>Lancer la yaourtière,<br/>Laisser reposer 2 heures,<br/>Égoutter 8 heures au frigo, égouttoirs en position haute.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -813,16 +723,14 @@
 </div>
 <div class="meta">
 <span class="badge">P3</span><span class="badge">960 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><a href="https://www.facebook.com/photo/?fbid=10241849207028535" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><a href="https://www.facebook.com/photo/?fbid=10241849207028535" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -849,9 +757,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Mettre dans un emporte-pièce avec du Sopalin ou compresser et retourner toutes les 6 à 8 heures pendant 24 heures.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger le lait et le fromage blanc,<br/>Ajouter la présure et mélanger,<br/>Lancer la yaourtière,<br/>Égoutter pendant 24 heures,<br/>Ajouter ail, ciboulette, herbes de Provence, sel et poivre selon les goûts.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger le lait et le fromage blanc,<br/>Ajouter la présure et mélanger,<br/>Lancer la yaourtière,<br/>Égoutter pendant 24 heures,<br/>Ajouter ail, ciboulette, herbes de Provence, sel et poivre selon les goûts.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -860,16 +766,14 @@
 </div>
 <div class="meta">
 <span class="badge">P3</span><span class="badge">840 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><a href="https://www.facebook.com/photo/?fbid=2417907982020236" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><a href="https://www.facebook.com/photo/?fbid=2417907982020236" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -891,9 +795,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>On peut remplacer le petit lait par 100 g de skyr du commerce (pour 6 pots).</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger les ingrédients,<br/>Verser dans le bas à fromage blanc ou dans les pots avec égouttoir,<br/>Lancer la yaourtière,<br/>Égoutter jusqu'à obtenir la consistance souhaitée.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger les ingrédients,<br/>Verser dans le bas à fromage blanc ou dans les pots avec égouttoir,<br/>Lancer la yaourtière,<br/>Égoutter jusqu'à obtenir la consistance souhaitée.</p></details>
 </div>
 <h2 id="prog4">Programme P4</h2>
 <div class="recette">
@@ -903,14 +805,12 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">45 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -950,9 +850,7 @@
           Réalisable en même temps que :
           <a href="#recette-7" style="color:#2a6a2a; font-weight:bold;">Crème brûlée</a> · <a href="#recette-17" style="color:#2a6a2a; font-weight:bold;">Mousse chocolat menthe</a> · <a href="#recette-18" style="color:#2a6a2a; font-weight:bold;">Crèmes Praliné</a> · <a href="#recette-20" style="color:#2a6a2a; font-weight:bold;">Liégeois au chocolat</a> · <a href="#recette-21" style="color:#2a6a2a; font-weight:bold;">Liégeois au café</a>
 </div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Casser le chocolat en petits morceaux dans un saladier et le faire fondre au bain-marie (ou au micro-ondes avec une cuillère à soupe d'eau),<br/>Faire chauffer la moitié de la crème puis la verser sur le chocolat et mélanger,<br/>Dans un autre récipient, mélanger les œufs, les jaunes et le sucre jusqu'au blanchiment de la préparation,<br/>Incorporer petit à petit le chocolat fondu, puis le lait et le reste de crème,<br/>Répartir dans les pots,<br/>Lancer la yaourtière,<br/>Laisser refroidir et conserver au frais.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Casser le chocolat en petits morceaux dans un saladier et le faire fondre au bain-marie (ou au micro-ondes avec une cuillère à soupe d'eau),<br/>Faire chauffer la moitié de la crème puis la verser sur le chocolat et mélanger,<br/>Dans un autre récipient, mélanger les œufs, les jaunes et le sucre jusqu'au blanchiment de la préparation,<br/>Incorporer petit à petit le chocolat fondu, puis le lait et le reste de crème,<br/>Répartir dans les pots,<br/>Lancer la yaourtière,<br/>Laisser refroidir et conserver au frais.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -961,14 +859,12 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">45 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1015,9 +911,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>On peut caraméliser au chalumeau ou avec un décapeur thermique (plus sain car pas de flamme).</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire chauffer le lait et ajouter la gousse de vanille incisée dans la longueur et grattée,<br/>Laisser infuser 15 minutes,<br/>Mélanger les œufs, les jaunes d'œufs et le sucre à la spatule,<br/>Ajouter le lait parfumé, la crème et mélanger,<br/>Répartir dans les pots,<br/>Lancer la yaourtière,<br/>Laisser refroidir complètement,<br/>Au moment de servir, saupoudrer de sucre cassonade et caraméliser sous le grill du four.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire chauffer le lait et ajouter la gousse de vanille incisée dans la longueur et grattée,<br/>Laisser infuser 15 minutes,<br/>Mélanger les œufs, les jaunes d'œufs et le sucre à la spatule,<br/>Ajouter le lait parfumé, la crème et mélanger,<br/>Répartir dans les pots,<br/>Lancer la yaourtière,<br/>Laisser refroidir complètement,<br/>Au moment de servir, saupoudrer de sucre cassonade et caraméliser sous le grill du four.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1026,14 +920,12 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">40 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1070,9 +962,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Testé avec 3 unidoses de café décaféiné en flocons pour 12 pots : excellent. Peut-être diminuer légèrement la quantité de sucre.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Délayer le sucre et la fécule de maïs dans un quart de lait,<br/>Faire chauffer dans une casserole jusqu'à ébullition,<br/>Hors du feu, incorporer le reste du lait et la crème,<br/>Dans un autre récipient, mélanger les œufs à la spatule jusqu'au blanchissement de ceux-ci,<br/>Ajouter le contenu de la casserole et le parfum (optionnel) choisi et bien mélanger,<br/>Répartir dans les pots,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Délayer le sucre et la fécule de maïs dans un quart de lait,<br/>Faire chauffer dans une casserole jusqu'à ébullition,<br/>Hors du feu, incorporer le reste du lait et la crème,<br/>Dans un autre récipient, mélanger les œufs à la spatule jusqu'au blanchissement de ceux-ci,<br/>Ajouter le contenu de la casserole et le parfum (optionnel) choisi et bien mélanger,<br/>Répartir dans les pots,<br/>Lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1081,14 +971,12 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">35 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1130,9 +1018,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Testé avec du Salidou à la place du caramel du commerce : excellent. Faire fondre le Salidou quelques secondes au micro-ondes et en verser un fond dans chaque pot. Idée récup : avec les blancs restants, faire des financiers.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire tremper la gélatine pendant 5 minutes dans l'eau froide<br/>Faire tiédir le lait à feu doux dans une casserole<br/>Mélanger le sucre, la fécule tamisée et les jaunes d'œufs à la spatule<br/>Verser la préparation dans la casserole et continuer la cuisson sur feu moyen pour épaissir le mélange en remuant régulièrement<br/>Ajouter la gélatine égouttée et bien mélanger<br/>Verser un fond de caramel liquide dans les pots<br/>Lancer la yaourtière<br/></p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire tremper la gélatine pendant 5 minutes dans l'eau froide<br/>Faire tiédir le lait à feu doux dans une casserole<br/>Mélanger le sucre, la fécule tamisée et les jaunes d'œufs à la spatule<br/>Verser la préparation dans la casserole et continuer la cuisson sur feu moyen pour épaissir le mélange en remuant régulièrement<br/>Ajouter la gélatine égouttée et bien mélanger<br/>Verser un fond de caramel liquide dans les pots<br/>Lancer la yaourtière<br/></p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1141,14 +1027,12 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">35 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1190,9 +1074,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Ajouter quelques cerises amarena dans la crème avant la cuisson puis saupoudrer d'amaretti émiettés au moment de servir : ça adoucit le dessert, fort en cacao. On peut aussi réduire la quantité de cacao de moitié et ajouter 1 cuillère à soupe de café lyophilisé à dissoudre dans la crème chaude.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Couper le beurre en petits morceaux puis le faire ramollir dans un bol à température ambiante,<br/>Hacher le chocolat en petits morceaux et le faire fondre au bain-marie,<br/>Faire chauffer la moitié de la crème et la verser sur le chocolat puis ajouter le beurre : homogénéiser à la spatule,<br/>Dans un autre récipient, mélanger les jaunes d'œufs, le sucre et le cacao,<br/>Mélanger avec la préparation au chocolat puis avec le reste de la crème liquide,<br/>Répartir dans les pots,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Couper le beurre en petits morceaux puis le faire ramollir dans un bol à température ambiante,<br/>Hacher le chocolat en petits morceaux et le faire fondre au bain-marie,<br/>Faire chauffer la moitié de la crème et la verser sur le chocolat puis ajouter le beurre : homogénéiser à la spatule,<br/>Dans un autre récipient, mélanger les jaunes d'œufs, le sucre et le cacao,<br/>Mélanger avec la préparation au chocolat puis avec le reste de la crème liquide,<br/>Répartir dans les pots,<br/>Lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1201,16 +1083,14 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">40 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/photo/?fbid=26694529326820029" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/photo/?fbid=26694529326820029" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1252,9 +1132,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Réalisée avec 2 grosses cuillères à soupe (au lieu de 4 c.c.) de pâte de pistache haut de gamme achetée en épicerie fine : 100% validé, extrêmement bon. Peut-être légèrement augmenter la quantité de sucre.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire chauffer le lait concentré non sucré et la crème,<br/>Ajouter la pâte de pistache,<br/>Dans un saladier, mélanger l'œuf, le jaune et le sucre,<br/>Mélanger les deux préparations,<br/>Verser dans les pots et lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire chauffer le lait concentré non sucré et la crème,<br/>Ajouter la pâte de pistache,<br/>Dans un saladier, mélanger l'œuf, le jaune et le sucre,<br/>Mélanger les deux préparations,<br/>Verser dans les pots et lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1263,14 +1141,12 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">45 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1307,9 +1183,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Possibilité de varier les parfums de chocolat.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Dans un saladier, mélanger les œufs et le sucre, sans faire mousser,<br/>Dans une casserole, faire chauffer la crème avec le chocolat, mélanger jusqu'à obtenir une texture bien lisse,<br/>Laisser tiédir,<br/>Verser le mélange chocolat/crème dans le saladier œufs + sucre,<br/>Mélanger doucement,<br/>Incorporer le lait à la préparation chocolatée,<br/>Verser dans les pots,<br/>Lancer la yaourtière,<br/>Laisser refroidir,<br/>Mettre au frigo minimum 4 heures.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Dans un saladier, mélanger les œufs et le sucre, sans faire mousser,<br/>Dans une casserole, faire chauffer la crème avec le chocolat, mélanger jusqu'à obtenir une texture bien lisse,<br/>Laisser tiédir,<br/>Verser le mélange chocolat/crème dans le saladier œufs + sucre,<br/>Mélanger doucement,<br/>Incorporer le lait à la préparation chocolatée,<br/>Verser dans les pots,<br/>Lancer la yaourtière,<br/>Laisser refroidir,<br/>Mettre au frigo minimum 4 heures.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1318,14 +1192,12 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">45 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1362,9 +1234,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>En cours d'évaluation... Testé avec 20g de fécule de maïs pour 6 pots mais c'est clairement trop, même si c'est très bon : prochain test avec moitié moins.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Délayer la maïzena dans un peu de lait froid,<br/>Faire fondre le praliné dans le reste lait + crème à feu doux,<br/>Ajouter la maïzena délayée, faire épaissir en remuant,<br/>Hors feu, ajouter les œufs battus, mélanger vigoureusement,<br/>Verser dans les pots, <br/>Lancer la yaourtière,<br/>3h au frais.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Délayer la maïzena dans un peu de lait froid,<br/>Faire fondre le praliné dans le reste lait + crème à feu doux,<br/>Ajouter la maïzena délayée, faire épaissir en remuant,<br/>Hors feu, ajouter les œufs battus, mélanger vigoureusement,<br/>Verser dans les pots, <br/>Lancer la yaourtière,<br/>3h au frais.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1373,16 +1243,14 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">45 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/groups/2392217524883105/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/groups/2392217524883105/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1419,9 +1287,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Ajouter de la crème chantilly au moment de servir.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire chauffer la crème et le chocolat jusqu'à ce que le mélange soit fondu,<br/>Mélanger les œufs et le sucre puis verser le chocolat dessus,<br/>Ajouter le lait et bien mélanger,<br/>Verser dans les pots,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire chauffer la crème et le chocolat jusqu'à ce que le mélange soit fondu,<br/>Mélanger les œufs et le sucre puis verser le chocolat dessus,<br/>Ajouter le lait et bien mélanger,<br/>Verser dans les pots,<br/>Lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1430,16 +1296,14 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">45 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/groups/2392217524883105/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/groups/2392217524883105/" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1476,9 +1340,7 @@
 </div>
 <div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Ajouter de la crème chantilly au moment de servir.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger oeufs et sucre,<br/>Ajouter la crème, le lait et l'extrait de café,<br/>Mélanger à nouveau,<br/>Verser dans les pots,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger oeufs et sucre,<br/>Ajouter la crème, le lait et l'extrait de café,<br/>Mélanger à nouveau,<br/>Verser dans les pots,<br/>Lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1487,16 +1349,14 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">60 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/groups/2392217524883105" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/groups/2392217524883105" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1532,9 +1392,7 @@
 <td class="quantite" data-base="0.5" data-ref="6">0.5</td>
 <td>c.c.</td>
 </tr>
-</table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire chauffer le lait,<br/>Battre les œufs avec les sucres et l'arôme vanille,<br/>Ajouter le lait chaud aux œufs et mélanger,<br/>Laisser tiédir,<br/>Lancer la yaourtière.</p></details>
+</table></details><details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire chauffer le lait,<br/>Battre les œufs avec les sucres et l'arôme vanille,<br/>Ajouter le lait chaud aux œufs et mélanger,<br/>Laisser tiédir,<br/>Lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1543,14 +1401,12 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">40 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1575,9 +1431,7 @@
           Réalisable en même temps que :
           <a href="#recette-8" style="color:#2a6a2a; font-weight:bold;">Crème aux oeufs (du cahier de la Multidélices)</a> · <a href="#recette-16" style="color:#2a6a2a; font-weight:bold;">Crèmes pistache</a>
 </div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Séparer les blancs des jaunes,<br/>Mélanger les jaunes, la crème de marron et le mascarpone,<br/>Monter les blancs en neige,<br/>Les incorporer au mélange précédent,<br/>Remplir les pots aux 2/3,<br/>Lancer la yaourtière,<br/>Mettre au frais 4h minimum.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Séparer les blancs des jaunes,<br/>Mélanger les jaunes, la crème de marron et le mascarpone,<br/>Monter les blancs en neige,<br/>Les incorporer au mélange précédent,<br/>Remplir les pots aux 2/3,<br/>Lancer la yaourtière,<br/>Mettre au frais 4h minimum.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1586,16 +1440,14 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">55 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/photo?fbid=10233501792515289" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/photo?fbid=10233501792515289" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1633,9 +1485,7 @@
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Extrait de vanille : pas d'arôme de vanille !</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire blanchir les œufs et le sucre,<br/>Ajouter la crème et le lait concentré non sucré,<br/>Finir par l'extrait de vanille,<br/>Mélanger et verser dans les pots,<br/>Lancer la yaourtière,<br/>Laisser 4 heures au frais.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire blanchir les œufs et le sucre,<br/>Ajouter la crème et le lait concentré non sucré,<br/>Finir par l'extrait de vanille,<br/>Mélanger et verser dans les pots,<br/>Lancer la yaourtière,<br/>Laisser 4 heures au frais.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1644,16 +1494,14 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">50 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/groups/2392217524883105" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/groups/2392217524883105" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1698,9 +1546,7 @@
           Réalisable en même temps que :
           <a href="#recette-30" style="color:#2a6a2a; font-weight:bold;">Crème au miel</a>
 </div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Battre légèrement les blancs d'œufs avec un tiers du sucre sans les monter en neige,<br/>Ajouter la crème et les grains de vanille (racler l'intérieur de la gousse),<br/>Remplir les pots aux deux-tiers,<br/>Lancer la yaourtière,<br/>Faire compoter les fruits rouges avec le reste de sucre, l'eau et le jus de citron pendant 15 minutes, jusqu'à ce que la préparation se détache du fond,<br/>Une fois le programme terminé, verser le coulis sur les panna cotta, placer les couvercles, et réserver au moins 2 heures au frais.<br/></p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Battre légèrement les blancs d'œufs avec un tiers du sucre sans les monter en neige,<br/>Ajouter la crème et les grains de vanille (racler l'intérieur de la gousse),<br/>Remplir les pots aux deux-tiers,<br/>Lancer la yaourtière,<br/>Faire compoter les fruits rouges avec le reste de sucre, l'eau et le jus de citron pendant 15 minutes, jusqu'à ce que la préparation se détache du fond,<br/>Une fois le programme terminé, verser le coulis sur les panna cotta, placer les couvercles, et réserver au moins 2 heures au frais.<br/></p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1709,16 +1555,14 @@
 </div>
 <div class="meta">
 <span class="badge">P4</span><span class="badge">50 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/photo/?fbid=975527388494316" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/photo/?fbid=975527388494316" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1748,9 +1592,7 @@
           Réalisable en même temps que :
           <a href="#recette-25" style="color:#2a6a2a; font-weight:bold;">Panna Cotta aux fruits rouges</a>
 </div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire chauffer le lait concentré et le miel, sans faire bouillir,<br/>Ajouter les œufs et la crème,<br/>Bien mélanger,<br/>Répartir dans les pots,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire chauffer le lait concentré et le miel, sans faire bouillir,<br/>Ajouter les œufs et la crème,<br/>Bien mélanger,<br/>Répartir dans les pots,<br/>Lancer la yaourtière.</p></details>
 </div>
 <h2 id="prog5">Programme P5</h2>
 <div class="recette">
@@ -1760,14 +1602,12 @@
 </div>
 <div class="meta">
 <span class="badge">P5</span><span class="badge">35 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1812,9 +1652,7 @@
           Réalisable en même temps que :
           <a href="#recette-14" style="color:#2a6a2a; font-weight:bold;">Moelleux au citron</a>
 </div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire fondre le chocolat blanc et le beurre au bain-marie,<br/>Ajouter le jaune d'œuf et la faine ; bien mélanger,<br/>Dans le bol, monter les blancs en neige ferme avec le sucre pour faire une meringue,<br/>Incorporer la meringue délicatement à la première préparation à l'aide d'une spatule,<br/>Ajouter les framboises à la préparation,<br/>Verser la pâte jusqu'aux trois-quarts environ dans la verrine préalablement beurrée,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Faire fondre le chocolat blanc et le beurre au bain-marie,<br/>Ajouter le jaune d'œuf et la faine ; bien mélanger,<br/>Dans le bol, monter les blancs en neige ferme avec le sucre pour faire une meringue,<br/>Incorporer la meringue délicatement à la première préparation à l'aide d'une spatule,<br/>Ajouter les framboises à la préparation,<br/>Verser la pâte jusqu'aux trois-quarts environ dans la verrine préalablement beurrée,<br/>Lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1823,14 +1661,12 @@
 </div>
 <div class="meta">
 <span class="badge">P5</span><span class="badge">35 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1880,9 +1716,7 @@
           Réalisable en même temps que :
           <a href="#recette-13" style="color:#2a6a2a; font-weight:bold;">Blondie</a>
 </div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger la farine et la levure,<br/>Dans le bol, mélanger l'œuf, le sucre, l'huile, le zeste, le jus de citron et le lait,<br/>Mélanger les deux préparations précédentes jusqu'à obtention d'une pâte homogène,<br/>Verser la pâte dans les verrines préalablement beurrées,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mélanger la farine et la levure,<br/>Dans le bol, mélanger l'œuf, le sucre, l'huile, le zeste, le jus de citron et le lait,<br/>Mélanger les deux préparations précédentes jusqu'à obtention d'une pâte homogène,<br/>Verser la pâte dans les verrines préalablement beurrées,<br/>Lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1891,16 +1725,14 @@
 </div>
 <div class="meta">
 <span class="badge">P5</span><span class="badge">15 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/photo/?fbid=10243794056886044" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/photo/?fbid=10243794056886044" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1928,9 +1760,7 @@
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Mettre au frais 4 heures avant de déguster.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mixer les fraises,<br/>Séparer les blancs des jaunes,<br/>Mélanger tous les ingrédients saud les blancs d'oeufs,<br/>Monter les blancs en neige,<br/>Mélanger délicatement,<br/>Verser dans les pots et lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Mixer les fraises,<br/>Séparer les blancs des jaunes,<br/>Mélanger tous les ingrédients saud les blancs d'oeufs,<br/>Monter les blancs en neige,<br/>Mélanger délicatement,<br/>Verser dans les pots et lancer la yaourtière.</p></details>
 </div>
 <div class="recette">
 <div style="display:flex; justify-content:space-between; align-items:baseline;">
@@ -1939,16 +1769,14 @@
 </div>
 <div class="meta">
 <span class="badge">P5</span><span class="badge">30 min</span><a href="#nb_pots" style="color:#888; font-size:0.85em; text-decoration:none;" title="Modifier le nombre de pots">
-      ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
-    </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/photo/?fbid=10240946095252516" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
-      📄 Voir la fiche recette
-    </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
-    🖨 Imprimer
-  </button>
+            ↗ Quantités pour <span class="nb-pots-affiche">6</span> pots
+          </a><span class="badge badge-eau">Eau requise</span><a href="https://www.facebook.com/photo/?fbid=10240946095252516" target="_blank" style="display:inline-block; margin:6px 0 10px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:6px; padding:6px 12px; font-size:0.85em; color:#b55a00; text-decoration:none;">
+            📄 Voir la fiche recette
+          </a><button onclick="imprimerRecette(this)" style="margin-left:10px; background:#b55a00; color:#fff; border:none; border-radius:6px; padding:4px 12px; font-size:0.85em; cursor:pointer;">
+          🖨 Imprimer
+        </button>
 </div>
-<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-          Ingrédients (cliquer pour développer)
-        </summary><table class="ingredients">
+<details style="margin-top:10px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Ingrédients (cliquer pour développer)</summary><table class="ingredients">
 <tr>
 <th>Ingrédient</th>
 <th>Quantité</th>
@@ -1996,32 +1824,23 @@
 </tr>
 </table></details><div style="margin-top:10px; font-style:italic; color:#666; border-top:1px solid #eee; padding-top:8px;">
 <strong>Notes :</strong>Fromage frais type Boursin ou Tartare. Se dégustent chauds dans les pots ou froids démoulés accompagnés d'une sauce au yaourt ou d'un coulis de légumes.</div>
-<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">
-            Préparation (cliquer pour développer)
-          </summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Éplucher et couper les carottes en rondelles,<br/>Les cuire (eau ou vapeur) et bien les égoutter,<br/>Huiler les pots,<br/>Mixer tous les ingrédients jusqu'à obtenir une préparation lisse,<br/>Remplir les pots aux 3/4,<br/>Lancer la yaourtière.</p></details>
+<details style="margin-top:10px; border-top:1px solid #eee; padding-top:8px;"><summary style="cursor:pointer; font-weight:bold; color:#b55a00;">Préparation (cliquer pour développer)</summary><p style="margin:6px 0 0 0; color:#444; line-height:1.8;">Éplucher et couper les carottes en rondelles,<br/>Les cuire (eau ou vapeur) et bien les égoutter,<br/>Huiler les pots,<br/>Mixer tous les ingrédients jusqu'à obtenir une préparation lisse,<br/>Remplir les pots aux 3/4,<br/>Lancer la yaourtière.</p></details>
 </div>
 <dialog id="dialog-filtres" style="border:2px solid #b55a00; border-radius:10px; padding:24px; max-width:600px; width:90%; font-family:Georgia,serif;"><h2 style="color:#b55a00; margin-top:0;">🔍 Ingrédients disponibles</h2>
-<p style="font-size:0.85em; color:#888; margin:0 0 12px 0;">
-      Cochez les ingrédients que vous avez : les recettes réalisables avec ces ingrédients s'affichent.
-    </p>
+<p style="font-size:0.85em; color:#888; margin:0 0 12px 0;">Cochez les ingrédients que vous avez : les recettes réalisables avec ces ingrédients s'affichent.</p>
 <div id="liste-ingredients" style="column-width:180px; column-gap:20px; max-height:50vh; overflow-y:auto; border:1px solid #eee; padding:10px; border-radius:6px;"></div>
 <div style="margin-top:14px; display:flex; gap:10px;">
-<button onclick="resetFiltres()" style="background:#888; color:#fff; border:none; border-radius:4px; padding:6px 16px; cursor:pointer;">
-        Réinitialiser
-      </button><button onclick="document.getElementById('dialog-filtres').close()" style="background:#b55a00; color:#fff; border:none; border-radius:4px; padding:6px 16px; cursor:pointer;">
-        Fermer
-      </button>
+<button onclick="resetFiltres()" style="background:#888; color:#fff; border:none; border-radius:4px; padding:6px 16px; cursor:pointer;">Réinitialiser</button><button onclick="document.getElementById('dialog-filtres').close()" style="background:#b55a00; color:#fff; border:none; border-radius:4px; padding:6px 16px; cursor:pointer;">Fermer</button>
 </div></dialog><div id="popup-recette" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.65); justify-content:center; align-items:center; z-index:9999;"><div id="popup-recette-inner" style="background:#fdf6ec; border:2px solid #b55a00; padding:12px; border-radius:10px; width:92%; max-width:700px; position:relative;">
 <button id="popup-recette-close" onclick="document.getElementById('popup-recette').style.display='none'" style="position:absolute; top:6px; right:12px; font-size:1.3em; background:none; border:none; color:#b55a00; cursor:pointer; font-weight:bold;">✕</button><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSehjsOEE-IwuWlufcBbmjOmhND8kap07W8dHgPZmTc3nHvXGQ/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
 </div></div>
 <div style="position:fixed; bottom:0; left:0; right:0; background:#b55a00; color:#fff; text-align:center; padding:10px; z-index:9999;">
-  Vous avez une recette Multi Délices ? 
-  <button onclick="document.getElementById('popup-recette').style.display='flex'" style="background:#fff; color:#b55a00; border:none; border-radius:4px; padding:4px 12px; font-weight:bold; cursor:pointer; margin-left:10px; transition:background 0.2s, color 0.2s;" onmouseover="this.style.background='#ffe0b2'" onmouseout="this.style.background='#fff'">
-  🍴 La soumettre ici
-</button>
+    Vous avez une recette Multi Délices ? 
+    <button onclick="document.getElementById('popup-recette').style.display='flex'" style="background:#fff; color:#b55a00; border:none; border-radius:4px; padding:4px 12px; font-weight:bold; cursor:pointer; margin-left:10px; transition:background 0.2s, color 0.2s;" onmouseover="this.style.background='#ffe0b2'" onmouseout="this.style.background='#fff'">
+      🍴 La soumettre ici
+    </button>
 </div>
 <script>
-    // --- RECALCUL POTS ---
     const input = document.getElementById('nb_pots');
     function recalcul() {
       const nb = parseFloat(input.value) || 6;
@@ -2038,7 +1857,6 @@
     input.addEventListener('input', recalcul);
     recalcul();
 
-    // --- FILTRE INGRÉDIENTS ---
     const ingredientsSet = new Set();
     document.querySelectorAll('table.ingredients tr td:first-child').forEach(td => {
       const val = td.textContent.trim().toLowerCase();
@@ -2058,56 +1876,50 @@
       listeDiv.appendChild(label);
     });
 
-function filtrerRecettes() {
-  const coches = [...document.querySelectorAll('#liste-ingredients input:checked')]
-    .map(cb => cb.value);
+    function filtrerRecettes() {
+      const coches = [...document.querySelectorAll('#liste-ingredients input:checked')].map(cb => cb.value);
 
-  document.querySelectorAll('.recette').forEach(recette => {
-    // Nettoyer les bandeaux précédents
-    recette.querySelectorAll('.alerte-manquant').forEach(el => el.remove());
+      document.querySelectorAll('.recette').forEach(recette => {
+        recette.querySelectorAll('.alerte-manquant').forEach(el => el.remove());
 
-    if (coches.length === 0) { recette.style.display = ''; return; }
+        if (coches.length === 0) {
+          recette.style.display = '';
+          return;
+        }
 
-    const ings = [...recette.querySelectorAll('table.ingredients tr td:first-child')]
-      .map(td => td.textContent.trim().toLowerCase());
+        const ings = [...recette.querySelectorAll('table.ingredients tr td:first-child, ingredientss ingredients column:first-child')]
+          .map(el => el.textContent.trim().toLowerCase());
 
-    const manquants = ings.filter(ing => !coches.includes(ing));
+        const contientAuMoinsUn = coches.some(ing => ings.includes(ing));
+        const manquants = ings.filter(ing => !coches.includes(ing));
 
-    if (manquants.length === 0) {
-      // ✅ Tout dispo
-      recette.style.display = '';
-    } else if (manquants.length === 1) {
-      // ⚠️ Un seul manquant : on affiche avec alerte
-      recette.style.display = '';
-      const alerte = document.createElement('div');
-      alerte.className = 'manquant alerte-manquant';
-      alerte.innerHTML = '⚠️ Il vous manque 1 ingrédient : <strong>'
-        + manquants[0] + '</strong><span class="badge-manquant">À se procurer</span>';
-      recette.appendChild(alerte);
-    } else {
-      // ❌ 2+ manquants : masquée
-      recette.style.display = 'none';
+        if (contientAuMoinsUn) {
+          recette.style.display = '';
+          const alerte = document.createElement('div');
+          alerte.className = 'manquant alerte-manquant';
+          alerte.innerHTML = '⚠️ Il vous manque ' + manquants.length + ' ingrédient' + (manquants.length > 1 ? 's' : '') + '.';
+          recette.appendChild(alerte);
+        } else {
+          recette.style.display = 'none';
+        }
+      });
+
+      document.querySelectorAll('h2').forEach(h2 => {
+        let next = h2.nextElementSibling;
+        let visible = false;
+        while (next && next.tagName !== 'H2') {
+          if (next.classList.contains('recette') && next.style.display !== 'none') visible = true;
+          next = next.nextElementSibling;
+        }
+        h2.style.display = visible ? '' : 'none';
+      });
     }
-  });
-
-  // Masquer les h2 sans recettes visibles
-  document.querySelectorAll('h2').forEach(h2 => {
-    let next = h2.nextElementSibling;
-    let visible = false;
-    while (next && next.tagName !== 'H2') {
-      if (next.classList.contains('recette') && next.style.display !== 'none') visible = true;
-      next = next.nextElementSibling;
-    }
-    h2.style.display = visible ? '' : 'none';
-  });
-}
 
     function resetFiltres() {
       document.querySelectorAll('#liste-ingredients input').forEach(cb => cb.checked = false);
       filtrerRecettes();
     }
 
-    // --- IMPRIMER UNE RECETTE ---
     function imprimerRecette(btn) {
       const recette = btn.closest('.recette');
       recette.querySelectorAll('details').forEach(d => d.open = true);
